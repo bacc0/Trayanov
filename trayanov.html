@@ -5,7 +5,8 @@
   <title>Veselin Trayanov CV</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,500,700,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+         
 
   <style>
     * {
@@ -15,32 +16,39 @@
     body {
       font-family: Helvetica, sans-serif;
       margin: 0;
+      background-color: rgb(255, 255, 255);
+      font-family: 'Roboto';
+    }
+    .body_wrap{
+      margin: 15px 15px;
+      box-shadow: 1px 1px 10px #5c5c5c;
+      border-radius: 3px;
+
+    }
+    .wrap_all{
+      padding: 0px px;
+      
+      border-radius: 3px;
+
+
     }
 
-    p {
-      letter-spacing: 0.2px;
-      word-spacing: 4px;
-      color: rgb(36, 36, 36);
-    }
+  
 
     /* Style the header */
     .header {
-      padding: 10px;
-      text-align: left;
+      text-align: center;
       background: rgb(20, 54, 74);
       color: rgb(255, 160, 1);
-      box-shadow: 5px 110px #303030;
 
-
-
-
-    }
-
-    .header_text {
-      padding: 0 0 0 40px;
-
+      background: rgb(25,17,27);
+      background: linear-gradient(342deg, rgba(25,17,27,1) 0%, rgba(62,39,77,1) 57%, rgba(114,16,196,1) 100%);
+      border-radius: 3px 3px 0  0;
+      height: 320px;
 
     }
+
+    
 
     /* Increase the font size of the h1 element */
     .header h1 {
@@ -132,6 +140,16 @@
       border-width: 1px;
     }
 
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+
     .footer {
       padding: 20px;
       /* Some padding */
@@ -140,6 +158,11 @@
       background: rgb(20, 54, 74);
       color: white;
       padding: 20px 40px 20px 20px;
+      border-radius: 0  0 3px 3px ;
+
+
+      background: rgb(25,17,27);
+      background: linear-gradient(145deg,rgba(114,16,196,1) 0%, rgba(62,39,77,1) 57%,   rgba(25,17,27,1)  100%);
 
     }
 
@@ -180,28 +203,93 @@
 
     }
 
+  
+
+    a {
+      color:rgb(110, 19, 188);
+      font-size: 14px;
+    }
+
+    p {
+      letter-spacing: 0.2px;
+      word-spacing: 4px;
+      color: rgb(36, 36, 36);
+    }
+
+    .header_text {
+
+      margin: auto;
+      width: 50%;
+
+
+    }
+
+    h1 {
+      color: rgb(255, 255, 255);
+      font-weight: 200;
+      margin: 0px 0 0;
+      font-size: 1px;
+    }
     h3 {
-      color: rgb(15, 39, 54);
+      color: rgb(80, 11, 137);
     }
 
     h4 {
       color: rgb(255, 255, 255);
     }
+  h5{
+    font-weight: 400;
+    padding: 0 0 22px;margin: 0px;
+     margin: 0 0 5px;
+  }
+  
 
-    a {
-      color: rgb(3, 156, 229);
-      font-size: 14px;
-    }
+    .btn a{
+     
+      color:white;
+      font-size: 18px;
+      background-color: rgba(240, 71, 255, 0.041);
+      padding: 12px 35px;
+      border-radius: 3px;
+      border: 1px solid rgb(255, 255, 255);
+      
+}
+
+.mail_phone a{
+     
+     color:rgb(237, 237, 237);
+     font-size: 12px;
+    
+     
+}
+
+.btn a:hover{
+      color:white;
+      font-size: 18px;
+      background-color:  rgb(99, 26, 163);
+      padding: 12px 35px;
+      border-radius: 3px;
+      border: 1px solid rgb(255, 255, 255);
+      box-shadow: 1px 1px 15px #0000006c;
+
+}
   </style>
 </head>
 
 <body>
-
+  <div class='body_wrap'>
+<div class='wrap_all'>
   <div class="header row">
+
     <div class="header_text">
-      <h4> Veselin Trayanov </h4>
-      <h5> Web Developer </h5>
-      <!-- <span class="pic_avatar" style="height:100px;">Image</span> -->
+
+          <div><h1> Veselin Trayanov </h1>
+            <h5> Web Developer </h5>
+
+            <div class="btn">
+                <span class="btn"><a href="https://github.com/bacc0/" target="_blank">GitHub</a></span>
+            </div>
+      </div>
 
     </div>
   </div>
@@ -294,11 +382,9 @@
         <a class='xl_text' href="https://top-cryptocurrency.herokuapp.com" target="_blank">To the App</a>
       </div>
       <div>
-        <div><a href="https://github.com/bacc0/Top-100-Crypto-App-React.js" target="_blank">Github React.js code</a></div>
-        <div><a href="https://github.com/bacc0/Top-100-Crypto-App-DataShow-Node.js-" target="_blank">Github Node.js data display
-            code</a></div>
-        <div><a href="https://github.com/bacc0/Top-100-Crypto-App-DataUpload-Node.js-" target="_blank">Github Node,js data
-            gatherer code</a></div>
+        <div><a href="https://github.com/bacc0/Top-100-Crypto-App-React.js" target="_blank">GitHub code React.js</a></div>
+        <div><a href="https://github.com/bacc0/Top-100-Crypto-App-DataShow-Node.js-" target="_blank">GitHub code Node.js data display</a></div>
+        <div><a href="https://github.com/bacc0/Top-100-Crypto-App-DataUpload-Node.js-" target="_blank">GitHub code Node.js data gatherer</a></div>
       </div>
 
       <br>
@@ -346,15 +432,16 @@
       <br>
 
       <div>
-        <span class="yell_text">Tel: </span>
-
+        <div class='mail_phone'>
+            <span class="yell_text">Tel: </span>
         <span><a href="tel:+447590010066"><img src="" />+447590010066</a>
           <span class="yell_text">Mail: </span>
           <span><a href="mailto:webmaster@example.com">bacco23@gmail.com</a></span></div>
-
+</div>
     </div>
   </div>
-
+</div>
+</div>
 </body>
 
 </html>
