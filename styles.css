@@ -248,7 +248,7 @@ h5 {
 }
 
 .btn_crypto:hover {
-	box-shadow: 1px 1px 15px #0000006c;
+     box-shadow: 1px 1px 18px #000000ad;
 	background-color: rgb(255, 255, 255);
 }
 
@@ -262,7 +262,7 @@ h5 {
 }
 
 .btn_unit_test:hover {
-	box-shadow: 1px 1px 15px #0000006c;
+	box-shadow: 1px 1px 18px #000000ad;
 	background-color: rgb(255, 255, 255);
 }
 
