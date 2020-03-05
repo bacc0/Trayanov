@@ -89,11 +89,11 @@
 	<key>hasManuallyChangedCSSPositioning</key>
 	<false/>
 	<key>lastCheckDate</key>
-	<date>2020-03-05T01:28:11Z</date>
+	<date>2020-03-05T17:45:28Z</date>
 	<key>layout</key>
 	<dict>
 		<key>currentInspectorPane</key>
-		<integer>4</integer>
+		<integer>3</integer>
 		<key>customizableLayout</key>
 		<dict>
 			<key>frame</key>
@@ -1161,13 +1161,13 @@
 						<key>timeCursors</key>
 						<dict>
 							<key>kTimelineDefaultIdentifier</key>
-							<real>0.0</real>
+							<real>7.6999998092651367</real>
 						</dict>
 						<key>timescale</key>
 						<integer>20</integer>
 					</dict>
 					<key>canvasSize</key>
-					<string>{5559, 4332}</string>
+					<string>{3925, 2955}</string>
 					<key>hypeScene</key>
 					<dict>
 						<key>backgroundColor</key>
@@ -1192,7 +1192,7 @@
 					<key>rootSymbolControllerOid</key>
 					<string>2</string>
 					<key>scrollViewOffset</key>
-					<string>{3098, 2212.203125}</string>
+					<string>{1882.5, 892.109375}</string>
 					<key>userGuides</key>
 					<array>
 						<dict>
@@ -1268,10 +1268,10 @@
 	<array>
 		<dict>
 			<key>documentIdentifier</key>
-			<string>C03B8035-E75D-463A-A10B-5D833DD9F61F-7385-00001D2307B7FCF8</string>
+			<string>89E93A4B-1E55-425F-A19C-CB869862423D-753-000000714548A432</string>
 			<key>selectedObjects</key>
 			<array>
-				<string>73</string>
+				<string>139</string>
 			</array>
 			<key>symbol</key>
 			<dict>
@@ -1383,6 +1383,12 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
+							<string>BackgroundSize</string>
+							<key>objectValue</key>
+							<string>100% 100%</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
 							<string>Locked</string>
 							<key>objectValue</key>
 							<string>1</string>
@@ -1392,12 +1398,6 @@
 							<string>Overflow</string>
 							<key>objectValue</key>
 							<string>visible</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>BackgroundSize</string>
-							<key>objectValue</key>
-							<string>100% 100%</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -1828,15 +1828,15 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>BackgroundSize</string>
-							<key>objectValue</key>
-							<string>100% 100%</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
 							<string>Locked</string>
 							<key>objectValue</key>
 							<string>1</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>BackgroundSize</string>
+							<key>objectValue</key>
+							<string>100% 100%</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -2755,6 +2755,18 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
+							<string>FilterEffectSepia</string>
+							<key>objectValue</key>
+							<string>0</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>BackdropFilterEffectBlur</string>
+							<key>objectValue</key>
+							<string>0</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
 							<string>ConstrainProportions</string>
 							<key>objectValue</key>
 							<string>YES</string>
@@ -2769,7 +2781,7 @@
 							<key>identifier</key>
 							<string>Opacity</string>
 							<key>objectValue</key>
-							<string>0.2</string>
+							<string>0.147685917721519</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -2785,9 +2797,45 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
+							<string>BackdropFilterEffectSaturate</string>
+							<key>objectValue</key>
+							<string>1</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>FilterEffectBlur</string>
+							<key>objectValue</key>
+							<string>0</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>BackdropFilterEffectHue</string>
+							<key>objectValue</key>
+							<string>0deg</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
 							<string>BackgroundRepeat</string>
 							<key>objectValue</key>
 							<string>no-repeat</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>BackdropFilterEffectBrightness</string>
+							<key>objectValue</key>
+							<string>1</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>FilterEffectContrast</string>
+							<key>objectValue</key>
+							<string>1</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>FilterEffectSaturate</string>
+							<key>objectValue</key>
+							<string>1</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -2827,6 +2875,24 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
+							<string>FilterEffectHue</string>
+							<key>objectValue</key>
+							<string>0deg</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>FilterEffectBrightness</string>
+							<key>objectValue</key>
+							<string>1</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>BackdropFilterEffectSepia</string>
+							<key>objectValue</key>
+							<string>0</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
 							<string>34</string>
@@ -2836,6 +2902,12 @@
 							<string>Width</string>
 							<key>objectValue</key>
 							<string>200px</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>BackdropFilterEffectContrast</string>
+							<key>objectValue</key>
+							<string>1</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -2878,15 +2950,15 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>ExplicitDimensions</string>
-							<key>objectValue</key>
-							<string>YES</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
 							<string>BorderColorBottom</string>
 							<key>objectValue</key>
 							<string>#512284</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>ExplicitDimensions</string>
+							<key>objectValue</key>
+							<string>YES</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -3046,13 +3118,13 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>BorderWidthBottom</string>
+							<string>BorderWidthLeft</string>
 							<key>objectValue</key>
 							<string>0px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>BorderWidthLeft</string>
+							<string>BorderWidthBottom</string>
 							<key>objectValue</key>
 							<string>0px</string>
 						</dict>
@@ -3061,9 +3133,9 @@
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>300px</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -3187,9 +3259,9 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>300px</string>
 						</dict>
 					</array>
 					<key>145</key>
@@ -3299,9 +3371,9 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>PaddingLeft</string>
+							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>8px</string>
+							<string>38</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -3311,9 +3383,9 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>ZIndex</string>
+							<string>PaddingLeft</string>
 							<key>objectValue</key>
-							<string>38</string>
+							<string>8px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -3446,9 +3518,9 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>PaddingLeft</string>
+							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>8px</string>
+							<string>39</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -3458,9 +3530,9 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>ZIndex</string>
+							<string>PaddingLeft</string>
 							<key>objectValue</key>
-							<string>39</string>
+							<string>8px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -3856,7 +3928,7 @@
 							<key>identifier</key>
 							<string>Opacity</string>
 							<key>objectValue</key>
-							<string>0.06961036392405064</string>
+							<string>0.1669204905063291</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -4625,9 +4697,9 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>BackgroundImageResourceGroupOid</string>
+							<string>AutoresizingMask</string>
 							<key>objectValue</key>
-							<string>67</string>
+							<string>256</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -4643,6 +4715,12 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
+							<string>BackgroundImageResourceGroupOid</string>
+							<key>objectValue</key>
+							<string>67</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
 							<string>AccessibilityRole</string>
 							<key>objectValue</key>
 							<string>img</string>
@@ -4652,12 +4730,6 @@
 							<string>TransformOriginYOffset</string>
 							<key>objectValue</key>
 							<string>50%</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>AutoresizingMask</string>
-							<key>objectValue</key>
-							<string>256</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -4703,15 +4775,15 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TransformOriginXOffset</string>
-							<key>objectValue</key>
-							<string>50%</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
 							<string>DisplayName</string>
 							<key>objectValue</key>
 							<string>rocket 1</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>TransformOriginXOffset</string>
+							<key>objectValue</key>
+							<string>50%</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -4796,9 +4868,9 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>BackgroundImageResourceGroupOid</string>
+							<string>AutoresizingMask</string>
 							<key>objectValue</key>
-							<string>67</string>
+							<string>296</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -4814,6 +4886,12 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
+							<string>BackgroundImageResourceGroupOid</string>
+							<key>objectValue</key>
+							<string>67</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
 							<string>AccessibilityRole</string>
 							<key>objectValue</key>
 							<string>img</string>
@@ -4823,12 +4901,6 @@
 							<string>TransformOriginYOffset</string>
 							<key>objectValue</key>
 							<string>50%</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>AutoresizingMask</string>
-							<key>objectValue</key>
-							<string>296</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -4874,15 +4946,15 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TransformOriginXOffset</string>
-							<key>objectValue</key>
-							<string>50%</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
 							<string>DisplayName</string>
 							<key>objectValue</key>
 							<string>rocket 1</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>TransformOriginXOffset</string>
+							<key>objectValue</key>
+							<string>50%</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -4967,9 +5039,9 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>BackgroundImageResourceGroupOid</string>
+							<string>AutoresizingMask</string>
 							<key>objectValue</key>
-							<string>67</string>
+							<string>256</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -4985,6 +5057,12 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
+							<string>BackgroundImageResourceGroupOid</string>
+							<key>objectValue</key>
+							<string>67</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
 							<string>AccessibilityRole</string>
 							<key>objectValue</key>
 							<string>img</string>
@@ -4994,12 +5072,6 @@
 							<string>TransformOriginYOffset</string>
 							<key>objectValue</key>
 							<string>50%</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>AutoresizingMask</string>
-							<key>objectValue</key>
-							<string>256</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -5045,15 +5117,15 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TransformOriginXOffset</string>
-							<key>objectValue</key>
-							<string>50%</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
 							<string>DisplayName</string>
 							<key>objectValue</key>
 							<string>rocket 1</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>TransformOriginXOffset</string>
+							<key>objectValue</key>
+							<string>50%</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -5072,15 +5144,15 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>ExplicitDimensions</string>
-							<key>objectValue</key>
-							<string>YES</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
 							<string>BorderColorBottom</string>
 							<key>objectValue</key>
 							<string>#B31F9C</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>ExplicitDimensions</string>
+							<key>objectValue</key>
+							<string>YES</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -5228,13 +5300,13 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>BorderWidthBottom</string>
+							<string>BorderWidthLeft</string>
 							<key>objectValue</key>
 							<string>0px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>BorderWidthLeft</string>
+							<string>BorderWidthBottom</string>
 							<key>objectValue</key>
 							<string>0px</string>
 						</dict>
@@ -5683,7 +5755,7 @@
 							<key>identifier</key>
 							<string>AutoresizingMask</string>
 							<key>objectValue</key>
-							<string>256</string>
+							<string>260</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -5794,7 +5866,7 @@
 							<key>identifier</key>
 							<string>AutoresizingMask</string>
 							<key>objectValue</key>
-							<string>256</string>
+							<string>260</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -6524,6 +6596,150 @@
 							</dict>
 							<dict>
 								<key>duration</key>
+								<real>0.0</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>MotionPathRotation</string>
+									<key>objectValue</key>
+									<string>220deg</string>
+								</dict>
+								<key>identifier</key>
+								<string>MotionPathRotation</string>
+								<key>isRelative</key>
+								<false/>
+								<key>referenceOid</key>
+								<string>70</string>
+								<key>startTime</key>
+								<real>0.0</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>MotionPathRotation</string>
+									<key>objectValue</key>
+									<string>0deg</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>57632A34-7CB3-44BD-A9F0-3001B798A135-1715-00000B14C92F06A4</string>
+								<key>zIndex</key>
+								<integer>1</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>21.066667556762695</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Opacity</string>
+									<key>objectValue</key>
+									<string>0.04000197784810126</string>
+								</dict>
+								<key>identifier</key>
+								<string>Opacity</string>
+								<key>isRelative</key>
+								<false/>
+								<key>referenceOid</key>
+								<string>109</string>
+								<key>startTime</key>
+								<real>0.0</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Opacity</string>
+									<key>objectValue</key>
+									<string>0.06259889240506329</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>AB8CE374-464C-4055-A639-BF8CDD111322-1715-0000179D95DD1C8D</string>
+								<key>zIndex</key>
+								<integer>1</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>1.5333333015441895</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Top</string>
+									<key>objectValue</key>
+									<string>235px</string>
+								</dict>
+								<key>identifier</key>
+								<string>Top</string>
+								<key>isRelative</key>
+								<false/>
+								<key>referenceOid</key>
+								<string>90</string>
+								<key>startTime</key>
+								<real>0.0</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Top</string>
+									<key>objectValue</key>
+									<string>251px</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>E11756FF-803C-4850-AD20-B59C9476E838-1715-00001466E29812C4</string>
+								<key>zIndex</key>
+								<integer>1</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>1.5333333015441895</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Left</string>
+									<key>objectValue</key>
+									<string>1224px</string>
+								</dict>
+								<key>identifier</key>
+								<string>Left</string>
+								<key>isRelative</key>
+								<false/>
+								<key>referenceOid</key>
+								<string>90</string>
+								<key>startTime</key>
+								<real>0.0</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Left</string>
+									<key>objectValue</key>
+									<string>1966px</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>EF4391A2-B362-4EB3-9225-1C9231351BC5-1715-00001466D61E23D3</string>
+								<key>zIndex</key>
+								<integer>1</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
 								<real>3.2999999523162842</real>
 								<key>endValue</key>
 								<dict>
@@ -6577,7 +6793,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>4F2EEE99-7CE3-4E12-91D2-DFF395F18019-7385-00001D22BFAC6820</string>
+									<string>A1B9A71E-D077-4F3D-B725-05BEAA9FEF95-753-00000070C5644574</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>70</string>
@@ -6692,7 +6908,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>4F2EEE99-7CE3-4E12-91D2-DFF395F18019-7385-00001D22BFAC6820</string>
+									<string>A1B9A71E-D077-4F3D-B725-05BEAA9FEF95-753-00000070C5644574</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>70</string>
@@ -6715,121 +6931,6 @@
 								<string>7EDC4641-2F77-4625-B98D-F4F212FE6AC6-1715-00000B108355A6C8</string>
 								<key>zIndex</key>
 								<integer>2</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>0.0</real>
-								<key>endValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>MotionPathRotation</string>
-									<key>objectValue</key>
-									<string>220deg</string>
-								</dict>
-								<key>identifier</key>
-								<string>MotionPathRotation</string>
-								<key>isRelative</key>
-								<false/>
-								<key>referenceOid</key>
-								<string>70</string>
-								<key>startTime</key>
-								<real>0.0</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>MotionPathRotation</string>
-									<key>objectValue</key>
-									<string>0deg</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>57632A34-7CB3-44BD-A9F0-3001B798A135-1715-00000B14C92F06A4</string>
-								<key>zIndex</key>
-								<integer>1</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>5</real>
-								<key>endValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>Top</string>
-									<key>objectValue</key>
-									<string>134px</string>
-								</dict>
-								<key>identifier</key>
-								<string>Top</string>
-								<key>isRelative</key>
-								<false/>
-								<key>motionPath</key>
-								<dict>
-									<key>bezierPath</key>
-									<dict>
-										<key>allowEndPointModification</key>
-										<true/>
-										<key>bezierCurves</key>
-										<array>
-											<dict>
-												<key>endControlPoint</key>
-												<string>{-62, 157}</string>
-												<key>endPoint</key>
-												<string>{-62, 157}</string>
-												<key>endPointMovementMode</key>
-												<integer>0</integer>
-												<key>startControlPoint</key>
-												<string>{-75, 157}</string>
-												<key>startPoint</key>
-												<string>{-75, 157}</string>
-												<key>startPointMovementMode</key>
-												<integer>0</integer>
-											</dict>
-										</array>
-										<key>closed</key>
-										<false/>
-										<key>interpolationPointCount</key>
-										<real>100</real>
-										<key>polygonSides</key>
-										<integer>0</integer>
-										<key>selectedControlPointIndexes</key>
-										<array/>
-										<key>showAllControlPoints</key>
-										<false/>
-										<key>type</key>
-										<integer>0</integer>
-										<key>useIntegerValues</key>
-										<true/>
-										<key>useSmallStyle</key>
-										<false/>
-									</dict>
-									<key>oid</key>
-									<string>5DF55F30-F5E0-4A95-9E21-A39711631D7F-7385-00001D22BFB08411</string>
-								</dict>
-								<key>referenceOid</key>
-								<string>71</string>
-								<key>startTime</key>
-								<real>0.0</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>Top</string>
-									<key>objectValue</key>
-									<string>134px</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>F320B5EF-1902-43DB-88EF-C4C42A2BFA5E-1715-00000B32888A2ED8</string>
-								<key>zIndex</key>
-								<integer>3</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -6886,7 +6987,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>5DF55F30-F5E0-4A95-9E21-A39711631D7F-7385-00001D22BFB08411</string>
+									<string>97C4DC1B-3D58-4645-B50E-95E4C52E7682-753-00000070C5681584</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>71</string>
@@ -6909,6 +7010,85 @@
 								<string>50EF0823-D51B-40D0-8166-468E9B327E65-1715-00000B3288946474</string>
 								<key>zIndex</key>
 								<integer>2</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>5</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Top</string>
+									<key>objectValue</key>
+									<string>134px</string>
+								</dict>
+								<key>identifier</key>
+								<string>Top</string>
+								<key>isRelative</key>
+								<false/>
+								<key>motionPath</key>
+								<dict>
+									<key>bezierPath</key>
+									<dict>
+										<key>allowEndPointModification</key>
+										<true/>
+										<key>bezierCurves</key>
+										<array>
+											<dict>
+												<key>endControlPoint</key>
+												<string>{-62, 157}</string>
+												<key>endPoint</key>
+												<string>{-62, 157}</string>
+												<key>endPointMovementMode</key>
+												<integer>0</integer>
+												<key>startControlPoint</key>
+												<string>{-75, 157}</string>
+												<key>startPoint</key>
+												<string>{-75, 157}</string>
+												<key>startPointMovementMode</key>
+												<integer>0</integer>
+											</dict>
+										</array>
+										<key>closed</key>
+										<false/>
+										<key>interpolationPointCount</key>
+										<real>100</real>
+										<key>polygonSides</key>
+										<integer>0</integer>
+										<key>selectedControlPointIndexes</key>
+										<array/>
+										<key>showAllControlPoints</key>
+										<false/>
+										<key>type</key>
+										<integer>0</integer>
+										<key>useIntegerValues</key>
+										<true/>
+										<key>useSmallStyle</key>
+										<false/>
+									</dict>
+									<key>oid</key>
+									<string>97C4DC1B-3D58-4645-B50E-95E4C52E7682-753-00000070C5681584</string>
+								</dict>
+								<key>referenceOid</key>
+								<string>71</string>
+								<key>startTime</key>
+								<real>0.0</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Top</string>
+									<key>objectValue</key>
+									<string>134px</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>F320B5EF-1902-43DB-88EF-C4C42A2BFA5E-1715-00000B32888A2ED8</string>
+								<key>zIndex</key>
+								<integer>3</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -6965,7 +7145,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>5DF55F30-F5E0-4A95-9E21-A39711631D7F-7385-00001D22BFB08411</string>
+									<string>97C4DC1B-3D58-4645-B50E-95E4C52E7682-753-00000070C5681584</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>71</string>
@@ -6986,6 +7166,121 @@
 								<integer>0</integer>
 								<key>uuid</key>
 								<string>34A3351E-A1CD-461C-A9B1-4E3EABE3ABD3-1715-00000B32888903AA</string>
+								<key>zIndex</key>
+								<integer>3</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>23</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>RotationAngleZ</string>
+									<key>objectValue</key>
+									<string>369deg</string>
+								</dict>
+								<key>identifier</key>
+								<string>RotationAngleZ</string>
+								<key>isRelative</key>
+								<false/>
+								<key>referenceOid</key>
+								<string>60</string>
+								<key>startTime</key>
+								<real>0.0</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>RotationAngleZ</string>
+									<key>objectValue</key>
+									<string>0deg</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>83F52679-85BF-4FA3-833F-976CC807ED84-1715-000009CF85EE934F</string>
+								<key>zIndex</key>
+								<integer>3</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>2.8333332538604736</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>MotionPathRotation</string>
+									<key>objectValue</key>
+									<string>180deg</string>
+								</dict>
+								<key>identifier</key>
+								<string>MotionPathRotation</string>
+								<key>isRelative</key>
+								<false/>
+								<key>motionPath</key>
+								<dict>
+									<key>bezierPath</key>
+									<dict>
+										<key>allowEndPointModification</key>
+										<true/>
+										<key>bezierCurves</key>
+										<array>
+											<dict>
+												<key>endControlPoint</key>
+												<string>{1263, 272}</string>
+												<key>endPoint</key>
+												<string>{1263, 272}</string>
+												<key>endPointMovementMode</key>
+												<integer>0</integer>
+												<key>startControlPoint</key>
+												<string>{1421, 273}</string>
+												<key>startPoint</key>
+												<string>{1421, 273}</string>
+												<key>startPointMovementMode</key>
+												<integer>0</integer>
+											</dict>
+										</array>
+										<key>closed</key>
+										<false/>
+										<key>interpolationPointCount</key>
+										<real>100</real>
+										<key>polygonSides</key>
+										<integer>0</integer>
+										<key>selectedControlPointIndexes</key>
+										<array/>
+										<key>showAllControlPoints</key>
+										<false/>
+										<key>type</key>
+										<integer>0</integer>
+										<key>useIntegerValues</key>
+										<true/>
+										<key>useSmallStyle</key>
+										<false/>
+									</dict>
+									<key>oid</key>
+									<string>CD94B533-AEAC-40D3-A61F-61025D0C3339-753-00000070C56ADC34</string>
+								</dict>
+								<key>referenceOid</key>
+								<string>83</string>
+								<key>startTime</key>
+								<real>0.0</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>MotionPathRotation</string>
+									<key>objectValue</key>
+									<string>180deg</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>BB61AC31-612F-43AF-989D-9BB9C1BE0E68-1715-000014695C432D09</string>
 								<key>zIndex</key>
 								<integer>3</integer>
 							</dict>
@@ -7063,20 +7358,20 @@
 							</dict>
 							<dict>
 								<key>duration</key>
-								<real>23</real>
+								<real>22.466667175292969</real>
 								<key>endValue</key>
 								<dict>
 									<key>identifier</key>
 									<string>RotationAngleZ</string>
 									<key>objectValue</key>
-									<string>369deg</string>
+									<string>360deg</string>
 								</dict>
 								<key>identifier</key>
 								<string>RotationAngleZ</string>
 								<key>isRelative</key>
 								<false/>
 								<key>referenceOid</key>
-								<string>60</string>
+								<string>116</string>
 								<key>startTime</key>
 								<real>0.0</real>
 								<key>startValue</key>
@@ -7093,34 +7388,77 @@
 								<key>type</key>
 								<integer>0</integer>
 								<key>uuid</key>
-								<string>83F52679-85BF-4FA3-833F-976CC807ED84-1715-000009CF85EE934F</string>
+								<string>95713264-6DE2-436B-9FD3-50D095C3A2FE-1715-00001840F88327EC</string>
 								<key>zIndex</key>
-								<integer>3</integer>
+								<integer>4</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
-								<real>1.5333333015441895</real>
+								<real>3.2999999523162842</real>
 								<key>endValue</key>
 								<dict>
 									<key>identifier</key>
-									<string>Left</string>
+									<string>MotionPathRotation</string>
 									<key>objectValue</key>
-									<string>1224px</string>
+									<string>220deg</string>
 								</dict>
 								<key>identifier</key>
-								<string>Left</string>
+								<string>MotionPathRotation</string>
 								<key>isRelative</key>
 								<false/>
+								<key>motionPath</key>
+								<dict>
+									<key>bezierPath</key>
+									<dict>
+										<key>allowEndPointModification</key>
+										<true/>
+										<key>bezierCurves</key>
+										<array>
+											<dict>
+												<key>endControlPoint</key>
+												<string>{903, 366}</string>
+												<key>endPoint</key>
+												<string>{903, 366}</string>
+												<key>endPointMovementMode</key>
+												<integer>0</integer>
+												<key>startControlPoint</key>
+												<string>{910, 372}</string>
+												<key>startPoint</key>
+												<string>{910, 372}</string>
+												<key>startPointMovementMode</key>
+												<integer>0</integer>
+											</dict>
+										</array>
+										<key>closed</key>
+										<false/>
+										<key>interpolationPointCount</key>
+										<real>100</real>
+										<key>polygonSides</key>
+										<integer>0</integer>
+										<key>selectedControlPointIndexes</key>
+										<array/>
+										<key>showAllControlPoints</key>
+										<false/>
+										<key>type</key>
+										<integer>0</integer>
+										<key>useIntegerValues</key>
+										<true/>
+										<key>useSmallStyle</key>
+										<false/>
+									</dict>
+									<key>oid</key>
+									<string>A1B9A71E-D077-4F3D-B725-05BEAA9FEF95-753-00000070C5644574</string>
+								</dict>
 								<key>referenceOid</key>
-								<string>90</string>
+								<string>70</string>
 								<key>startTime</key>
 								<real>0.0</real>
 								<key>startValue</key>
 								<dict>
 									<key>identifier</key>
-									<string>Left</string>
+									<string>MotionPathRotation</string>
 									<key>objectValue</key>
-									<string>1966px</string>
+									<string>220deg</string>
 								</dict>
 								<key>symbolElementActionAttributesBySymbolTimeline</key>
 								<dict/>
@@ -7129,34 +7467,34 @@
 								<key>type</key>
 								<integer>0</integer>
 								<key>uuid</key>
-								<string>EF4391A2-B362-4EB3-9225-1C9231351BC5-1715-00001466D61E23D3</string>
+								<string>882F0FFC-E14A-43B0-B5B8-C2F0236524C3-1715-00000B14C9D4CB49</string>
 								<key>zIndex</key>
-								<integer>5</integer>
+								<integer>4</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
-								<real>1.5333333015441895</real>
+								<real>22.466667175292969</real>
 								<key>endValue</key>
 								<dict>
 									<key>identifier</key>
-									<string>Top</string>
+									<string>RotationAngleZ</string>
 									<key>objectValue</key>
-									<string>235px</string>
+									<string>0deg</string>
 								</dict>
 								<key>identifier</key>
-								<string>Top</string>
+								<string>RotationAngleZ</string>
 								<key>isRelative</key>
 								<false/>
 								<key>referenceOid</key>
-								<string>90</string>
+								<string>118</string>
 								<key>startTime</key>
 								<real>0.0</real>
 								<key>startValue</key>
 								<dict>
 									<key>identifier</key>
-									<string>Top</string>
+									<string>RotationAngleZ</string>
 									<key>objectValue</key>
-									<string>251px</string>
+									<string>360deg</string>
 								</dict>
 								<key>symbolElementActionAttributesBySymbolTimeline</key>
 								<dict/>
@@ -7165,7 +7503,7 @@
 								<key>type</key>
 								<integer>0</integer>
 								<key>uuid</key>
-								<string>E11756FF-803C-4850-AD20-B59C9476E838-1715-00001466E29812C4</string>
+								<string>6C448974-8149-41F0-AD17-468BBA6C036B-1715-00001861B7E40F83</string>
 								<key>zIndex</key>
 								<integer>5</integer>
 							</dict>
@@ -7224,7 +7562,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>9F20FA1D-CA6C-41B7-ABCB-8F91749D6F65-7385-00001D22BFB59AAE</string>
+									<string>CD94B533-AEAC-40D3-A61F-61025D0C3339-753-00000070C56ADC34</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>83</string>
@@ -7247,85 +7585,6 @@
 								<string>A673C3B3-63EE-4C5E-8F11-B6F79D2D9FA6-1715-000014695C0D11E8</string>
 								<key>zIndex</key>
 								<integer>6</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>2.8333332538604736</real>
-								<key>endValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>MotionPathRotation</string>
-									<key>objectValue</key>
-									<string>180deg</string>
-								</dict>
-								<key>identifier</key>
-								<string>MotionPathRotation</string>
-								<key>isRelative</key>
-								<false/>
-								<key>motionPath</key>
-								<dict>
-									<key>bezierPath</key>
-									<dict>
-										<key>allowEndPointModification</key>
-										<true/>
-										<key>bezierCurves</key>
-										<array>
-											<dict>
-												<key>endControlPoint</key>
-												<string>{1263, 272}</string>
-												<key>endPoint</key>
-												<string>{1263, 272}</string>
-												<key>endPointMovementMode</key>
-												<integer>0</integer>
-												<key>startControlPoint</key>
-												<string>{1421, 273}</string>
-												<key>startPoint</key>
-												<string>{1421, 273}</string>
-												<key>startPointMovementMode</key>
-												<integer>0</integer>
-											</dict>
-										</array>
-										<key>closed</key>
-										<false/>
-										<key>interpolationPointCount</key>
-										<real>100</real>
-										<key>polygonSides</key>
-										<integer>0</integer>
-										<key>selectedControlPointIndexes</key>
-										<array/>
-										<key>showAllControlPoints</key>
-										<false/>
-										<key>type</key>
-										<integer>0</integer>
-										<key>useIntegerValues</key>
-										<true/>
-										<key>useSmallStyle</key>
-										<false/>
-									</dict>
-									<key>oid</key>
-									<string>9F20FA1D-CA6C-41B7-ABCB-8F91749D6F65-7385-00001D22BFB59AAE</string>
-								</dict>
-								<key>referenceOid</key>
-								<string>83</string>
-								<key>startTime</key>
-								<real>0.0</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>MotionPathRotation</string>
-									<key>objectValue</key>
-									<string>180deg</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>BB61AC31-612F-43AF-989D-9BB9C1BE0E68-1715-000014695C432D09</string>
-								<key>zIndex</key>
-								<integer>3</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -7382,7 +7641,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>9F20FA1D-CA6C-41B7-ABCB-8F91749D6F65-7385-00001D22BFB59AAE</string>
+									<string>CD94B533-AEAC-40D3-A61F-61025D0C3339-753-00000070C56ADC34</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>83</string>
@@ -7696,114 +7955,6 @@
 							</dict>
 							<dict>
 								<key>duration</key>
-								<real>21.066667556762695</real>
-								<key>endValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>Opacity</string>
-									<key>objectValue</key>
-									<string>0.04000197784810126</string>
-								</dict>
-								<key>identifier</key>
-								<string>Opacity</string>
-								<key>isRelative</key>
-								<false/>
-								<key>referenceOid</key>
-								<string>109</string>
-								<key>startTime</key>
-								<real>0.0</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>Opacity</string>
-									<key>objectValue</key>
-									<string>0.06259889240506329</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>AB8CE374-464C-4055-A639-BF8CDD111322-1715-0000179D95DD1C8D</string>
-								<key>zIndex</key>
-								<integer>1</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>22.466667175292969</real>
-								<key>endValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>RotationAngleZ</string>
-									<key>objectValue</key>
-									<string>360deg</string>
-								</dict>
-								<key>identifier</key>
-								<string>RotationAngleZ</string>
-								<key>isRelative</key>
-								<false/>
-								<key>referenceOid</key>
-								<string>116</string>
-								<key>startTime</key>
-								<real>0.0</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>RotationAngleZ</string>
-									<key>objectValue</key>
-									<string>0deg</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>95713264-6DE2-436B-9FD3-50D095C3A2FE-1715-00001840F88327EC</string>
-								<key>zIndex</key>
-								<integer>4</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>22.466667175292969</real>
-								<key>endValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>RotationAngleZ</string>
-									<key>objectValue</key>
-									<string>0deg</string>
-								</dict>
-								<key>identifier</key>
-								<string>RotationAngleZ</string>
-								<key>isRelative</key>
-								<false/>
-								<key>referenceOid</key>
-								<string>118</string>
-								<key>startTime</key>
-								<real>0.0</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>RotationAngleZ</string>
-									<key>objectValue</key>
-									<string>360deg</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>6C448974-8149-41F0-AD17-468BBA6C036B-1715-00001861B7E40F83</string>
-								<key>zIndex</key>
-								<integer>5</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
 								<real>22.466667175292969</real>
 								<key>endValue</key>
 								<dict>
@@ -8020,85 +8171,6 @@
 							</dict>
 							<dict>
 								<key>duration</key>
-								<real>3.2999999523162842</real>
-								<key>endValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>MotionPathRotation</string>
-									<key>objectValue</key>
-									<string>220deg</string>
-								</dict>
-								<key>identifier</key>
-								<string>MotionPathRotation</string>
-								<key>isRelative</key>
-								<false/>
-								<key>motionPath</key>
-								<dict>
-									<key>bezierPath</key>
-									<dict>
-										<key>allowEndPointModification</key>
-										<true/>
-										<key>bezierCurves</key>
-										<array>
-											<dict>
-												<key>endControlPoint</key>
-												<string>{903, 366}</string>
-												<key>endPoint</key>
-												<string>{903, 366}</string>
-												<key>endPointMovementMode</key>
-												<integer>0</integer>
-												<key>startControlPoint</key>
-												<string>{910, 372}</string>
-												<key>startPoint</key>
-												<string>{910, 372}</string>
-												<key>startPointMovementMode</key>
-												<integer>0</integer>
-											</dict>
-										</array>
-										<key>closed</key>
-										<false/>
-										<key>interpolationPointCount</key>
-										<real>100</real>
-										<key>polygonSides</key>
-										<integer>0</integer>
-										<key>selectedControlPointIndexes</key>
-										<array/>
-										<key>showAllControlPoints</key>
-										<false/>
-										<key>type</key>
-										<integer>0</integer>
-										<key>useIntegerValues</key>
-										<true/>
-										<key>useSmallStyle</key>
-										<false/>
-									</dict>
-									<key>oid</key>
-									<string>4F2EEE99-7CE3-4E12-91D2-DFF395F18019-7385-00001D22BFAC6820</string>
-								</dict>
-								<key>referenceOid</key>
-								<string>70</string>
-								<key>startTime</key>
-								<real>0.0</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>MotionPathRotation</string>
-									<key>objectValue</key>
-									<string>220deg</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>882F0FFC-E14A-43B0-B5B8-C2F0236524C3-1715-00000B14C9D4CB49</string>
-								<key>zIndex</key>
-								<integer>4</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
 								<real>5.2333331108093262</real>
 								<key>endValue</key>
 								<dict>
@@ -8171,13 +8243,13 @@
 							</dict>
 							<dict>
 								<key>duration</key>
-								<real>21</real>
+								<real>20.466666698455811</real>
 								<key>endValue</key>
 								<dict>
 									<key>identifier</key>
 									<string>Top</string>
 									<key>objectValue</key>
-									<string>227px</string>
+									<string>230.203px</string>
 								</dict>
 								<key>identifier</key>
 								<string>Top</string>
@@ -8203,11 +8275,11 @@
 								<key>uuid</key>
 								<string>8C3889C8-7042-4010-B49B-82145B1963B6-1715-000012F44C3EE4F1</string>
 								<key>zIndex</key>
-								<integer>15</integer>
+								<integer>2</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
-								<real>8.7666664123535156</real>
+								<real>8.7666668891906738</real>
 								<key>endValue</key>
 								<dict>
 									<key>identifier</key>
@@ -8239,7 +8311,100 @@
 								<key>uuid</key>
 								<string>B939BB04-1A83-4C14-8155-7035F4F4F6D5-1715-000012F1FD55BA45</string>
 								<key>zIndex</key>
-								<integer>15</integer>
+								<integer>2</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>14.166666984558105</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>MotionPathRotation</string>
+									<key>objectValue</key>
+									<string>180deg</string>
+								</dict>
+								<key>identifier</key>
+								<string>MotionPathRotation</string>
+								<key>isRelative</key>
+								<false/>
+								<key>motionPath</key>
+								<dict>
+									<key>bezierPath</key>
+									<dict>
+										<key>allowEndPointModification</key>
+										<true/>
+										<key>bezierCurves</key>
+										<array>
+											<dict>
+												<key>endControlPoint</key>
+												<string>{1160, 272}</string>
+												<key>endPoint</key>
+												<string>{1013, 272}</string>
+												<key>endPointMovementMode</key>
+												<integer>0</integer>
+												<key>startControlPoint</key>
+												<string>{1263, 272}</string>
+												<key>startPoint</key>
+												<string>{1263, 272}</string>
+												<key>startPointMovementMode</key>
+												<integer>0</integer>
+											</dict>
+											<dict>
+												<key>endControlPoint</key>
+												<string>{-58, 272}</string>
+												<key>endPoint</key>
+												<string>{-58, 272}</string>
+												<key>endPointMovementMode</key>
+												<integer>0</integer>
+												<key>startControlPoint</key>
+												<string>{639, 272}</string>
+												<key>startPoint</key>
+												<string>{1013, 272}</string>
+												<key>startPointMovementMode</key>
+												<integer>0</integer>
+											</dict>
+										</array>
+										<key>closed</key>
+										<false/>
+										<key>interpolationPointCount</key>
+										<real>100</real>
+										<key>polygonSides</key>
+										<integer>0</integer>
+										<key>selectedControlPointIndexes</key>
+										<array/>
+										<key>showAllControlPoints</key>
+										<false/>
+										<key>type</key>
+										<integer>0</integer>
+										<key>useIntegerValues</key>
+										<true/>
+										<key>useSmallStyle</key>
+										<false/>
+									</dict>
+									<key>oid</key>
+									<string>2313A4DB-75E7-4639-8A97-D2D4931DAAF2-753-00000070C5B88637</string>
+								</dict>
+								<key>referenceOid</key>
+								<string>83</string>
+								<key>startTime</key>
+								<real>2.8333332538604736</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>MotionPathRotation</string>
+									<key>objectValue</key>
+									<string>180deg</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>D1817910-C830-4EAE-9127-841AFFE0CD3E-1715-00000FBAADC653F0</string>
+								<key>zIndex</key>
+								<integer>5</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -8310,7 +8475,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>DADDB3D2-6AEF-4255-88EC-4A4B97B9D512-7385-00001D22BFC09C2B</string>
+									<string>2313A4DB-75E7-4639-8A97-D2D4931DAAF2-753-00000070C5B88637</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>83</string>
@@ -8403,7 +8568,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>DADDB3D2-6AEF-4255-88EC-4A4B97B9D512-7385-00001D22BFC09C2B</string>
+									<string>2313A4DB-75E7-4639-8A97-D2D4931DAAF2-753-00000070C5B88637</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>83</string>
@@ -8426,99 +8591,6 @@
 								<string>04088B9E-C3E6-40C2-A945-FC9F2B76941C-1715-00000FACED039495</string>
 								<key>zIndex</key>
 								<integer>16</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>14.166666984558105</real>
-								<key>endValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>MotionPathRotation</string>
-									<key>objectValue</key>
-									<string>180deg</string>
-								</dict>
-								<key>identifier</key>
-								<string>MotionPathRotation</string>
-								<key>isRelative</key>
-								<false/>
-								<key>motionPath</key>
-								<dict>
-									<key>bezierPath</key>
-									<dict>
-										<key>allowEndPointModification</key>
-										<true/>
-										<key>bezierCurves</key>
-										<array>
-											<dict>
-												<key>endControlPoint</key>
-												<string>{1160, 272}</string>
-												<key>endPoint</key>
-												<string>{1013, 272}</string>
-												<key>endPointMovementMode</key>
-												<integer>0</integer>
-												<key>startControlPoint</key>
-												<string>{1263, 272}</string>
-												<key>startPoint</key>
-												<string>{1263, 272}</string>
-												<key>startPointMovementMode</key>
-												<integer>0</integer>
-											</dict>
-											<dict>
-												<key>endControlPoint</key>
-												<string>{-58, 272}</string>
-												<key>endPoint</key>
-												<string>{-58, 272}</string>
-												<key>endPointMovementMode</key>
-												<integer>0</integer>
-												<key>startControlPoint</key>
-												<string>{639, 272}</string>
-												<key>startPoint</key>
-												<string>{1013, 272}</string>
-												<key>startPointMovementMode</key>
-												<integer>0</integer>
-											</dict>
-										</array>
-										<key>closed</key>
-										<false/>
-										<key>interpolationPointCount</key>
-										<real>100</real>
-										<key>polygonSides</key>
-										<integer>0</integer>
-										<key>selectedControlPointIndexes</key>
-										<array/>
-										<key>showAllControlPoints</key>
-										<false/>
-										<key>type</key>
-										<integer>0</integer>
-										<key>useIntegerValues</key>
-										<true/>
-										<key>useSmallStyle</key>
-										<false/>
-									</dict>
-									<key>oid</key>
-									<string>DADDB3D2-6AEF-4255-88EC-4A4B97B9D512-7385-00001D22BFC09C2B</string>
-								</dict>
-								<key>referenceOid</key>
-								<string>83</string>
-								<key>startTime</key>
-								<real>2.8333332538604736</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>MotionPathRotation</string>
-									<key>objectValue</key>
-									<string>180deg</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>D1817910-C830-4EAE-9127-841AFFE0CD3E-1715-00000FBAADC653F0</string>
-								<key>zIndex</key>
-								<integer>5</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -8598,6 +8670,85 @@
 								<key>endValue</key>
 								<dict>
 									<key>identifier</key>
+									<string>MotionPathRotation</string>
+									<key>objectValue</key>
+									<string>226deg</string>
+								</dict>
+								<key>identifier</key>
+								<string>MotionPathRotation</string>
+								<key>isRelative</key>
+								<false/>
+								<key>motionPath</key>
+								<dict>
+									<key>bezierPath</key>
+									<dict>
+										<key>allowEndPointModification</key>
+										<true/>
+										<key>bezierCurves</key>
+										<array>
+											<dict>
+												<key>endControlPoint</key>
+												<string>{505, -59}</string>
+												<key>endPoint</key>
+												<string>{505, -59}</string>
+												<key>endPointMovementMode</key>
+												<integer>0</integer>
+												<key>startControlPoint</key>
+												<string>{903, 366}</string>
+												<key>startPoint</key>
+												<string>{903, 366}</string>
+												<key>startPointMovementMode</key>
+												<integer>0</integer>
+											</dict>
+										</array>
+										<key>closed</key>
+										<false/>
+										<key>interpolationPointCount</key>
+										<real>100</real>
+										<key>polygonSides</key>
+										<integer>0</integer>
+										<key>selectedControlPointIndexes</key>
+										<array/>
+										<key>showAllControlPoints</key>
+										<false/>
+										<key>type</key>
+										<integer>0</integer>
+										<key>useIntegerValues</key>
+										<true/>
+										<key>useSmallStyle</key>
+										<false/>
+									</dict>
+									<key>oid</key>
+									<string>F1EC350A-28F3-4200-AE89-25DA8311517C-753-00000070C5CCC16F</string>
+								</dict>
+								<key>referenceOid</key>
+								<string>70</string>
+								<key>startTime</key>
+								<real>3.2999999523162842</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>MotionPathRotation</string>
+									<key>objectValue</key>
+									<string>226deg</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>355549F2-8C1E-431D-A92B-390F2DA13CA8-1715-00000B14C9F328D7</string>
+								<key>zIndex</key>
+								<integer>6</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>1.7000000476837158</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
 									<string>Left</string>
 									<key>objectValue</key>
 									<string>482px</string>
@@ -8647,7 +8798,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>A579AE81-3337-4383-ACDC-8161ABE94346-7385-00001D22BFC34D0A</string>
+									<string>F1EC350A-28F3-4200-AE89-25DA8311517C-753-00000070C5CCC16F</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>70</string>
@@ -8726,7 +8877,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>A579AE81-3337-4383-ACDC-8161ABE94346-7385-00001D22BFC34D0A</string>
+									<string>F1EC350A-28F3-4200-AE89-25DA8311517C-753-00000070C5CCC16F</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>70</string>
@@ -8749,85 +8900,6 @@
 								<string>43060179-BA9D-4E80-9B3C-6154BFA7E7BA-1715-00000B10835E4423</string>
 								<key>zIndex</key>
 								<integer>18</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>1.7000000476837158</real>
-								<key>endValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>MotionPathRotation</string>
-									<key>objectValue</key>
-									<string>226deg</string>
-								</dict>
-								<key>identifier</key>
-								<string>MotionPathRotation</string>
-								<key>isRelative</key>
-								<false/>
-								<key>motionPath</key>
-								<dict>
-									<key>bezierPath</key>
-									<dict>
-										<key>allowEndPointModification</key>
-										<true/>
-										<key>bezierCurves</key>
-										<array>
-											<dict>
-												<key>endControlPoint</key>
-												<string>{505, -59}</string>
-												<key>endPoint</key>
-												<string>{505, -59}</string>
-												<key>endPointMovementMode</key>
-												<integer>0</integer>
-												<key>startControlPoint</key>
-												<string>{903, 366}</string>
-												<key>startPoint</key>
-												<string>{903, 366}</string>
-												<key>startPointMovementMode</key>
-												<integer>0</integer>
-											</dict>
-										</array>
-										<key>closed</key>
-										<false/>
-										<key>interpolationPointCount</key>
-										<real>100</real>
-										<key>polygonSides</key>
-										<integer>0</integer>
-										<key>selectedControlPointIndexes</key>
-										<array/>
-										<key>showAllControlPoints</key>
-										<false/>
-										<key>type</key>
-										<integer>0</integer>
-										<key>useIntegerValues</key>
-										<true/>
-										<key>useSmallStyle</key>
-										<false/>
-									</dict>
-									<key>oid</key>
-									<string>A579AE81-3337-4383-ACDC-8161ABE94346-7385-00001D22BFC34D0A</string>
-								</dict>
-								<key>referenceOid</key>
-								<string>70</string>
-								<key>startTime</key>
-								<real>3.2999999523162842</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>MotionPathRotation</string>
-									<key>objectValue</key>
-									<string>226deg</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>355549F2-8C1E-431D-A92B-390F2DA13CA8-1715-00000B14C9F328D7</string>
-								<key>zIndex</key>
-								<integer>6</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -8907,85 +8979,6 @@
 								<key>endValue</key>
 								<dict>
 									<key>identifier</key>
-									<string>Top</string>
-									<key>objectValue</key>
-									<string>133px</string>
-								</dict>
-								<key>identifier</key>
-								<string>Top</string>
-								<key>isRelative</key>
-								<false/>
-								<key>motionPath</key>
-								<dict>
-									<key>bezierPath</key>
-									<dict>
-										<key>allowEndPointModification</key>
-										<true/>
-										<key>bezierCurves</key>
-										<array>
-											<dict>
-												<key>endControlPoint</key>
-												<string>{-51, 156}</string>
-												<key>endPoint</key>
-												<string>{-51, 156}</string>
-												<key>endPointMovementMode</key>
-												<integer>0</integer>
-												<key>startControlPoint</key>
-												<string>{-62, 157}</string>
-												<key>startPoint</key>
-												<string>{-62, 157}</string>
-												<key>startPointMovementMode</key>
-												<integer>0</integer>
-											</dict>
-										</array>
-										<key>closed</key>
-										<false/>
-										<key>interpolationPointCount</key>
-										<real>100</real>
-										<key>polygonSides</key>
-										<integer>0</integer>
-										<key>selectedControlPointIndexes</key>
-										<array/>
-										<key>showAllControlPoints</key>
-										<false/>
-										<key>type</key>
-										<integer>0</integer>
-										<key>useIntegerValues</key>
-										<true/>
-										<key>useSmallStyle</key>
-										<false/>
-									</dict>
-									<key>oid</key>
-									<string>531F1271-847C-4B99-A1DC-98EE2779CE43-7385-00001D22BFC5877C</string>
-								</dict>
-								<key>referenceOid</key>
-								<string>71</string>
-								<key>startTime</key>
-								<real>5</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>Top</string>
-									<key>objectValue</key>
-									<string>134px</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>4DD4AABC-3DB6-45AB-88A5-222D9893EF0A-1715-00000B3288A3D403</string>
-								<key>zIndex</key>
-								<integer>20</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>1.3000001907348633</real>
-								<key>endValue</key>
-								<dict>
-									<key>identifier</key>
 									<string>MotionPathRotation</string>
 									<key>objectValue</key>
 									<string>354deg</string>
@@ -9035,7 +9028,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>531F1271-847C-4B99-A1DC-98EE2779CE43-7385-00001D22BFC5877C</string>
+									<string>62C08523-EE04-4637-9C73-4A506EE17874-753-00000070C5DC3A2D</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>71</string>
@@ -9058,6 +9051,164 @@
 								<string>649A4EDE-89FA-4833-9C1D-620722830A5C-1715-00000B3288B52AEE</string>
 								<key>zIndex</key>
 								<integer>7</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>0.16666650772094727</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>MotionPathRotation</string>
+									<key>objectValue</key>
+									<string>174deg</string>
+								</dict>
+								<key>identifier</key>
+								<string>MotionPathRotation</string>
+								<key>isRelative</key>
+								<false/>
+								<key>motionPath</key>
+								<dict>
+									<key>bezierPath</key>
+									<dict>
+										<key>allowEndPointModification</key>
+										<true/>
+										<key>bezierCurves</key>
+										<array>
+											<dict>
+												<key>endControlPoint</key>
+												<string>{494, -58}</string>
+												<key>endPoint</key>
+												<string>{494, -58}</string>
+												<key>endPointMovementMode</key>
+												<integer>0</integer>
+												<key>startControlPoint</key>
+												<string>{505, -59}</string>
+												<key>startPoint</key>
+												<string>{505, -59}</string>
+												<key>startPointMovementMode</key>
+												<integer>0</integer>
+											</dict>
+										</array>
+										<key>closed</key>
+										<false/>
+										<key>interpolationPointCount</key>
+										<real>100</real>
+										<key>polygonSides</key>
+										<integer>0</integer>
+										<key>selectedControlPointIndexes</key>
+										<array/>
+										<key>showAllControlPoints</key>
+										<false/>
+										<key>type</key>
+										<integer>0</integer>
+										<key>useIntegerValues</key>
+										<true/>
+										<key>useSmallStyle</key>
+										<false/>
+									</dict>
+									<key>oid</key>
+									<string>B94E5E03-1E30-4BDB-AD76-CA6783C3F1E9-753-00000070C5DD9CC6</string>
+								</dict>
+								<key>referenceOid</key>
+								<string>70</string>
+								<key>startTime</key>
+								<real>5</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>MotionPathRotation</string>
+									<key>objectValue</key>
+									<string>174deg</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>19F0DF27-348E-4230-8F82-3B38F4F833AC-1715-00000B2B2F2DDAC5</string>
+								<key>zIndex</key>
+								<integer>8</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>1.3000001907348633</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Top</string>
+									<key>objectValue</key>
+									<string>133px</string>
+								</dict>
+								<key>identifier</key>
+								<string>Top</string>
+								<key>isRelative</key>
+								<false/>
+								<key>motionPath</key>
+								<dict>
+									<key>bezierPath</key>
+									<dict>
+										<key>allowEndPointModification</key>
+										<true/>
+										<key>bezierCurves</key>
+										<array>
+											<dict>
+												<key>endControlPoint</key>
+												<string>{-51, 156}</string>
+												<key>endPoint</key>
+												<string>{-51, 156}</string>
+												<key>endPointMovementMode</key>
+												<integer>0</integer>
+												<key>startControlPoint</key>
+												<string>{-62, 157}</string>
+												<key>startPoint</key>
+												<string>{-62, 157}</string>
+												<key>startPointMovementMode</key>
+												<integer>0</integer>
+											</dict>
+										</array>
+										<key>closed</key>
+										<false/>
+										<key>interpolationPointCount</key>
+										<real>100</real>
+										<key>polygonSides</key>
+										<integer>0</integer>
+										<key>selectedControlPointIndexes</key>
+										<array/>
+										<key>showAllControlPoints</key>
+										<false/>
+										<key>type</key>
+										<integer>0</integer>
+										<key>useIntegerValues</key>
+										<true/>
+										<key>useSmallStyle</key>
+										<false/>
+									</dict>
+									<key>oid</key>
+									<string>62C08523-EE04-4637-9C73-4A506EE17874-753-00000070C5DC3A2D</string>
+								</dict>
+								<key>referenceOid</key>
+								<string>71</string>
+								<key>startTime</key>
+								<real>5</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Top</string>
+									<key>objectValue</key>
+									<string>134px</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>4DD4AABC-3DB6-45AB-88A5-222D9893EF0A-1715-00000B3288A3D403</string>
+								<key>zIndex</key>
+								<integer>20</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -9114,7 +9265,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>531F1271-847C-4B99-A1DC-98EE2779CE43-7385-00001D22BFC5877C</string>
+									<string>62C08523-EE04-4637-9C73-4A506EE17874-753-00000070C5DC3A2D</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>71</string>
@@ -9193,7 +9344,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>95BC6DD4-1439-4A0A-8CA2-5F9E8FF83A8A-7385-00001D22BFC99502</string>
+									<string>B94E5E03-1E30-4BDB-AD76-CA6783C3F1E9-753-00000070C5DD9CC6</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>70</string>
@@ -9272,7 +9423,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>95BC6DD4-1439-4A0A-8CA2-5F9E8FF83A8A-7385-00001D22BFC99502</string>
+									<string>B94E5E03-1E30-4BDB-AD76-CA6783C3F1E9-753-00000070C5DD9CC6</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>70</string>
@@ -9298,13 +9449,13 @@
 							</dict>
 							<dict>
 								<key>duration</key>
-								<real>0.16666650772094727</real>
+								<real>6.8333334922790527</real>
 								<key>endValue</key>
 								<dict>
 									<key>identifier</key>
 									<string>MotionPathRotation</string>
 									<key>objectValue</key>
-									<string>174deg</string>
+									<string>407deg</string>
 								</dict>
 								<key>identifier</key>
 								<string>MotionPathRotation</string>
@@ -9320,15 +9471,15 @@
 										<array>
 											<dict>
 												<key>endControlPoint</key>
-												<string>{494, -58}</string>
+												<string>{866, 347}</string>
 												<key>endPoint</key>
-												<string>{494, -58}</string>
+												<string>{866, 347}</string>
 												<key>endPointMovementMode</key>
 												<integer>0</integer>
 												<key>startControlPoint</key>
-												<string>{505, -59}</string>
+												<string>{494, -58}</string>
 												<key>startPoint</key>
-												<string>{505, -59}</string>
+												<string>{494, -58}</string>
 												<key>startPointMovementMode</key>
 												<integer>0</integer>
 											</dict>
@@ -9351,18 +9502,18 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>95BC6DD4-1439-4A0A-8CA2-5F9E8FF83A8A-7385-00001D22BFC99502</string>
+									<string>07990A31-3EC8-4EA2-8269-922860FBCEA1-753-00000070C5E41A1F</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>70</string>
 								<key>startTime</key>
-								<real>5</real>
+								<real>5.1666665077209473</real>
 								<key>startValue</key>
 								<dict>
 									<key>identifier</key>
 									<string>MotionPathRotation</string>
 									<key>objectValue</key>
-									<string>174deg</string>
+									<string>47deg</string>
 								</dict>
 								<key>symbolElementActionAttributesBySymbolTimeline</key>
 								<dict/>
@@ -9371,9 +9522,9 @@
 								<key>type</key>
 								<integer>0</integer>
 								<key>uuid</key>
-								<string>19F0DF27-348E-4230-8F82-3B38F4F833AC-1715-00000B2B2F2DDAC5</string>
+								<string>3DB1F370-896B-46B3-A058-2176DCDBD3DB-1715-00000B14CA00005A</string>
 								<key>zIndex</key>
-								<integer>8</integer>
+								<integer>9</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -9423,7 +9574,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>92BCD453-A6DA-4B74-9601-08D8A8DA47B0-7385-00001D22BFCE712E</string>
+									<string>07990A31-3EC8-4EA2-8269-922860FBCEA1-753-00000070C5E41A1F</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>70</string>
@@ -9495,7 +9646,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>92BCD453-A6DA-4B74-9601-08D8A8DA47B0-7385-00001D22BFCE712E</string>
+									<string>07990A31-3EC8-4EA2-8269-922860FBCEA1-753-00000070C5E41A1F</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>70</string>
@@ -9518,85 +9669,6 @@
 								<string>08085671-6493-4A1B-A6AA-9D2B8907EDD0-1715-00000B1264EAA3DC</string>
 								<key>zIndex</key>
 								<integer>22</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>6.8333334922790527</real>
-								<key>endValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>MotionPathRotation</string>
-									<key>objectValue</key>
-									<string>407deg</string>
-								</dict>
-								<key>identifier</key>
-								<string>MotionPathRotation</string>
-								<key>isRelative</key>
-								<false/>
-								<key>motionPath</key>
-								<dict>
-									<key>bezierPath</key>
-									<dict>
-										<key>allowEndPointModification</key>
-										<true/>
-										<key>bezierCurves</key>
-										<array>
-											<dict>
-												<key>endControlPoint</key>
-												<string>{866, 347}</string>
-												<key>endPoint</key>
-												<string>{866, 347}</string>
-												<key>endPointMovementMode</key>
-												<integer>0</integer>
-												<key>startControlPoint</key>
-												<string>{494, -58}</string>
-												<key>startPoint</key>
-												<string>{494, -58}</string>
-												<key>startPointMovementMode</key>
-												<integer>0</integer>
-											</dict>
-										</array>
-										<key>closed</key>
-										<false/>
-										<key>interpolationPointCount</key>
-										<real>100</real>
-										<key>polygonSides</key>
-										<integer>0</integer>
-										<key>selectedControlPointIndexes</key>
-										<array/>
-										<key>showAllControlPoints</key>
-										<false/>
-										<key>type</key>
-										<integer>0</integer>
-										<key>useIntegerValues</key>
-										<true/>
-										<key>useSmallStyle</key>
-										<false/>
-									</dict>
-									<key>oid</key>
-									<string>92BCD453-A6DA-4B74-9601-08D8A8DA47B0-7385-00001D22BFCE712E</string>
-								</dict>
-								<key>referenceOid</key>
-								<string>70</string>
-								<key>startTime</key>
-								<real>5.1666665077209473</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>MotionPathRotation</string>
-									<key>objectValue</key>
-									<string>47deg</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>3DB1F370-896B-46B3-A058-2176DCDBD3DB-1715-00000B14CA00005A</string>
-								<key>zIndex</key>
-								<integer>9</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -9749,85 +9821,6 @@
 								<key>endValue</key>
 								<dict>
 									<key>identifier</key>
-									<string>Top</string>
-									<key>objectValue</key>
-									<string>-15px</string>
-								</dict>
-								<key>identifier</key>
-								<string>Top</string>
-								<key>isRelative</key>
-								<false/>
-								<key>motionPath</key>
-								<dict>
-									<key>bezierPath</key>
-									<dict>
-										<key>allowEndPointModification</key>
-										<true/>
-										<key>bezierCurves</key>
-										<array>
-											<dict>
-												<key>endControlPoint</key>
-												<string>{1252, 8}</string>
-												<key>endPoint</key>
-												<string>{1252, 8}</string>
-												<key>endPointMovementMode</key>
-												<integer>0</integer>
-												<key>startControlPoint</key>
-												<string>{-51, 156}</string>
-												<key>startPoint</key>
-												<string>{-51, 156}</string>
-												<key>startPointMovementMode</key>
-												<integer>0</integer>
-											</dict>
-										</array>
-										<key>closed</key>
-										<false/>
-										<key>interpolationPointCount</key>
-										<real>100</real>
-										<key>polygonSides</key>
-										<integer>0</integer>
-										<key>selectedControlPointIndexes</key>
-										<array/>
-										<key>showAllControlPoints</key>
-										<false/>
-										<key>type</key>
-										<integer>0</integer>
-										<key>useIntegerValues</key>
-										<true/>
-										<key>useSmallStyle</key>
-										<false/>
-									</dict>
-									<key>oid</key>
-									<string>3ABD6559-DB17-43F2-A7A8-3DE64A009DDF-7385-00001D22BFD50CC5</string>
-								</dict>
-								<key>referenceOid</key>
-								<string>71</string>
-								<key>startTime</key>
-								<real>6.3000001907348633</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>Top</string>
-									<key>objectValue</key>
-									<string>133px</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>4C2C579E-7034-46A2-AC7B-786FD8E29BC5-1715-00000B33668FB308</string>
-								<key>zIndex</key>
-								<integer>24</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>7.6999998092651367</real>
-								<key>endValue</key>
-								<dict>
-									<key>identifier</key>
 									<string>MotionPathRotation</string>
 									<key>objectValue</key>
 									<string>353deg</string>
@@ -9877,7 +9870,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>3ABD6559-DB17-43F2-A7A8-3DE64A009DDF-7385-00001D22BFD50CC5</string>
+									<string>EF2742D1-725D-4B54-94AD-BA1AE042DDC9-753-00000070C5E88EAF</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>71</string>
@@ -9900,6 +9893,85 @@
 								<string>070469C4-8077-470A-8615-03C68BC6BBB1-1715-00000B3366A426F3</string>
 								<key>zIndex</key>
 								<integer>10</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>7.6999998092651367</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Top</string>
+									<key>objectValue</key>
+									<string>-15px</string>
+								</dict>
+								<key>identifier</key>
+								<string>Top</string>
+								<key>isRelative</key>
+								<false/>
+								<key>motionPath</key>
+								<dict>
+									<key>bezierPath</key>
+									<dict>
+										<key>allowEndPointModification</key>
+										<true/>
+										<key>bezierCurves</key>
+										<array>
+											<dict>
+												<key>endControlPoint</key>
+												<string>{1252, 8}</string>
+												<key>endPoint</key>
+												<string>{1252, 8}</string>
+												<key>endPointMovementMode</key>
+												<integer>0</integer>
+												<key>startControlPoint</key>
+												<string>{-51, 156}</string>
+												<key>startPoint</key>
+												<string>{-51, 156}</string>
+												<key>startPointMovementMode</key>
+												<integer>0</integer>
+											</dict>
+										</array>
+										<key>closed</key>
+										<false/>
+										<key>interpolationPointCount</key>
+										<real>100</real>
+										<key>polygonSides</key>
+										<integer>0</integer>
+										<key>selectedControlPointIndexes</key>
+										<array/>
+										<key>showAllControlPoints</key>
+										<false/>
+										<key>type</key>
+										<integer>0</integer>
+										<key>useIntegerValues</key>
+										<true/>
+										<key>useSmallStyle</key>
+										<false/>
+									</dict>
+									<key>oid</key>
+									<string>EF2742D1-725D-4B54-94AD-BA1AE042DDC9-753-00000070C5E88EAF</string>
+								</dict>
+								<key>referenceOid</key>
+								<string>71</string>
+								<key>startTime</key>
+								<real>6.3000001907348633</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Top</string>
+									<key>objectValue</key>
+									<string>133px</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>4C2C579E-7034-46A2-AC7B-786FD8E29BC5-1715-00000B33668FB308</string>
+								<key>zIndex</key>
+								<integer>24</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -9956,7 +10028,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>3ABD6559-DB17-43F2-A7A8-3DE64A009DDF-7385-00001D22BFD50CC5</string>
+									<string>EF2742D1-725D-4B54-94AD-BA1AE042DDC9-753-00000070C5E88EAF</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>71</string>
@@ -10073,7 +10145,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>20662CC3-683B-4280-866C-2FC7DC3E5848-7385-00001D22BFDBEC2A</string>
+									<string>12FCB189-11F6-4904-9CA8-264A6449E263-753-00000070C5EE461B</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>72</string>
@@ -10154,7 +10226,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>20662CC3-683B-4280-866C-2FC7DC3E5848-7385-00001D22BFDBEC2A</string>
+									<string>12FCB189-11F6-4904-9CA8-264A6449E263-753-00000070C5EE461B</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>72</string>
@@ -10235,7 +10307,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>20662CC3-683B-4280-866C-2FC7DC3E5848-7385-00001D22BFDBEC2A</string>
+									<string>12FCB189-11F6-4904-9CA8-264A6449E263-753-00000070C5EE461B</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>72</string>
@@ -10319,13 +10391,13 @@
 							</dict>
 							<dict>
 								<key>duration</key>
-								<real>12.233332633972168</real>
+								<real>11.699999809265137</real>
 								<key>endValue</key>
 								<dict>
 									<key>identifier</key>
 									<string>Left</string>
 									<key>objectValue</key>
-									<string>-90px</string>
+									<string>-133.063px</string>
 								</dict>
 								<key>identifier</key>
 								<string>Left</string>
@@ -10351,7 +10423,7 @@
 								<key>uuid</key>
 								<string>2EA9DE94-E3EF-4DA2-B61B-5EC514B9C237-1715-000012F1FD5FDB2B</string>
 								<key>zIndex</key>
-								<integer>27</integer>
+								<integer>3</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -10415,78 +10487,6 @@
 								<key>duration</key>
 								<real>0.0</real>
 								<key>identifier</key>
-								<string>Top</string>
-								<key>isRelative</key>
-								<false/>
-								<key>motionPath</key>
-								<dict>
-									<key>bezierPath</key>
-									<dict>
-										<key>allowEndPointModification</key>
-										<true/>
-										<key>bezierCurves</key>
-										<array>
-											<dict>
-												<key>endControlPoint</key>
-												<string>{-51, 156}</string>
-												<key>endPoint</key>
-												<string>{-51, 156}</string>
-												<key>endPointMovementMode</key>
-												<integer>0</integer>
-												<key>startControlPoint</key>
-												<string>{1252, 8}</string>
-												<key>startPoint</key>
-												<string>{1252, 8}</string>
-												<key>startPointMovementMode</key>
-												<integer>0</integer>
-											</dict>
-										</array>
-										<key>closed</key>
-										<false/>
-										<key>interpolationPointCount</key>
-										<real>100</real>
-										<key>polygonSides</key>
-										<integer>0</integer>
-										<key>selectedControlPointIndexes</key>
-										<array/>
-										<key>showAllControlPoints</key>
-										<false/>
-										<key>type</key>
-										<integer>0</integer>
-										<key>useIntegerValues</key>
-										<true/>
-										<key>useSmallStyle</key>
-										<false/>
-									</dict>
-									<key>oid</key>
-									<string>24192D69-964C-4906-8238-3EEB150BFE5F-7385-00001D22BFDE953D</string>
-								</dict>
-								<key>referenceOid</key>
-								<string>71</string>
-								<key>startTime</key>
-								<real>14</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>Top</string>
-									<key>objectValue</key>
-									<string>-15px</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>A4E2D3B2-B6F2-4DBC-ACE6-0A5BAB5F9E42-1715-00000B36F313EB42</string>
-								<key>zIndex</key>
-								<integer>27</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>0.0</real>
-								<key>identifier</key>
 								<string>MotionPathRotation</string>
 								<key>isRelative</key>
 								<false/>
@@ -10531,7 +10531,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>24192D69-964C-4906-8238-3EEB150BFE5F-7385-00001D22BFDE953D</string>
+									<string>43060A57-9FED-409D-B00C-5261D0976602-753-00000070C5F1BA67</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>71</string>
@@ -10554,6 +10554,78 @@
 								<string>D8040FB6-2530-4C03-B478-A6DBBEB2D585-1715-00000B36F32B3380</string>
 								<key>zIndex</key>
 								<integer>13</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>0.0</real>
+								<key>identifier</key>
+								<string>Top</string>
+								<key>isRelative</key>
+								<false/>
+								<key>motionPath</key>
+								<dict>
+									<key>bezierPath</key>
+									<dict>
+										<key>allowEndPointModification</key>
+										<true/>
+										<key>bezierCurves</key>
+										<array>
+											<dict>
+												<key>endControlPoint</key>
+												<string>{-51, 156}</string>
+												<key>endPoint</key>
+												<string>{-51, 156}</string>
+												<key>endPointMovementMode</key>
+												<integer>0</integer>
+												<key>startControlPoint</key>
+												<string>{1252, 8}</string>
+												<key>startPoint</key>
+												<string>{1252, 8}</string>
+												<key>startPointMovementMode</key>
+												<integer>0</integer>
+											</dict>
+										</array>
+										<key>closed</key>
+										<false/>
+										<key>interpolationPointCount</key>
+										<real>100</real>
+										<key>polygonSides</key>
+										<integer>0</integer>
+										<key>selectedControlPointIndexes</key>
+										<array/>
+										<key>showAllControlPoints</key>
+										<false/>
+										<key>type</key>
+										<integer>0</integer>
+										<key>useIntegerValues</key>
+										<true/>
+										<key>useSmallStyle</key>
+										<false/>
+									</dict>
+									<key>oid</key>
+									<string>43060A57-9FED-409D-B00C-5261D0976602-753-00000070C5F1BA67</string>
+								</dict>
+								<key>referenceOid</key>
+								<string>71</string>
+								<key>startTime</key>
+								<real>14</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Top</string>
+									<key>objectValue</key>
+									<string>-15px</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>A4E2D3B2-B6F2-4DBC-ACE6-0A5BAB5F9E42-1715-00000B36F313EB42</string>
+								<key>zIndex</key>
+								<integer>27</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -10603,7 +10675,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>24192D69-964C-4906-8238-3EEB150BFE5F-7385-00001D22BFDE953D</string>
+									<string>43060A57-9FED-409D-B00C-5261D0976602-753-00000070C5F1BA67</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>71</string>
@@ -10669,12 +10741,12 @@
 								<key>endValue</key>
 								<dict>
 									<key>identifier</key>
-									<string>Left</string>
+									<string>Width</string>
 									<key>objectValue</key>
-									<string>1219px</string>
+									<string>35px</string>
 								</dict>
 								<key>identifier</key>
-								<string>Left</string>
+								<string>Width</string>
 								<key>isRelative</key>
 								<false/>
 								<key>referenceOid</key>
@@ -10684,9 +10756,9 @@
 								<key>startValue</key>
 								<dict>
 									<key>identifier</key>
-									<string>Left</string>
+									<string>Width</string>
 									<key>objectValue</key>
-									<string>-43px</string>
+									<string>45px</string>
 								</dict>
 								<key>symbolElementActionAttributesBySymbolTimeline</key>
 								<dict/>
@@ -10695,9 +10767,9 @@
 								<key>type</key>
 								<integer>0</integer>
 								<key>uuid</key>
-								<string>5BB7352D-E4FF-46CC-91EA-DCE1E08E5D12-1715-00000E2C2423C488</string>
+								<string>AC1B734F-72FA-4738-9CA1-377E5199FAFB-1715-00000E31DC861817</string>
 								<key>zIndex</key>
-								<integer>29</integer>
+								<integer>3</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -10741,12 +10813,12 @@
 								<key>endValue</key>
 								<dict>
 									<key>identifier</key>
-									<string>Width</string>
+									<string>Left</string>
 									<key>objectValue</key>
-									<string>35px</string>
+									<string>1219px</string>
 								</dict>
 								<key>identifier</key>
-								<string>Width</string>
+								<string>Left</string>
 								<key>isRelative</key>
 								<false/>
 								<key>referenceOid</key>
@@ -10756,88 +10828,9 @@
 								<key>startValue</key>
 								<dict>
 									<key>identifier</key>
-									<string>Width</string>
-									<key>objectValue</key>
-									<string>45px</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>AC1B734F-72FA-4738-9CA1-377E5199FAFB-1715-00000E31DC861817</string>
-								<key>zIndex</key>
-								<integer>3</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>1.5</real>
-								<key>endValue</key>
-								<dict>
-									<key>identifier</key>
 									<string>Left</string>
 									<key>objectValue</key>
-									<string>-174.5px</string>
-								</dict>
-								<key>identifier</key>
-								<string>Left</string>
-								<key>isRelative</key>
-								<false/>
-								<key>motionPath</key>
-								<dict>
-									<key>bezierPath</key>
-									<dict>
-										<key>allowEndPointModification</key>
-										<true/>
-										<key>bezierCurves</key>
-										<array>
-											<dict>
-												<key>endControlPoint</key>
-												<string>{-128, 272}</string>
-												<key>endPoint</key>
-												<string>{-128, 272}</string>
-												<key>endPointMovementMode</key>
-												<integer>0</integer>
-												<key>startControlPoint</key>
-												<string>{-58, 272}</string>
-												<key>startPoint</key>
-												<string>{-58, 272}</string>
-												<key>startPointMovementMode</key>
-												<integer>0</integer>
-											</dict>
-										</array>
-										<key>closed</key>
-										<false/>
-										<key>interpolationPointCount</key>
-										<real>100</real>
-										<key>polygonSides</key>
-										<integer>0</integer>
-										<key>selectedControlPointIndexes</key>
-										<array/>
-										<key>showAllControlPoints</key>
-										<false/>
-										<key>type</key>
-										<integer>0</integer>
-										<key>useIntegerValues</key>
-										<true/>
-										<key>useSmallStyle</key>
-										<false/>
-									</dict>
-									<key>oid</key>
-									<string>DB7B5E19-444D-4FA6-A745-C7CCFF29CAD6-7385-00001D22BFE09053</string>
-								</dict>
-								<key>referenceOid</key>
-								<string>83</string>
-								<key>startTime</key>
-								<real>17</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>Left</string>
-									<key>objectValue</key>
-									<string>-104.5px</string>
+									<string>-43px</string>
 								</dict>
 								<key>symbolElementActionAttributesBySymbolTimeline</key>
 								<dict/>
@@ -10846,86 +10839,7 @@
 								<key>type</key>
 								<integer>0</integer>
 								<key>uuid</key>
-								<string>9E08A4D4-AF4F-473D-B278-E47BB9DBD732-1715-00000FACE5AB6664</string>
-								<key>zIndex</key>
-								<integer>30</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>1.5</real>
-								<key>endValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>Top</string>
-									<key>objectValue</key>
-									<string>221.5px</string>
-								</dict>
-								<key>identifier</key>
-								<string>Top</string>
-								<key>isRelative</key>
-								<false/>
-								<key>motionPath</key>
-								<dict>
-									<key>bezierPath</key>
-									<dict>
-										<key>allowEndPointModification</key>
-										<true/>
-										<key>bezierCurves</key>
-										<array>
-											<dict>
-												<key>endControlPoint</key>
-												<string>{-128, 272}</string>
-												<key>endPoint</key>
-												<string>{-128, 272}</string>
-												<key>endPointMovementMode</key>
-												<integer>0</integer>
-												<key>startControlPoint</key>
-												<string>{-58, 272}</string>
-												<key>startPoint</key>
-												<string>{-58, 272}</string>
-												<key>startPointMovementMode</key>
-												<integer>0</integer>
-											</dict>
-										</array>
-										<key>closed</key>
-										<false/>
-										<key>interpolationPointCount</key>
-										<real>100</real>
-										<key>polygonSides</key>
-										<integer>0</integer>
-										<key>selectedControlPointIndexes</key>
-										<array/>
-										<key>showAllControlPoints</key>
-										<false/>
-										<key>type</key>
-										<integer>0</integer>
-										<key>useIntegerValues</key>
-										<true/>
-										<key>useSmallStyle</key>
-										<false/>
-									</dict>
-									<key>oid</key>
-									<string>DB7B5E19-444D-4FA6-A745-C7CCFF29CAD6-7385-00001D22BFE09053</string>
-								</dict>
-								<key>referenceOid</key>
-								<string>83</string>
-								<key>startTime</key>
-								<real>17</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>Top</string>
-									<key>objectValue</key>
-									<string>221.5px</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>82AB4759-CAC3-4A87-8E98-16909A038BBB-1715-00000FACED0B7B2F</string>
+								<string>5BB7352D-E4FF-46CC-91EA-DCE1E08E5D12-1715-00000E2C2423C488</string>
 								<key>zIndex</key>
 								<integer>29</integer>
 							</dict>
@@ -10984,7 +10898,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>DB7B5E19-444D-4FA6-A745-C7CCFF29CAD6-7385-00001D22BFE09053</string>
+									<string>0DC9F523-62DA-4C1E-AB39-FDA68CADAB8E-753-00000070C5F45DEB</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>83</string>
@@ -11010,65 +10924,14 @@
 							</dict>
 							<dict>
 								<key>duration</key>
-								<real>0.0</real>
-								<key>identifier</key>
-								<string>Left</string>
-								<key>isRelative</key>
-								<false/>
-								<key>referenceOid</key>
-								<string>108</string>
-								<key>startTime</key>
-								<real>18.5</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>Left</string>
-									<key>objectValue</key>
-									<string>421px</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>250596A6-283F-4C0A-95AF-91D966CB8020-1715-0000175A310DEE6C</string>
-								<key>zIndex</key>
-								<integer>31</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>0.0</real>
-								<key>identifier</key>
-								<string>Top</string>
-								<key>isRelative</key>
-								<false/>
-								<key>referenceOid</key>
-								<string>108</string>
-								<key>startTime</key>
-								<real>18.5</real>
-								<key>startValue</key>
+								<real>1.5</real>
+								<key>endValue</key>
 								<dict>
 									<key>identifier</key>
 									<string>Top</string>
 									<key>objectValue</key>
-									<string>-1610px</string>
+									<string>221.5px</string>
 								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>C551A92B-263C-47D3-8509-C1C25111F159-1715-000017598A2199BC</string>
-								<key>zIndex</key>
-								<integer>30</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>0.0</real>
 								<key>identifier</key>
 								<string>Top</string>
 								<key>isRelative</key>
@@ -11083,15 +10946,15 @@
 										<array>
 											<dict>
 												<key>endControlPoint</key>
-												<string>{-58, 272}</string>
+												<string>{-128, 272}</string>
 												<key>endPoint</key>
-												<string>{-58, 272}</string>
+												<string>{-128, 272}</string>
 												<key>endPointMovementMode</key>
 												<integer>0</integer>
 												<key>startControlPoint</key>
-												<string>{-128, 272}</string>
+												<string>{-58, 272}</string>
 												<key>startPoint</key>
-												<string>{-128, 272}</string>
+												<string>{-58, 272}</string>
 												<key>startPointMovementMode</key>
 												<integer>0</integer>
 											</dict>
@@ -11114,12 +10977,12 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>EB8FAFCD-AC7B-418C-AD74-DC4A3A177DDF-7385-00001D22BFE25C3C</string>
+									<string>0DC9F523-62DA-4C1E-AB39-FDA68CADAB8E-753-00000070C5F45DEB</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>83</string>
 								<key>startTime</key>
-								<real>18.5</real>
+								<real>17</real>
 								<key>startValue</key>
 								<dict>
 									<key>identifier</key>
@@ -11134,9 +10997,88 @@
 								<key>type</key>
 								<integer>0</integer>
 								<key>uuid</key>
-								<string>95027A5D-FFFC-4E34-A1AE-9378F686F9F8-1715-000014BDEF529AE5</string>
+								<string>82AB4759-CAC3-4A87-8E98-16909A038BBB-1715-00000FACED0B7B2F</string>
 								<key>zIndex</key>
-								<integer>31</integer>
+								<integer>29</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>1.5</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Left</string>
+									<key>objectValue</key>
+									<string>-174.5px</string>
+								</dict>
+								<key>identifier</key>
+								<string>Left</string>
+								<key>isRelative</key>
+								<false/>
+								<key>motionPath</key>
+								<dict>
+									<key>bezierPath</key>
+									<dict>
+										<key>allowEndPointModification</key>
+										<true/>
+										<key>bezierCurves</key>
+										<array>
+											<dict>
+												<key>endControlPoint</key>
+												<string>{-128, 272}</string>
+												<key>endPoint</key>
+												<string>{-128, 272}</string>
+												<key>endPointMovementMode</key>
+												<integer>0</integer>
+												<key>startControlPoint</key>
+												<string>{-58, 272}</string>
+												<key>startPoint</key>
+												<string>{-58, 272}</string>
+												<key>startPointMovementMode</key>
+												<integer>0</integer>
+											</dict>
+										</array>
+										<key>closed</key>
+										<false/>
+										<key>interpolationPointCount</key>
+										<real>100</real>
+										<key>polygonSides</key>
+										<integer>0</integer>
+										<key>selectedControlPointIndexes</key>
+										<array/>
+										<key>showAllControlPoints</key>
+										<false/>
+										<key>type</key>
+										<integer>0</integer>
+										<key>useIntegerValues</key>
+										<true/>
+										<key>useSmallStyle</key>
+										<false/>
+									</dict>
+									<key>oid</key>
+									<string>0DC9F523-62DA-4C1E-AB39-FDA68CADAB8E-753-00000070C5F45DEB</string>
+								</dict>
+								<key>referenceOid</key>
+								<string>83</string>
+								<key>startTime</key>
+								<real>17</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Left</string>
+									<key>objectValue</key>
+									<string>-104.5px</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>9E08A4D4-AF4F-473D-B278-E47BB9DBD732-1715-00000FACE5AB6664</string>
+								<key>zIndex</key>
+								<integer>30</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -11186,7 +11128,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>EB8FAFCD-AC7B-418C-AD74-DC4A3A177DDF-7385-00001D22BFE25C3C</string>
+									<string>34848CB8-2C59-4C84-BB67-7AE446CBEBF2-753-00000070C5F63D04</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>83</string>
@@ -11209,6 +11151,136 @@
 								<string>6BA6F6F5-700C-4A51-93D9-E7451DBF9B49-1715-000014BDEF884626</string>
 								<key>zIndex</key>
 								<integer>15</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>0.0</real>
+								<key>identifier</key>
+								<string>Top</string>
+								<key>isRelative</key>
+								<false/>
+								<key>referenceOid</key>
+								<string>108</string>
+								<key>startTime</key>
+								<real>18.5</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Top</string>
+									<key>objectValue</key>
+									<string>-1610px</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>C551A92B-263C-47D3-8509-C1C25111F159-1715-000017598A2199BC</string>
+								<key>zIndex</key>
+								<integer>30</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>0.0</real>
+								<key>identifier</key>
+								<string>Left</string>
+								<key>isRelative</key>
+								<false/>
+								<key>referenceOid</key>
+								<string>108</string>
+								<key>startTime</key>
+								<real>18.5</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Left</string>
+									<key>objectValue</key>
+									<string>421px</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>250596A6-283F-4C0A-95AF-91D966CB8020-1715-0000175A310DEE6C</string>
+								<key>zIndex</key>
+								<integer>31</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>0.0</real>
+								<key>identifier</key>
+								<string>Top</string>
+								<key>isRelative</key>
+								<false/>
+								<key>motionPath</key>
+								<dict>
+									<key>bezierPath</key>
+									<dict>
+										<key>allowEndPointModification</key>
+										<true/>
+										<key>bezierCurves</key>
+										<array>
+											<dict>
+												<key>endControlPoint</key>
+												<string>{-58, 272}</string>
+												<key>endPoint</key>
+												<string>{-58, 272}</string>
+												<key>endPointMovementMode</key>
+												<integer>0</integer>
+												<key>startControlPoint</key>
+												<string>{-128, 272}</string>
+												<key>startPoint</key>
+												<string>{-128, 272}</string>
+												<key>startPointMovementMode</key>
+												<integer>0</integer>
+											</dict>
+										</array>
+										<key>closed</key>
+										<false/>
+										<key>interpolationPointCount</key>
+										<real>100</real>
+										<key>polygonSides</key>
+										<integer>0</integer>
+										<key>selectedControlPointIndexes</key>
+										<array/>
+										<key>showAllControlPoints</key>
+										<false/>
+										<key>type</key>
+										<integer>0</integer>
+										<key>useIntegerValues</key>
+										<true/>
+										<key>useSmallStyle</key>
+										<false/>
+									</dict>
+									<key>oid</key>
+									<string>34848CB8-2C59-4C84-BB67-7AE446CBEBF2-753-00000070C5F63D04</string>
+								</dict>
+								<key>referenceOid</key>
+								<string>83</string>
+								<key>startTime</key>
+								<real>18.5</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Top</string>
+									<key>objectValue</key>
+									<string>221.5px</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>95027A5D-FFFC-4E34-A1AE-9378F686F9F8-1715-000014BDEF529AE5</string>
+								<key>zIndex</key>
+								<integer>31</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -11258,7 +11330,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>EB8FAFCD-AC7B-418C-AD74-DC4A3A177DDF-7385-00001D22BFE25C3C</string>
+									<string>34848CB8-2C59-4C84-BB67-7AE446CBEBF2-753-00000070C5F63D04</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>83</string>
@@ -11279,6 +11351,35 @@
 								<integer>0</integer>
 								<key>uuid</key>
 								<string>44126DD1-91B7-416E-BA25-3B05FFD03A32-1715-000014BDEF511ED0</string>
+								<key>zIndex</key>
+								<integer>32</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>0.0</real>
+								<key>identifier</key>
+								<string>Top</string>
+								<key>isRelative</key>
+								<false/>
+								<key>referenceOid</key>
+								<string>125</string>
+								<key>startTime</key>
+								<real>19</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Top</string>
+									<key>objectValue</key>
+									<string>71px</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>f</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>3A2B7F6A-0581-4CAE-B5B5-49C21ED937A5-1715-0000192B866E6A52</string>
 								<key>zIndex</key>
 								<integer>32</integer>
 							</dict>
@@ -11310,35 +11411,6 @@
 								<string>D1E68896-C25C-42EA-906D-F62698C6C210-1715-0000192B80200551</string>
 								<key>zIndex</key>
 								<integer>33</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>0.0</real>
-								<key>identifier</key>
-								<string>Top</string>
-								<key>isRelative</key>
-								<false/>
-								<key>referenceOid</key>
-								<string>125</string>
-								<key>startTime</key>
-								<real>19</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>Top</string>
-									<key>objectValue</key>
-									<string>71px</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>f</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>3A2B7F6A-0581-4CAE-B5B5-49C21ED937A5-1715-0000192B866E6A52</string>
-								<key>zIndex</key>
-								<integer>32</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -11402,6 +11474,35 @@
 								<key>duration</key>
 								<real>0.0</real>
 								<key>identifier</key>
+								<string>Opacity</string>
+								<key>isRelative</key>
+								<false/>
+								<key>referenceOid</key>
+								<string>109</string>
+								<key>startTime</key>
+								<real>21.066667556762695</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Opacity</string>
+									<key>objectValue</key>
+									<string>0.04000197784810126</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>81F9EB7B-C340-45C2-8C99-2CA003554CE6-1715-0000179D95F33E12</string>
+								<key>zIndex</key>
+								<integer>2</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>0.0</real>
+								<key>identifier</key>
 								<string>Top</string>
 								<key>isRelative</key>
 								<false/>
@@ -11460,19 +11561,19 @@
 								<key>duration</key>
 								<real>0.0</real>
 								<key>identifier</key>
-								<string>Opacity</string>
+								<string>Top</string>
 								<key>isRelative</key>
 								<false/>
 								<key>referenceOid</key>
-								<string>109</string>
+								<string>139</string>
 								<key>startTime</key>
-								<real>21.066667556762695</real>
+								<real>21.366666793823242</real>
 								<key>startValue</key>
 								<dict>
 									<key>identifier</key>
-									<string>Opacity</string>
+									<string>Top</string>
 									<key>objectValue</key>
-									<string>0.04000197784810126</string>
+									<string>41px</string>
 								</dict>
 								<key>symbolElementActionAttributesBySymbolTimeline</key>
 								<dict/>
@@ -11481,9 +11582,9 @@
 								<key>type</key>
 								<integer>0</integer>
 								<key>uuid</key>
-								<string>81F9EB7B-C340-45C2-8C99-2CA003554CE6-1715-0000179D95F33E12</string>
+								<string>4BD4FDFE-0881-4720-9B86-7AF338A4B370-1715-0000194ACACB61FE</string>
 								<key>zIndex</key>
-								<integer>2</integer>
+								<integer>35</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -11516,21 +11617,28 @@
 							</dict>
 							<dict>
 								<key>duration</key>
-								<real>0.0</real>
+								<real>0.53333282470703125</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Top</string>
+									<key>objectValue</key>
+									<string>227px</string>
+								</dict>
 								<key>identifier</key>
 								<string>Top</string>
 								<key>isRelative</key>
 								<false/>
 								<key>referenceOid</key>
-								<string>139</string>
+								<string>90</string>
 								<key>startTime</key>
-								<real>21.366666793823242</real>
+								<real>22</real>
 								<key>startValue</key>
 								<dict>
 									<key>identifier</key>
 									<string>Top</string>
 									<key>objectValue</key>
-									<string>41px</string>
+									<string>230.203px</string>
 								</dict>
 								<key>symbolElementActionAttributesBySymbolTimeline</key>
 								<dict/>
@@ -11539,9 +11647,9 @@
 								<key>type</key>
 								<integer>0</integer>
 								<key>uuid</key>
-								<string>4BD4FDFE-0881-4720-9B86-7AF338A4B370-1715-0000194ACACB61FE</string>
+								<string>EA42FA11-84F0-4E66-B0F0-EDA2337D55DC-753-000000854EE98B28</string>
 								<key>zIndex</key>
-								<integer>35</integer>
+								<integer>3</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -11569,6 +11677,71 @@
 								<integer>0</integer>
 								<key>uuid</key>
 								<string>6753A97C-4B11-4646-BBC2-ADE0C6F1259A-1715-00000E31DC8D33BA</string>
+								<key>zIndex</key>
+								<integer>4</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>0.0</real>
+								<key>identifier</key>
+								<string>Height</string>
+								<key>isRelative</key>
+								<false/>
+								<key>referenceOid</key>
+								<string>77</string>
+								<key>startTime</key>
+								<real>22</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Height</string>
+									<key>objectValue</key>
+									<string>35px</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>B82AE1F4-6459-4D9D-B034-FD2A0D5A9F7D-1715-00000E31DCA30452</string>
+								<key>zIndex</key>
+								<integer>4</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>0.53333282470703125</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Left</string>
+									<key>objectValue</key>
+									<string>-90px</string>
+								</dict>
+								<key>identifier</key>
+								<string>Left</string>
+								<key>isRelative</key>
+								<false/>
+								<key>referenceOid</key>
+								<string>90</string>
+								<key>startTime</key>
+								<real>22</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Left</string>
+									<key>objectValue</key>
+									<string>-133.063px</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>912E5C4B-8AF0-4257-AA1C-6678FCCAF67F-753-00000085559432DF</string>
 								<key>zIndex</key>
 								<integer>4</integer>
 							</dict>
@@ -11634,35 +11807,6 @@
 								<key>duration</key>
 								<real>0.0</real>
 								<key>identifier</key>
-								<string>Height</string>
-								<key>isRelative</key>
-								<false/>
-								<key>referenceOid</key>
-								<string>77</string>
-								<key>startTime</key>
-								<real>22</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>Height</string>
-									<key>objectValue</key>
-									<string>35px</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>B82AE1F4-6459-4D9D-B034-FD2A0D5A9F7D-1715-00000E31DCA30452</string>
-								<key>zIndex</key>
-								<integer>4</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>0.0</real>
-								<key>identifier</key>
 								<string>Top</string>
 								<key>isRelative</key>
 								<false/>
@@ -11721,35 +11865,6 @@
 								<key>duration</key>
 								<real>0.0</real>
 								<key>identifier</key>
-								<string>Left</string>
-								<key>isRelative</key>
-								<false/>
-								<key>referenceOid</key>
-								<string>105</string>
-								<key>startTime</key>
-								<real>22</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>Left</string>
-									<key>objectValue</key>
-									<string>992px</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>53546B48-92BF-4626-94B8-6C0C0D095EEF-1715-000016FFEC415873</string>
-								<key>zIndex</key>
-								<integer>39</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>0.0</real>
-								<key>identifier</key>
 								<string>Top</string>
 								<key>isRelative</key>
 								<false/>
@@ -11774,6 +11889,35 @@
 								<string>EFE1C005-1646-4DFD-BC4D-215E724B0F28-1715-000016FFFE82C89E</string>
 								<key>zIndex</key>
 								<integer>38</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>0.0</real>
+								<key>identifier</key>
+								<string>Left</string>
+								<key>isRelative</key>
+								<false/>
+								<key>referenceOid</key>
+								<string>105</string>
+								<key>startTime</key>
+								<real>22</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Left</string>
+									<key>objectValue</key>
+									<string>992px</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>53546B48-92BF-4626-94B8-6C0C0D095EEF-1715-000016FFEC415873</string>
+								<key>zIndex</key>
+								<integer>39</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -11880,6 +12024,64 @@
 								<key>duration</key>
 								<real>0.0</real>
 								<key>identifier</key>
+								<string>RotationAngleZ</string>
+								<key>isRelative</key>
+								<false/>
+								<key>referenceOid</key>
+								<string>116</string>
+								<key>startTime</key>
+								<real>22.466667175292969</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>RotationAngleZ</string>
+									<key>objectValue</key>
+									<string>360deg</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>28DCE189-FC20-40B6-BE04-A56FED93BAE4-1715-00001840F8A52949</string>
+								<key>zIndex</key>
+								<integer>9</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>0.0</real>
+								<key>identifier</key>
+								<string>RotationAngleZ</string>
+								<key>isRelative</key>
+								<false/>
+								<key>referenceOid</key>
+								<string>118</string>
+								<key>startTime</key>
+								<real>22.466667175292969</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>RotationAngleZ</string>
+									<key>objectValue</key>
+									<string>0deg</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>2B1E84EC-361D-446B-9ED3-45FC32334134-1715-00001861B80BA4E6</string>
+								<key>zIndex</key>
+								<integer>10</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>0.0</real>
+								<key>identifier</key>
 								<string>MotionPathRotation</string>
 								<key>isRelative</key>
 								<false/>
@@ -11924,7 +12126,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>08E7BEA1-7E56-41E9-9B4E-E0C91A857A47-7385-00001D22BFE8FA3F</string>
+									<string>F1EC970C-EDF0-49A6-9D1F-ABBDF32B191F-753-00000070C6003B90</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>72</string>
@@ -11996,7 +12198,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>08E7BEA1-7E56-41E9-9B4E-E0C91A857A47-7385-00001D22BFE8FA3F</string>
+									<string>F1EC970C-EDF0-49A6-9D1F-ABBDF32B191F-753-00000070C6003B90</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>72</string>
@@ -12068,7 +12270,7 @@
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>08E7BEA1-7E56-41E9-9B4E-E0C91A857A47-7385-00001D22BFE8FA3F</string>
+									<string>F1EC970C-EDF0-49A6-9D1F-ABBDF32B191F-753-00000070C6003B90</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>72</string>
@@ -12091,64 +12293,6 @@
 								<string>271D5F52-897F-4836-A62B-0B7BB0A0B2F0-1715-00000B41C43C5AEB</string>
 								<key>zIndex</key>
 								<integer>41</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>0.0</real>
-								<key>identifier</key>
-								<string>RotationAngleZ</string>
-								<key>isRelative</key>
-								<false/>
-								<key>referenceOid</key>
-								<string>116</string>
-								<key>startTime</key>
-								<real>22.466667175292969</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>RotationAngleZ</string>
-									<key>objectValue</key>
-									<string>360deg</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>28DCE189-FC20-40B6-BE04-A56FED93BAE4-1715-00001840F8A52949</string>
-								<key>zIndex</key>
-								<integer>9</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>0.0</real>
-								<key>identifier</key>
-								<string>RotationAngleZ</string>
-								<key>isRelative</key>
-								<false/>
-								<key>referenceOid</key>
-								<string>118</string>
-								<key>startTime</key>
-								<real>22.466667175292969</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>RotationAngleZ</string>
-									<key>objectValue</key>
-									<string>0deg</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>2B1E84EC-361D-446B-9ED3-45FC32334134-1715-00001861B80BA4E6</string>
-								<key>zIndex</key>
-								<integer>10</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -12235,7 +12379,7 @@
 								<key>uuid</key>
 								<string>FF10C392-319C-4524-BC2C-ED379BCADCFE-1715-000012F44C4723E9</string>
 								<key>zIndex</key>
-								<integer>42</integer>
+								<integer>4</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -12264,7 +12408,7 @@
 								<key>uuid</key>
 								<string>A7658DEE-9B63-4A77-8D28-30E3BC20FA05-1715-000012F446EA9B4A</string>
 								<key>zIndex</key>
-								<integer>43</integer>
+								<integer>5</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
