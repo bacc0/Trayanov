@@ -89,7 +89,7 @@
 	<key>hasManuallyChangedCSSPositioning</key>
 	<false/>
 	<key>lastCheckDate</key>
-	<date>2020-03-05T17:45:28Z</date>
+	<date>2020-03-05T17:49:46Z</date>
 	<key>layout</key>
 	<dict>
 		<key>currentInspectorPane</key>
@@ -1192,7 +1192,7 @@
 					<key>rootSymbolControllerOid</key>
 					<string>2</string>
 					<key>scrollViewOffset</key>
-					<string>{1882.5, 892.109375}</string>
+					<string>{1875.5, 946.734375}</string>
 					<key>userGuides</key>
 					<array>
 						<dict>
