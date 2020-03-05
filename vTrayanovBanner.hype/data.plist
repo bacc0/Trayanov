@@ -89,7 +89,7 @@
 	<key>hasManuallyChangedCSSPositioning</key>
 	<false/>
 	<key>lastCheckDate</key>
-	<date>2020-03-05T01:23:41Z</date>
+	<date>2020-03-05T01:28:11Z</date>
 	<key>layout</key>
 	<dict>
 		<key>currentInspectorPane</key>
@@ -1192,7 +1192,7 @@
 					<key>rootSymbolControllerOid</key>
 					<string>2</string>
 					<key>scrollViewOffset</key>
-					<string>{1968, 1249.203125}</string>
+					<string>{3098, 2212.203125}</string>
 					<key>userGuides</key>
 					<array>
 						<dict>
@@ -1203,7 +1203,7 @@
 						</dict>
 					</array>
 					<key>zoomFactor</key>
-					<real>0.75</real>
+					<real>1.25</real>
 				</dict>
 			</array>
 		</dict>
@@ -1270,7 +1270,9 @@
 			<key>documentIdentifier</key>
 			<string>C03B8035-E75D-463A-A10B-5D833DD9F61F-7385-00001D2307B7FCF8</string>
 			<key>selectedObjects</key>
-			<array/>
+			<array>
+				<string>73</string>
+			</array>
 			<key>symbol</key>
 			<dict>
 				<key>addToNewSceneControllers</key>
@@ -3214,7 +3216,7 @@
 							<key>identifier</key>
 							<string>FontSize</string>
 							<key>objectValue</key>
-							<string>30px</string>
+							<string>28px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -3362,7 +3364,7 @@
 							<key>identifier</key>
 							<string>FontSize</string>
 							<key>objectValue</key>
-							<string>16px</string>
+							<string>14px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -3392,7 +3394,7 @@
 							<key>identifier</key>
 							<string>Top</string>
 							<key>objectValue</key>
-							<string>109px</string>
+							<string>108px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -3605,13 +3607,13 @@
 							<key>identifier</key>
 							<string>BorderRadiusBottomRight</string>
 							<key>objectValue</key>
-							<string>0px</string>
+							<string>3px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
 							<string>FontSize</string>
 							<key>objectValue</key>
-							<string>24px</string>
+							<string>22px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -3683,13 +3685,13 @@
 							<key>identifier</key>
 							<string>BorderRadiusBottomLeft</string>
 							<key>objectValue</key>
-							<string>0px</string>
+							<string>3px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
 							<string>BorderRadiusTopLeft</string>
 							<key>objectValue</key>
-							<string>0px</string>
+							<string>3px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -3707,7 +3709,7 @@
 							<key>identifier</key>
 							<string>BorderRadiusTopRight</string>
 							<key>objectValue</key>
-							<string>0px</string>
+							<string>3px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -3785,7 +3787,7 @@
 							<key>identifier</key>
 							<string>Top</string>
 							<key>objectValue</key>
-							<string>151px</string>
+							<string>149px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
