@@ -125,7 +125,6 @@ a:visited {
 	background: rgb(20, 54, 74);
 	color: white;
 	padding: 20px 40px 20px 20px;
-	border-radius: 0 0 3px 3px;
 	background: rgb(25, 17, 27);
 	background: linear-gradient(145deg, rgba(114, 16, 196, 1) 0%, rgba(62, 39, 77, 1) 57%, rgba(25, 17, 27, 1) 100%);
 }
