@@ -11,7 +11,7 @@
 	<key>createOfflineApplicationCache</key>
 	<false/>
 	<key>currentSceneContainer</key>
-	<string>168</string>
+	<string>1</string>
 	<key>customExportSlices</key>
 	<array>
 		<dict>
@@ -93,7 +93,7 @@
 	<key>hasManuallyChangedCSSPositioning</key>
 	<false/>
 	<key>lastCheckDate</key>
-	<date>2020-03-13T14:07:50Z</date>
+	<date>2020-03-13T14:09:22Z</date>
 	<key>layout</key>
 	<dict>
 		<key>currentInspectorPane</key>
@@ -1333,7 +1333,7 @@
 						<integer>30</integer>
 					</dict>
 					<key>canvasSize</key>
-					<string>{3946, 3831}</string>
+					<string>{5626, 4332}</string>
 					<key>hypeScene</key>
 					<dict>
 						<key>backgroundColor</key>
@@ -1358,7 +1358,7 @@
 					<key>rootSymbolControllerOid</key>
 					<string>2</string>
 					<key>scrollViewOffset</key>
-					<string>{1328, 897}</string>
+					<string>{1629, 1333}</string>
 					<key>userGuides</key>
 					<array>
 						<dict>
@@ -1558,7 +1558,7 @@ function untitledFunction(hypeDocument, element, event) {
 			<string>8A466737-0605-4DE0-A074-1582DCCC51FA-6409-00002843A42685B9</string>
 			<key>selectedObjects</key>
 			<array>
-				<string>173</string>
+				<string>149</string>
 			</array>
 			<key>symbol</key>
 			<dict>
@@ -3663,7 +3663,7 @@ function untitledFunction(hypeDocument, element, event) {
 							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>40</string>
+							<string>39</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -3810,7 +3810,7 @@ function untitledFunction(hypeDocument, element, event) {
 							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>42</string>
+							<string>41</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -3957,7 +3957,7 @@ function untitledFunction(hypeDocument, element, event) {
 							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>39</string>
+							<string>51</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -4684,7 +4684,7 @@ function untitledFunction(hypeDocument, element, event) {
 							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>43</string>
+							<string>42</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -4849,7 +4849,7 @@ function untitledFunction(hypeDocument, element, event) {
 							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>44</string>
+							<string>43</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -5050,7 +5050,7 @@ function untitledFunction(hypeDocument, element, event) {
 							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>45</string>
+							<string>44</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -5215,7 +5215,7 @@ function untitledFunction(hypeDocument, element, event) {
 							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>46</string>
+							<string>45</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -5392,7 +5392,7 @@ function untitledFunction(hypeDocument, element, event) {
 							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>47</string>
+							<string>46</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -5557,7 +5557,7 @@ function untitledFunction(hypeDocument, element, event) {
 							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>48</string>
+							<string>47</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -5740,7 +5740,7 @@ function untitledFunction(hypeDocument, element, event) {
 							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>51</string>
+							<string>50</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -7599,7 +7599,7 @@ function untitledFunction(hypeDocument, element, event) {
 							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>49</string>
+							<string>48</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -7796,7 +7796,7 @@ function untitledFunction(hypeDocument, element, event) {
 							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>50</string>
+							<string>49</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
