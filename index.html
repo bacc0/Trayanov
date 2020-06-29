@@ -547,7 +547,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                           <div class="row">
                               <div class="col-md-4 modal-content">
                                       <!-- <h2 id="bannimg" class="text-center"><img src="https://www.newstatesman.com/sites/all/modules/paywall/assets/img/private-modal.png" alt="Subscribe from just £1 per week"></h2> -->
-                                      <h2 id="bannimg" class="text-center"><img src="./media/private-modal.png" alt="Subscribe from just £1 per week"></h2>
+                                      <h2 id="bannimg" class="text-center">
+
+                                        
+                                        <!-- <img src="./media/private-modal.png" alt="Subscribe from just £1 per week"> -->
+
+
+                                        <picture>
+                                            <source srcset="./media/private-modal.webp" type="image/webp">
+                                            <source srcset="./media/private-modal.jpg"  type="image/jpeg"> 
+                                            <img    src="./media/private-modal.webp"    src="./media/private-modal.jpg" >
+                                        </picture>
+
+
+
+                                      </h2>
                                       <div class="text-center">
                                           <h4 class="text-center">You are browsing in private mode.</h4>
                                           <p class="modal-message">To enjoy all the benefits of our website</p>
@@ -728,7 +742,9 @@ jQuery("div.story_related_"+currentNid+" #"+currentNid+"related_story").append(t
     <!--<a id="new_sub_button_mobile" class="last leaf menu-mlid-12703 subscribe-link">Subscribe</a>-->
 
     <h1 class="site-logo">
-            <a href="https://www.newstatesman.com/" title="Home"><img src="./media/newstatesman_logo@2x.png" alt="New Statesman"/></a>
+            <a href="https://www.newstatesman.com/" title="Home">
+              <img src="./media/newstatesman_logo@2x.png" alt="New Statesman"/>
+            </a>
           </h1>
           
     
@@ -1212,16 +1228,26 @@ jQuery('#noimage').val('imageexist');
                         <div class="multiple-author-images">
 
                                     <!-- <div class="author-avatar" ><img src="https://www.newstatesman.com/sites/default/files/will_dunn_sketch.jpg"></div> -->
-                                    <div class="author-avatar" ><img src="./media/will_dunn_sketch.jpg"></div>
+                                    <div class="author-avatar" >
+
+                                      <picture>
+                                          <source srcset="./media/will_dunn_sketch.webp" type="image/webp">
+                                          <source srcset="./media/will_dunn_sketch.jpg"  type="image/jpeg"> 
+                                          <img    src="./media/will_dunn_sketch.webp"    src="./media/will_dunn_sketch.jpg" >
+                                      </picture>
+
+                                    </div>
 
                 
                 
               </div>
           <div class="author-byline"><!-- @Author -->
-            By <a href="https://www.newstatesman.com/writers/321549">Will Dunn</a>          </div>
-                    <div class="author-twitter twitter-button">
-                        <a href="https://twitter.com/willydunn" class="twitter-follow-button" data-show-count="false"> Follow @willydunn</a>
-                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            By <a href="https://www.newstatesman.com/writers/321549">Will Dunn</a>          
+          </div>
+
+          <div class="author-twitter twitter-button">
+              <a href="https://twitter.com/willydunn" class="twitter-follow-button" data-show-count="false"> Follow @willydunn</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
           </div>
                   </aside>
         <!-- .article-author -->
