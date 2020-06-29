@@ -549,7 +549,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                       <!-- <h2 id="bannimg" class="text-center"><img src="https://www.newstatesman.com/sites/all/modules/paywall/assets/img/private-modal.png" alt="Subscribe from just £1 per week"></h2> -->
                                       <h2 id="bannimg" class="text-center">
 
-                                        
+
                                         <!-- <img src="./media/private-modal.png" alt="Subscribe from just £1 per week"> -->
 
 
@@ -1336,7 +1336,16 @@ jQuery('#noimage').val('imageexist');
 
                         <div class="about-the-author">
               <div class="row">
-                                <div class="large-2 columns author-avatar"><img src="./media/will_dunn_sketch.jpg"></div>
+                                <div class="large-2 columns author-avatar">
+
+                                  <!-- <img src="./media/will_dunn_sketch.jpg"> -->
+
+                                  <picture>
+                                      <source srcset="./media/will_dunn_sketch.webp" type="image/webp">
+                                      <source srcset="./media/will_dunn_sketch.jpg"  type="image/jpeg"> 
+                                      <img    src="./media/will_dunn_sketch.webp"    src="./media/will_dunn_sketch.jpg" >
+                                  </picture>
+                                </div>
                                 <div class="large-10 columns author-details">
                   <!-- <h3> </h3>-->
                                     <p>
