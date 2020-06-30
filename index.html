@@ -494,7 +494,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <div class="col-md-4 modal-content">
                                       <h2 id="bannimg" class="text-center">
                                         
-                                        <img src="https://www.newstatesman.com/sites/all/modules/paywall/assets/img/private-modal.png" alt="Subscribe from just £1 per week">
+                                        <!-- <img src="https://www.newstatesman.com/sites/all/modules/paywall/assets/img/private-modal.png" alt="Subscribe from just £1 per week"> -->
+
+                                        <picture>
+                                          <source srcset="./media/private-modal.webp" type="image/webp" alt="Subscribe from just £1 per week">
+                                          <source srcset="./media/private-modal.png"  type="image/png"  alt="Subscribe from just £1 per week">
+                                          <img    src="./media/private-modal.webp"    src="./media/private-modal.png"alt="Subscribe from just £1 per week" >
+                                      </picture>
                                       
                                       </h2>
                                       <div class="text-center">
@@ -631,7 +637,19 @@ jQuery("div.story_related_"+currentNid+" #"+currentNid+"related_story").append(t
 
  
     <h1 class="site-logo">
-            <a href="https://www.newstatesman.com/" title="Home"><img src="https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/images/newstatesman_logo@2x.png" alt="New Statesman"/></a>
+            <a href="https://www.newstatesman.com/" title="Home">
+
+
+              <!-- <img src="https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/images/newstatesman_logo@2x.png" alt="New Statesman"/> -->
+            
+              <picture>
+                <source srcset="./media/newstatesman_logo@2x.webp" type="image/webp" alt="New Statesman">
+                <source srcset="./media/newstatesman_logo@2x.png"  type="image/png"  alt="New Statesman">
+                <img    src="   ./media/newstatesman_logo@2x.webp" src="./media/newstatesman_logo@2x.png" alt="New Statesman">
+            </picture>
+            
+            
+            </a>
           </h1>
           
     
