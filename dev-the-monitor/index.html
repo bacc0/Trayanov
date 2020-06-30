@@ -2013,57 +2013,40 @@ _cp.push({module:"block", delta:"51"});
 </script>
 
 <script type='text/javascript'>
+      jQuery(document).ready(function() {
 
-jQuery(document).ready(function() {
+          var first1=0;
+          var first2=0;
+          var first3=0;
+          var first4=0;
+          var first5=0;
+          var first6=0;
 
-var first1=0;
-var first2=0;
-var first3=0;
-var first4=0;
-var first5=0;
-var first6=0;
+          var article_type=0
 
-var article_type=0
-
-//alert(article_type);
-
-    //Load the second article onlym when you get to the bottom of the first.
-    jQuery(window).bind('scroll', function() {
-
-
-
-
-function detectmob() { 
- if( navigator.userAgent.match(/Android/i)
- || navigator.userAgent.match(/webOS/i)
- || navigator.userAgent.match(/iPhone/i)
- || navigator.userAgent.match(/iPad/i)
- || navigator.userAgent.match(/iPod/i)
- || navigator.userAgent.match(/BlackBerry/i)
- || navigator.userAgent.match(/Windows Phone/i)
- ){
-    return true;
-  }
- else {
-    return false;
-  }
-}
+        jQuery(window).bind('scroll', function() {
+            function detectmob() {
+            if(  navigator.userAgent.match(/Android/i)
+              || navigator.userAgent.match(/webOS/i)
+              || navigator.userAgent.match(/iPhone/i)
+              || navigator.userAgent.match(/iPad/i)
+              || navigator.userAgent.match(/iPod/i)
+              || navigator.userAgent.match(/BlackBerry/i)
+              || navigator.userAgent.match(/Windows Phone/i)
+            ){
+            return true;
+        }
+        else {
+            return false;
+          }
+        }
+        detectmobvalue=detectmob();
+      });
+  });
+</script>
 
 
-
-detectmobvalue=detectmob();     
-
-
-
-
-
-
-
-
-
-
-
-</script><script type="text/javascript">
+<script type="text/javascript">
 $(".homepage_sticky").sticky({ topSpacing: 100 });
 </script>
 
