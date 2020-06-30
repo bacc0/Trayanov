@@ -105,7 +105,8 @@
 
 <!--[if gt IE 9 | !IE ]><!-->
             <link href="https://www.newstatesman.com/sites/all/modules/paywall/assets/css/ev-widgets.min.css" rel="stylesheet">
-			<link href="https://www.newstatesman.com/sites/all/modules/paywall/assets/css/ev-widgets.min.old.css" rel="stylesheet">
+			<!-- <link href="https://www.newstatesman.com/sites/all/modules/paywall/assets/css/ev-widgets.min.old.css" rel="stylesheet"> -->
+			<link href="./CSSs//css5.css" rel="stylesheet">
             <link href="https://www.newstatesman.com/sites/all/modules/paywall/assets/css/prefixed-bootstrap.css" rel="stylesheet">
             <script type="text/javascript" src="https://www.newstatesman.com/sites/all/modules/paywall/assets/js/ev-dab.min.js?ver=1.2.2"></script>
             <script type="text/javascript" src="https://www.newstatesman.com/sites/all/modules/paywall/assets/js/ev-widgets.min.js?ver=3.7.2"></script>
@@ -174,8 +175,8 @@ var _cp = _cp || []; var _cp_d = 0;
 @import url("https://www.newstatesman.com/sites/all/modules/flippy/flippy.css?qci118");
 </style>
 <style type="text/css" media="all">
-@import url("https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/style.css?qci118");
-@import url("./CSSs/css.css");
+/* @import url("https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/style.css?qci118"); */
+@import url("./CSSs/css1.css");
 @import url("https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/styles/style-america.css?qci118");
 </style>
 
@@ -548,7 +549,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 </span></a><a><span class="tns-ev-close tns-close">&times;</span></a><ev-login ev-ready="login_loaded" auth-scheme-name="default" forgot-password-service="edit_password" show-social="true" recaptcha="false" social-style="icons" social-networks="['facebook', 'google']" remember-me="true" title="Login" show-labels="false" show-header="false" show-container="false"  auto-populate="true" submitbtn-caption="Log In" override-translation-key="ev.login">
-    </ev-login><span class="tns-right">Don't have an account? <a name="register" class="tns-goto-register" data-context="Login">Sign up</a></span></div><div class="tns-modal tns-modal--register"><a><span class="ev-nslogo"><img src="https://www.newstatesman.com/sites/default/files/styles/large/public/ns-ga.jpeg?itok=soqxWQNh"></span></a><a><span class="tns-ev-close tns-close">&times;</span></a><ev-registration show-labels="false" show-header="false" id="registration" auth-scheme-name="default" recaptcha="true" service-name="default" title="register" submitbtn-caption="Create Account" auto-login="false" show-social="true" social-style="icons" social-networks="['facebook', 'google']" hidden-attributes="{'registration': 'true'}"></ev-registration><div class="tns-pp ng-scope">By registering, I Agree to the <a href="https://www.newstatesman.com/terms/" target="_blank">Terms of Service</a> and <a href="https://www.newstatesman.com/privacy-policy/" target="_blank">Privacy Policy</a></div><span class="tns-right">Already a member? <a name="login" class="tns-goto-login" data-context="Register">Log in</a></span></div><div class="tns-modal tns-modal--paywall ns-paywall--subscribe"><a><span class="tns-ev-close tns-close">&times;</span></a><ev-paywall modal="false"></ev-paywall></div><div class="tns-modal tns-modal--paywallNotifier ns-paywall--subscribe-mozila"><a><span class="tns-ev-close tns-close">&times;</span></a><ev-paywall-notifier modal="false"></ev-paywall-notifier></div><div name="sociallogin" class="tns-modal tns-modal--sociallogin"><a><span class="tns-ev-close tns-close">&times;</span></a><ev-social-registration id="socialRegistration" auth-scheme-name="default" service-name="registration" title="Create an Account"
+    </ev-login><span class="tns-right">Don't have an account? <a name="register" class="tns-goto-register" data-context="Login">Sign up</a></span></div><div class="tns-modal tns-modal--register"><a><span class="ev-nslogo">
+      
+      
+      <<!-- <img src="https://www.newstatesman.com/sites/default/files/styles/large/public/ns-ga.jpeg?itok=soqxWQNh"> -->
+
+  <picture>
+    <source srcset="./media/ns-ga.webp" type="image/webp">
+    <source srcset="./media/ns-ga.jpeg" type="image/jpeg">
+    <img    src="   ./media/ns-ga.webp" src="./media/ns-ga.jpeg" >
+</picture>
+    
+    
+    </span></a><a><span class="tns-ev-close tns-close">&times;</span></a><ev-registration show-labels="false" show-header="false" id="registration" auth-scheme-name="default" recaptcha="true" service-name="default" title="register" submitbtn-caption="Create Account" auto-login="false" show-social="true" social-style="icons" social-networks="['facebook', 'google']" hidden-attributes="{'registration': 'true'}"></ev-registration><div class="tns-pp ng-scope">By registering, I Agree to the <a href="https://www.newstatesman.com/terms/" target="_blank">Terms of Service</a> and <a href="https://www.newstatesman.com/privacy-policy/" target="_blank">Privacy Policy</a></div><span class="tns-right">Already a member? <a name="login" class="tns-goto-login" data-context="Register">Log in</a></span></div><div class="tns-modal tns-modal--paywall ns-paywall--subscribe"><a><span class="tns-ev-close tns-close">&times;</span></a><ev-paywall modal="false"></ev-paywall></div><div class="tns-modal tns-modal--paywallNotifier ns-paywall--subscribe-mozila"><a><span class="tns-ev-close tns-close">&times;</span></a><ev-paywall-notifier modal="false"></ev-paywall-notifier></div><div name="sociallogin" class="tns-modal tns-modal--sociallogin"><a><span class="tns-ev-close tns-close">&times;</span></a><ev-social-registration id="socialRegistration" auth-scheme-name="default" service-name="registration" title="Create an Account"
                 modal-keyboard="true" modal-backdrop="true" auto-populate="true" auto-register="false"
                 show-error-msgs="true" submitBtn-caption="Create Account" cancel-anchor-caption="" show-labels="false">
             </ev-social-registration></div><div class="tns-modal tns-modal--privateMode"><a><span class="tns-ev-close tns-close">&times;</span></a><div class="container-fluid">
@@ -2010,7 +2023,7 @@ _cp.push({module:"block", delta:"51"});
 
           jQuery(window).bind('scroll', function() {
               function detectmob() {
-                
+
               if(  navigator.userAgent.match(/Android/i)
                 || navigator.userAgent.match(/webOS/i)
                 || navigator.userAgent.match(/iPhone/i)
