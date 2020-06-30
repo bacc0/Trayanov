@@ -638,7 +638,19 @@ jQuery("div.story_related_"+currentNid+" #"+currentNid+"related_story").append(t
 <div class="header-promotion">
 	 		<div>
 			<div class="promotion">
-			  <a href="https://www.newstatesman.com/subscribe12"><img src="https://www.newstatesman.com/sites/default/files/styles/large/public/12-for-12.png" alt="12 issues for £12"></a>
+        <a href="https://www.newstatesman.com/subscribe12">
+          
+          
+          <!-- <img src="https://www.newstatesman.com/sites/default/files/styles/large/public/12-for-12.png" alt="12 issues for £12"> -->
+
+          <picture>
+            <source srcset="./media/12-for-12.webp" type="image/webp">
+            <source srcset="./media/12-for-12.png"  type="image/png">
+            <img    src="   ./media/12-for-12.webp" src="./media/12-for-12.png" >
+        </picture>
+        
+        
+        </a>
 			</div>
 		</div>
 	
