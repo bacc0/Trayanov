@@ -1460,7 +1460,18 @@ if(location.hostname=='critiquetimes.com'){ window.location.href='https://dev-th
   <div class="row">
     <div class="footerwrapper">
       <div class="large-2 columns footerlogo">
-        <img src="https://newstatesman.com/sites/all/themes/creative-responsive-theme/images/newstatesman_logo@2x.png" alt="">
+
+
+
+        <!-- <img src="https://newstatesman.com/sites/all/themes/creative-responsive-theme/images/newstatesman_logo@2x.png" alt=""> -->
+
+        <picture>
+          <source srcset="./media/newstatesman_logo@2x.webp" type="image/webp">
+          <source srcset="./media/newstatesman_logo@2x.png"  type="image/png">
+          <img    src="   ./media/newstatesman_logo@2x.webp" src="./media/newstatesman_logo@2x.png" >
+      </picture>
+
+
       </div>
       <div class="large-10 columns">
         <div class="link-footer">
