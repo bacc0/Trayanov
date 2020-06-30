@@ -1,10 +1,6 @@
 <!DOCTYPE html>
-<!--[if lte IE 7]> <html lang="en" class="ie ie7"> <![endif]-->
-<!--[if IE 8 ]> <html lang="en" class="ie ie8"> <![endif]-->
-<!--[if IE 9 ]> <html lang="en" class="ie ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+ <html lang="en"> 
 
-<!-- Mirrored from dev-the-monitor.pantheonsite.io/task/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Jun 2020 11:49:46 GMT -->
 <head>
 <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"d4f02fb7e7",applicationID:"14767184"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1169.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
 <meta property="og:image" content="https://www.newstatesman.com/sites/default/files/styles/homesection_image/public/blogs_2020/06/fota.png?itok=JpZCWuKM" />
@@ -110,9 +106,7 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-TileImage" content="/mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
-<!--<meta name="google-site-verification" content="-wzk9l4dBtL8YHJVF-afrZXha3QSFTKJvhfaoTyOL2Y" />--->
 
-<!--[if gt IE 9 | !IE ]><!-->
 <link href="https://www.newstatesman.com/sites/all/modules/paywall/assets/css/ev-widgets.min.css" rel="stylesheet">
 <link href="https://www.newstatesman.com/sites/all/modules/paywall/assets/css/ev-widgets.min.old.css" rel="stylesheet">
 <link href="https://www.newstatesman.com/sites/all/modules/paywall/assets/css/prefixed-bootstrap.css" rel="stylesheet">
@@ -123,8 +117,7 @@
 
 
 
-          <![endif]-->
-<!-- Online Advertising -->
+          
 
 
 
@@ -135,7 +128,6 @@
 </script>
 
 
-<!-- <script type="text/javascript" src="//static.amp.services/clients/GlobalData/NewStatesman.js"></script> -->
 
 
 <script type="text/javascript" src="https://www.newstatesman.com/sites/default/files/js/js_qikmINIYTWe4jcTUn8cKiMr8bmSDiZB9LQqvceZ6wlM.js"></script>
@@ -194,150 +186,135 @@ var _cp = _cp || []; var _cp_d = 0;
 <meta name="DCSext.WebsiteName" content="www.newstatesman.com" />
 
 
-<!-- Facebook Conversion Code for Checkouts - New Statesman 1 -->
-    <script>(function() {
-    var _fbq = window._fbq || (window._fbq = []);
-    if (!_fbq.loaded) {
-    var fbds = document.createElement('script');
-    fbds.async = true;
-    fbds.src = 'http://connect.facebook.net/en_US/fbds.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(fbds, s);
-    _fbq.loaded = true;
-    }
-    })();
-    window._fbq = window._fbq || [];
-    window._fbq.push(['track', '6025943409225', {'value':'0.00','currency':'GBP'}]);
+    <script>
+      (function () {
+        var _fbq = window._fbq || (window._fbq = []);
+        if (!_fbq.loaded) {
+          var fbds = document.createElement('script');
+          fbds.async = true;
+          fbds.src = 'http://connect.facebook.net/en_US/fbds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(fbds, s);
+          _fbq.loaded = true;
+        }
+      })();
+      window._fbq = window._fbq || [];
+      window._fbq.push(['track', '6025943409225', {
+        'value': '0.00',
+        'currency': 'GBP'
+      }]);
     </script>
+
     <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6025943409225&amp;cd[value]=0.00&amp;cd[currency]=GBP&amp;noscript=1" /></noscript>
     
-    <!-- Facebook tracking pixel -->
-    <script>(function() {
-    var _fbq = window._fbq || (window._fbq = []);
-    if (!_fbq.loaded) {
-    var fbds = document.createElement('script');
-    fbds.async = true;
-    fbds.src = 'http://connect.facebook.net/en_US/fbds.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(fbds, s);
-    _fbq.loaded = true;
-    }
-    _fbq.push(['addPixelId', '526380280843209']);
-    })();
-    window._fbq = window._fbq || [];
-    window._fbq.push(['track', 'PixelInitialized', {}]);
+    <script>
+      (function () {
+        var _fbq = window._fbq || (window._fbq = []);
+        if (!_fbq.loaded) {
+          var fbds = document.createElement('script');
+          fbds.async = true;
+          fbds.src = 'http://connect.facebook.net/en_US/fbds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(fbds, s);
+          _fbq.loaded = true;
+        }
+        _fbq.push(['addPixelId', '526380280843209']);
+      })();
+      window._fbq = window._fbq || [];
+      window._fbq.push(['track', 'PixelInitialized', {}]);
     </script>
+
     <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=526380280843209&amp;ev=PixelInitialized" /></noscript>
     
 
-<!-- Facebook Conversion Code for New Statesman - MasterBrand Philips 2015 -->
-      <script>(function() {
-      var _fbq = window._fbq || (window._fbq = []);
-      if (!_fbq.loaded) {
-      var fbds = document.createElement('script');
-      fbds.async = true;
-      fbds.src = 'http://connect.facebook.net/en_US/fbds.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(fbds, s);
-      _fbq.loaded = true;
-      }
-      })();
-      window._fbq = window._fbq || [];
-      window._fbq.push(['track', '6032031760848', {'value':'0.00','currency':'GBP'}]);
+      <script>
+        (function () {
+          var _fbq = window._fbq || (window._fbq = []);
+          if (!_fbq.loaded) {
+            var fbds = document.createElement('script');
+            fbds.async = true;
+            fbds.src = 'http://connect.facebook.net/en_US/fbds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(fbds, s);
+            _fbq.loaded = true;
+          }
+        })();
+        window._fbq = window._fbq || [];
+        window._fbq.push(['track', '6032031760848', {
+          'value': '0.00',
+          'currency': 'GBP'
+        }]);
       </script>
+
       <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6032031760848&amp;cd[value]=0.00&amp;cd[currency]=GBP&amp;noscript=1" /></noscript>
-	  <script type="text/javascript"> 
-		if(location.hostname=='critiquetimes.com'){ window.location.href='https://critiquetimes.com/'; }
+    
+    <script type="text/javascript"> 
+		    if(location.hostname=='critiquetimes.com'){ window.location.href='https://critiquetimes.com/'; }
 	  </script>
-<!-- end of Facebook Conversion Code- MasterBrand Philips 2015 -->
 
-
-<!-- OnScroll tag: New Statesman -->
-<!-- <script src="//tags.onscroll.com/3380db1e-7e02-4e5d-b02b-291ba90d3565/tag.min.js" async defer></script> -->
-
-<!-- Hotjar Tracking Code for www.newstatesman.com -->
 <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:899208,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  (function (h, o, t, j, a, r) {
+    h.hj = h.hj || function () {
+      (h.hj.q = h.hj.q || []).push(arguments)
+    };
+    h._hjSettings = {
+      hjid: 899208,
+      hjsv: 6
+    };
+    a = o.getElementsByTagName('head')[0];
+    r = o.createElement('script');
+    r.async = 1;
+    r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+    a.appendChild(r);
+  })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
 </script>
- <!-- On mouse hover sponsered artilce --->
 
- <!-- On mouse hover sponsered artilce --->
-  
-
-<!--- Added Organization name and address for structure data elements ------>	
 	<script type="application/ld+json">
-	{
-	  "@context": "http://schema.org",
-	  "@type": "Organization",
-	  "url": "https://www.newstatesman.com/us",
-	  "name": "Newstatesman."
-	 
-     
-	}
-</script>
-<!--- End Organization name and address for structure data elements -->
-<!-- Unruly tracking Code ----->
-<script>
-var unruly = window.unruly ||{};
-unruly.native = unruly.native || {};
-unruly.native.siteld=1080927;
-</script>
-<!-- <script src="//video.unrulymedia.com/native/native-loader.js"></script> -->
-<!--unruly tracking code---->
-<!-- unruly script--->
-<!-- head script  start -->
+	  {
+	    "@context": "http://schema.org",
+	    "@type": "Organization",
+	    "url": "https://www.newstatesman.com/us",
+	    "name": "Newstatesman."
+	  }
+	</script>
+
+  <script>
+    var unruly = window.unruly || {};
+    unruly.native = unruly.native || {};
+    unruly.native.siteld = 1080927;
+  </script>
 
 
-<!-- <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-<script>
-  window.googletag = window.googletag || {cmd: []};
-  googletag.cmd.push(function() {
-    googletag.defineSlot('/5269235/New_Statesman/1x3', [1, 3], '1x3').addService(googletag.pubads());
-    googletag.pubads().enableSingleRequest();
-    googletag.pubads().collapseEmptyDivs();
-    googletag.enableServices();
-  });
-</script> -->
-<!-- head script  End-->
-
-<!-- unruly script---->
+  <script>
+    dataLayer = [{
+      'nodeID': '325759',
+      'title': 'Finger on the App: the dystopian competition that sums up everything that’s wrong with the internet',
+      'type': 'blogs',
+      'categories': 'Science & Tech,Internet,International,Science & Tech,Internet & Social Media',
+      'NSgeo': 'UK',
+      'publishedDate': '2020-06-25 12:01:29',
+      'authorName': 'Will Dunn'
+    }];
+  </script>
 
 
 
-
-
-<script>
-  dataLayer = [{
-    'nodeID': '325759',
-    'title': 'Finger on the App: the dystopian competition that sums up everything that’s wrong with the internet',
-    'type': 'blogs',
-    'categories': 'Science & Tech,Internet,International,Science & Tech,Internet & Social Media',
-    'NSgeo' : 'UK',
-    'publishedDate': '2020-06-25 12:01:29',
-    'authorName': 'Will Dunn'
-  }];
-</script>
-
-
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WCSDN56');</script>
-<!-- End Google Tag Manager -->
-
-   
-
-
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WCSDN56');
+  </script>
 
 
 </head>
@@ -405,7 +382,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             pmDomain: "https://cmp.evolok.net/pm/api/v2",
             version: 2,
             stripeKey: "pk_live_iGYXuxWCb49iOFMJ7G4F86Yy",
-		    gocardlessKey: "r6pl7ZbTOkybdM2SZKNYissworK71NEhMFUeQGet",
+		        gocardlessKey: "r6pl7ZbTOkybdM2SZKNYissworK71NEhMFUeQGet",
             skipSummary: false,
             skipProfile: false,
             skipValidation: false,
@@ -446,16 +423,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   }
               }
           },
-          /* "newsletterEveningCall": {
-              "type": "checkbox",
-              "values": {
-                  "true": {
-                      "caption": "New Statesman Evening Call",
-                      "id": "true"
-                  }
-              }
-          },
-         */ "newsletterSpecialOffers": {
+          "newsletterSpecialOffers": {
               "type": "checkbox",
               "values": {
                   "true": {
@@ -473,16 +441,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   }
               }
           },
-		  /*"NS_Daily_Highlights_Newsletter": {
-              "type": "checkbox",
-              "values": {
-                  "true": {
-                      "caption": "Daily Highlights - your daily round up of coverage from the New Statesman team",
-                      "id": "true"
-                  }
-              }
-          },*/
-		  
           "NS_Archive_Newsletter": {
             "type": "checkbox",
             "values": {
@@ -506,18 +464,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         EV.Dab.init();
 
       </script>
-<!--- Evlolok init ENDS -->
 
-<!--Twitter conversion tracking pixel for philips -->
 
 <script src="https://platform.twitter.com/oct.js" type="text/javascript"></script>
 <script type="text/javascript">twttr.conversion.trackPid('ntow3', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
+
 <noscript>
-<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ntow3&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0" />
-<img height="1" width="1" style="display:none;" alt="" src="http://t.co/i/adsct?txn_id=ntow3&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ntow3&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="http://t.co/i/adsct?txn_id=ntow3&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0" />
 </noscript>
 
-<!-- End of Twitter conversion tracking pixel for philips -->
 
 
 
@@ -532,15 +488,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body class="html not-front logged-in no-sidebars page-node page-node- page-node-325759 node-type-blogs adminimal-menu adminimal-frontend article-theme " >
  
-<!-- Google Tag Manager (noscript) -->
 <noscript><iframe id='gtm' src="https://www.googletagmanager.com/ns.html?id=GTM-WCSDN56"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 <div class="tns-modal-wrapper">
   <div class="tns-modal tns-modal--login">
       <a>
           <span class="ev-nslogo">
-              <!-- <img src="./media/ns-ga.jpeg"> -->
               <picture>
                   <source srcset="./media/ns-ga.webp" type="image/webp">
                   <source srcset="./media/ns-ga.jpeg" type="image/jpeg">
@@ -556,7 +509,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="tns-modal tns-modal--register">
       <a>
           <span class="ev-nslogo">
-              <!-- <img src="./media/ns-ga.jpeg"> -->
               <picture>
                   <source srcset="./media/ns-ga.webp" type="image/webp">
                   <source srcset="./media/ns-ga.jpeg" type="image/jpeg">
@@ -599,7 +551,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="row">
               <div class="col-md-4 modal-content">
                   <h2 id="bannimg" class="text-center">
-                      <!-- <img src="./media/private-modal.png" alt="Subscribe from just £1 per week"> -->
                       <picture>
                           <source srcset="./media/private-modal.webp" type="image/webp">
                           <source srcset="./media/private-modal.png"  type="image/png">
@@ -619,145 +570,77 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
 </div>
 <script>
-  function load_disqus(c,path)
-  {
-   //var pageurl= '?q=/node/'+c;
-  //history.pushState('stateObj', "page 2", pageurl);
-  history.pushState('stateObj', "page 2", path);
-  if(document.getElementById("disqus_thread"))
-  {
-  
+  function load_disqus(c, path) {
+    history.pushState('stateObj', "page 2", path);
+    if (document.getElementById("disqus_thread")) {
+
       var ano = document.getElementById("disqus_loader").getAttribute("class");
-   if(ano.substr(13)==c)
-   {
-     var vis = document.getElementById("disqus_thread").getAttribute("style");
-    if(vis == 'display: none;')
-    {
-  
-    document.getElementById("disqus_thread").style.display = 'block';
-    return false;
+      if (ano.substr(13) == c) {
+        var vis = document.getElementById("disqus_thread").getAttribute("style");
+        if (vis == 'display: none;') {
+
+          document.getElementById("disqus_thread").style.display = 'block';
+          return false;
+        } else {
+
+          document.getElementById("disqus_thread").style.display = 'none';
+          return false;
+        }
+      }
+
+
+      var x = document.getElementById("disqus_thread").getAttribute("class");
+      document.getElementById("disqus_thread").setAttribute("id", x);
+
+      var y = document.getElementById("disqus_loader").getAttribute("class");
+      document.getElementById("disqus_loader").setAttribute("id", y);
+
     }
-    else{
-  
-     document.getElementById("disqus_thread").style.display = 'none';
-    return false;
-    }
-   }
-  
-  
-   var x = document.getElementById("disqus_thread").getAttribute("class");
-  document.getElementById("disqus_thread").setAttribute("id", x);
-  
-   var y = document.getElementById("disqus_loader").getAttribute("class");
-  document.getElementById("disqus_loader").setAttribute("id", y);
-  
-  // var ldr1 = document.getElementById(y);
-  //ldr1.style.display = 'Block';
-  
-  }
-  
-    document.getElementById("disqus_thread"+c).setAttribute("id", "disqus_thread");
-  document.getElementById("disqus_loader"+c).setAttribute("id", "disqus_loader");
-  
-  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+
+    document.getElementById("disqus_thread" + c).setAttribute("id", "disqus_thread");
+    document.getElementById("disqus_loader" + c).setAttribute("id", "disqus_loader");
+
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
     dsq.src = "https://newstatesman1913.disqus.com/embed.js";
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-   // var ldr = document.getElementById('disqus_loader');
-   // ldr.parentNode.removeChild(ldr);
-  // ldr.style.display = 'none';
   
-  return false;
+
+    return false;
   }
-  
-  function showimage(id)
-  {
-  var cls = document.getElementById(id).getAttribute("class");
-   var n = cls.indexOf("feature-image-revealed");
-  if(n < 0)
-  document.getElementById(id).setAttribute("class",cls+" feature-image-revealed");
-  else
-  document.getElementById(id).setAttribute("class",cls.substr(0,n));
-   return;
-  
-  
-  
+
+  function showimage(id) {
+    var cls = document.getElementById(id).getAttribute("class");
+    var n = cls.indexOf("feature-image-revealed");
+    if (n < 0)
+      document.getElementById(id).setAttribute("class", cls + " feature-image-revealed");
+    else
+      document.getElementById(id).setAttribute("class", cls.substr(0, n));
+    return;
   }
-  function shownewsform(id)
-  {
-  var cls = document.getElementById(id).getAttribute("class");
-   var n = cls.indexOf("email-newsletter-revealed");
-  if(n < 0)
-  document.getElementById(id).setAttribute("class",cls+" email-newsletter-revealed");
-  else
-  document.getElementById(id).setAttribute("class",cls.substr(0,n));
-   return;
-  
-  
-  
+
+  function shownewsform(id) {
+    var cls = document.getElementById(id).getAttribute("class");
+    var n = cls.indexOf("email-newsletter-revealed");
+    if (n < 0)
+      document.getElementById(id).setAttribute("class", cls + " email-newsletter-revealed");
+    else
+      document.getElementById(id).setAttribute("class", cls.substr(0, n));
+    return;
   }
-  /*  jQuery(".email-newsletter-toggle").click(function(){
-  nlid = this.id;
-  nids = nlid.split('_');
-  nids = nids[1];
-  n = '#showhidenews_'+nids;
-  jQuery(n).toggleClass("email-newsletter-revealed");
-  });
-  */
-  
+ 
 </script>
 <script>
-  /*function checktheval(sel_val){
-  
-  var my_selector = '.field-name-body div.field-item > p:nth-last-of-type('+sel_val+')';
-  if(jQuery(my_selector).html().length<1){
-  //return 1;
-  sel_val++;
-  checktheval(sel_val);
-  }else{
-  console.log(my_selector);
-  return my_selector;
-  }
-  }*/
-  
-  
-  jQuery(document).ready(function($) {
-  
-  
-  //alert("ok blog dsfsd");
-  //check_sel = checktheval(3);
-  //console.log("=====================");
-  //console.log(check_sel);
-  // jQuery( "div.story_related" ).insertAfter(check_sel);
-  var currentNid = Drupal.settings.custommodule.currentNid;
-  jQuery( "#node-"+currentNid+" div.story_related_"+currentNid ).insertAfter( ".field-name-body p:eq(3)" );
-  var te=jQuery("#node-"+currentNid+ " #related-story-wraper").html();
-  jQuery("div.story_related_"+currentNid+" #"+currentNid+"related_story").append(te);
-  
-  
-  //console.log("=====================");
-  // console.log(te);
-  // console.log("=====================");
-  // console.log( "#node-"+currentNid+ " div."+currentNid+"story_related" );
-  // console.log("#node-"+currentNid+" div."+currentNid+"story_related #"+currentNid+"related_story");
-  
-  
+  jQuery(document).ready(function ($) {
+
+    var currentNid = Drupal.settings.custommodule.currentNid;
+    jQuery("#node-" + currentNid + " div.story_related_" + currentNid).insertAfter(".field-name-body p:eq(3)");
+    var te = jQuery("#node-" + currentNid + " #related-story-wraper").html();
+    jQuery("div.story_related_" + currentNid + " #" + currentNid + "related_story").append(te);
   });
-  
-  
-  
 </script>
-<!-- Hide Ad code -->
-<!-- <div class="leaderboard top-leaderboard">
-  <div class="row"> -->
-<!-- /ca-pub-8914899523938848/New_Statesman/Unit1 test -->
-<!--  <div id='Unit1'>
-  <script type='text/javascript'>
-    googletag.cmd.push(function() { googletag.display('Unit1'); });
-  </script>
-  </div>
-  </div>
-  </div> -->
-<!-- .top-leaderboard -->
+
 <header class="site-header clearfix">
   <div class="row">
       <div class="ns-switcher">
@@ -775,10 +658,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <input id="check" type="checkbox">
           <div class="ns-switcher_close">
               <label onclick="javascript:location.href='https://dev-the-monitor.pantheonsite.io/preference/edition?ver=US';createCookie('STYXKEY_nsversion', 'US', 30);" for="check" class="america_selected ns_uk"><span class="america_desktop">International EDITION</span><span class="america_mobile">INTL</span></label>
-              <!-- <label onclick="javascript:location.href='/preference/edition?ver=US';createCookie('STYXKEY_nsversion', 'US', 30);" for="check" class="america_selected"><span class="america_desktop">America EDITION</span><span class="america_mobile">US</span></label> -->
           </div>
       </div>
-      <!--<a id="new_sub_button_mobile" class="last leaf menu-mlid-12703 subscribe-link">Subscribe</a>-->
       <h1 class="site-logo">
           <a href="https://www.newstatesman.com/" title="Home">
               <!-- <img src="./media/newstatesman_logo@2x.png" alt="New Statesman"/> -->
@@ -792,9 +673,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="header-promotion">
           <div>
               <div class="promotion">
-                  <!-- <a href="https://www.newstatesman.com/subscribe12"><img src="https://www.newstatesman.com/sites/default/files/styles/large/public/12-for-12.png" alt="12 issues for £12"></a> -->
                   <a href="https://www.newstatesman.com/subscribe12">
-                      <!-- <img src="./media/12-for-12.png" alt="12 issues for £12"> -->
                       <picture>
                           <source srcset="./media/12-for-12.webp" type="image/webp">
                           <source srcset="./media/12-for-12.png"  type="image/png">
@@ -803,27 +682,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   </a>
               </div>
           </div>
-          <!-- 	<div>
-              <div class="twitter-follow-promotion">
-                <a href="https://twitter.com/NewStatesman"><strong>Follow us</strong> on Twitter </a>
-              </div>
-              </div>
-              
-              <div>
-              <div class="podcast-promotion">
-                <a href="https://www.newstatesman.com/podcast/"><small>New Statesman</small> <span>Podcast</span></a>
-              </div>
-              </div> -->
       </div>
-      <!-- header-promotion -->
-      <!-- <ul>
-          <li> <a href="https://www.newstatesman.com/">UK Edition</a> </li>
-          <li> <a href="https://www.newstatesman.com/us">US Edition</a> </li>
-          </ul> -->
-      <!-- <select id="ns-version" name="NSVER" size="1" onchange="this.form.submit();">
-          <option value="">UK</option>
-          <option value="frontpage-america">US</option>
-          </select> -->
   </div>
   <!-- .row -->
   <nav class="site-nav">
@@ -851,9 +710,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                           </div>
                       </div>
                   </div>
-                  <!-- /.block -->
               </div>
-              <!-- /.region -->
           </ul>
           <div class="content-links-toggle">More</div>
           <ul class="content-links">
@@ -877,9 +734,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                           </div>
                       </div>
                   </div>
-                  <!-- /.block -->
               </div>
-              <!-- /.region -->
           </ul>
           <div class="mega-menu-row mega-menu row politics-mg">
               <div class="close-hover-mega-menu">Close menu</div>
@@ -891,7 +746,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                           <div class="large-3 columns">
                           </div>
                       </div>
-                      <!-- .row -->
                       <div class="main-mega-menu-section">
                           <div class="large-12 columns ns-network">
                               <div class="mega-menu-logo">
@@ -910,24 +764,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                       <div class="large-4 columns">
                                           <h1><a href="https://www.newstatesman.com/spotlight">Spotlight</a></h1>
                                           <h2><a href="https://www.newstatesman.com/cyber">Cyber</a></h2>
-                                          <!-- <h2><a href="https://www.newstatesman.com/northern-powerhouse">Northern Powerhouse</a></h2>
-                                              <h2><a href="https://www.newstatesman.com/skills">Skills</a></h2>
-                                              <h2><a href="https://www.newstatesman.com/manufacturing">Manufacturing</a></h2> <h2><a href="https://www.newstatesman.com/investment">Investment</a></h2>-->
                                           <h2 class="viewall"><a href="https://www.newstatesman.com/spotlight">View All</a></h2>
                                       </div>
                                   </div>
                               </div>
-                              <!-- .network-sites -->
                           </div>
-                          <!-- .ns-network -->
                       </div>
-                      <!-- .main-mega-menu-section -->
                   </div>
-                  <!-- .large-8 -->
               </div>
-              <!-- .row -->
           </div>
-          <!-- .politics-mg -->
           <div class="mega-menu-row mega-menu row culture-mg">
               <div class="close-hover-mega-menu">Close menu</div>
               <div class="row">
@@ -938,7 +783,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                           <div class="large-3 columns">
                           </div>
                       </div>
-                      <!-- .row -->
                       <div class="main-mega-menu-section">
                           <div class="large-12 columns ns-network">
                               <div class="mega-menu-logo">
@@ -957,25 +801,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                       <div class="large-4 columns">
                                           <h1><a href="https://www.newstatesman.com/spotlight">Spotlight</a></h1>
                                           <h2><a href="https://www.newstatesman.com/cyber">Cyber</a></h2>
-                                          <!-- <h2><a href="https://www.newstatesman.com/northern-powerhouse">Northern Powerhouse</a></h2>
-                                              <h2><a href="https://www.newstatesman.com/skills">Skills</a></h2>
-                                              <h2><a href="https://www.newstatesman.com/manufacturing">Manufacturing</a></h2> <h2><a href="https://www.newstatesman.com/investment">Investment</a></h2>-->
                                           <h2 class="viewall"><a href="https://www.newstatesman.com/spotlight">View All</a></h2>
                                           </h2>
                                       </div>
                                   </div>
                               </div>
-                              <!-- .network-sites -->
                           </div>
-                          <!-- .ns-network -->
                       </div>
-                      <!-- .main-mega-menu-section -->
                   </div>
-                  <!-- .large-8 -->
               </div>
-              <!-- .row -->
           </div>
-          <!-- .culture-mg -->
           <div class="mega-menu-row mega-menu row world-mg">
               <div class="close-hover-mega-menu">Close menu</div>
               <div class="row">
@@ -986,7 +821,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                           <div class="large-3 columns">
                           </div>
                       </div>
-                      <!-- .row -->
                       <div class="main-mega-menu-section">
                           <div class="large-12 columns ns-network">
                               <div class="mega-menu-logo">
@@ -1005,25 +839,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                       <div class="large-4 columns">
                                           <h1><a href="https://www.newstatesman.com/spotlight">Spotlight</a></h1>
                                           <h2><a href="https://www.newstatesman.com/cyber">Cyber</a></h2>
-                                          <!-- <h2><a href="https://www.newstatesman.com/northern-powerhouse">Northern Powerhouse</a></h2>
-                                              <h2><a href="https://www.newstatesman.com/skills">Skills</a></h2>
-                                              <h2><a href="https://www.newstatesman.com/manufacturing">Manufacturing</a></h2> <h2><a href="https://www.newstatesman.com/investment">Investment</a></h2>-->
+                                        
                                           <h2 class="viewall"><a href="https://www.newstatesman.com/spotlight">View All</a></h2>
                                           </h2>
                                       </div>
                                   </div>
                               </div>
-                              <!-- .network-sites -->
                           </div>
-                          <!-- .ns-network -->
                       </div>
-                      <!-- .main-mega-menu-section -->
                   </div>
-                  <!-- .large-8 -->
               </div>
-              <!-- .row -->
           </div>
-          <!-- world-mg -->
           <div class="mega-menu-row mega-menu row science_tech-mg">
               <div class="close-hover-mega-menu">Close menu</div>
               <div class="row">
@@ -1034,7 +860,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                           <div class="large-3 columns">
                           </div>
                       </div>
-                      <!-- .row -->
                       <div class="main-mega-menu-section">
                           <div class="large-12 columns ns-network">
                               <div class="mega-menu-logo">
@@ -1053,32 +878,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                       <div class="large-4 columns">
                                           <h1><a href="https://www.newstatesman.com/spotlight">Spotlight</a></h1>
                                           <h2><a href="https://www.newstatesman.com/cyber">Cyber</a></h2>
-                                          <!-- <h2><a href="https://www.newstatesman.com/northern-powerhouse">Northern Powerhouse</a></h2>
-                                              <h2><a href="https://www.newstatesman.com/skills">Skills</a></h2>
-                                              <h2><a href="https://www.newstatesman.com/manufacturing">Manufacturing</a></h2> <h2><a href="https://www.newstatesman.com/investment">Investment</a></h2>-->
                                           <h2 class="viewall"><a href="https://www.newstatesman.com/spotlight">View All</a></h2>
                                           </h2>
                                       </div>
                                   </div>
                               </div>
-                              <!-- .network-sites -->
                           </div>
-                          <!-- .ns-network -->
                       </div>
-                      <!-- .main-mega-menu-section -->
                   </div>
-                  <!-- .large-8 -->
               </div>
-              <!-- .row -->
           </div>
-          <!-- ns_tech-mg -->
           <div class="mega-menu-row mega-menu row event-mg">
               <div class="close-hover-mega-menu">Close menu</div>
               <div class="row">
                   <div class="large-12 columns">
                       <div class="row">
                       </div>
-                      <!-- .row -->
                       <div class="main-mega-menu-section">
                           <div class="large-12 columns ns-network">
                               <div class="mega-menu-logo">
@@ -1097,25 +912,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                       <div class="large-4 columns">
                                           <h1><a href="https://www.newstatesman.com/spotlight">Spotlight</a></h1>
                                           <h2><a href="https://www.newstatesman.com/cyber">Cyber</a></h2>
-                                          <!-- <h2><a href="https://www.newstatesman.com/northern-powerhouse">Northern Powerhouse</a></h2>
-                                              <h2><a href="https://www.newstatesman.com/skills">Skills</a></h2>
-                                              <h2><a href="https://www.newstatesman.com/manufacturing">Manufacturing</a></h2> <h2><a href="https://www.newstatesman.com/investment">Investment</a></h2>-->
                                           <h2 class="viewall"><a href="https://www.newstatesman.com/spotlight">View All</a></h2>
                                           </h2>
                                       </div>
                                   </div>
                               </div>
-                              <!-- .network-sites -->
                           </div>
-                          <!-- .ns-network -->
                       </div>
-                      <!-- .main-mega-menu-section -->
                   </div>
-                  <!-- .large-8 -->
               </div>
-              <!-- .row -->
           </div>
-          <!-- events -->
           <div class= 'tns-evo-profile ev'>
               <button name="login" class="tns-btn tns-login" >Login</button>  <button name="register" class="tns-btn tns-register">Register</button><a href="https://www.newstatesman.com/subscribe12" id="new_sub_button" class="last leaf menu-mlid-12703 subscribe-link">Subscribe</a>            
           </div>
@@ -1147,9 +953,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                       </form>
                   </div>
               </div>
-              <!-- /.block -->
           </div>
-          <!-- /.region -->
       </div>
       <div class="mega-menu-toggle mobile-mega-menu-toggle">Menu</div>
   </nav>
@@ -1159,13 +963,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="region region-content">
   <input type="hidden" name="oldcat" id="oldcat" value=""  />
   <input type="hidden" name="noimage" id="noimage" value=""  />
-  <!--<script type="text/javascript" async="true" src="https://fo-static.omnitagjs.com/otp.js"></script>-->
-  <!-- New Statesman widget sidebar Desktop/Tablet -->
-  <!--<script type="text/javascript" async="true" src="//fo-api.omnitagjs.com/fo-api/ot.js?Placement=c478f81aae3ce0e84511bde9b10e0e2e"></script>-->
-  <!--omn -->
-  <!-- <script src="//get.s-onetag.com/d70a1473-2da8-45dc-93bc-2eec7b92f5cf/tag.min.js" async defer></script> -->
   <script>
-      //HideAds script removing the script tag
         if( EV.util.getEVSession() == null ){ 
           console.log('Hide');
         
@@ -1179,8 +977,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                       }
       jQuery('#oldcat').val('scitech');
       
-      
-      //jQuery(".share-buttons").stick_in_parent({offset_top:110, recalc_every: 1});
       
        
   </script>
@@ -1201,14 +997,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                       <div id="node-325759" class="node node-blogs node-full" about="/science-tech/internet/2020/06/finger-app-dystopian-competition-sums-everything-s-wrong-internet" typeof="sioc:Item foaf:Document">
                           <div class="row">
                               <header class="large-9 columns article-header"  style="background-color:#fff">
-                                  <!--<div class="article-category">  </div>-->
                                   <div class="article-category"><a href="https://www.newstatesman.com/international/internet-social-media">Internet &amp; Social Media</a> </div>
-                                  <!-- .article-category -->
                                   <div class="article-date">
                                       25 June 2020          
                                   </div>
                                   <h1  class="title inf_class" data-analyticsid="/science-tech/internet/2020/06/finger-app-dystopian-competition-sums-everything-s-wrong-internet">
-                                      <!-- @Title --> Finger on the App: the dystopian competition that sums up everything that’s wrong with the internet
+                                      Finger on the App: the dystopian competition that sums up everything that’s wrong with the internet
                                   </h1>
                                   <span property="dc:title" content="Finger on the App: the dystopian competition that sums up everything that’s wrong with the internet" class="rdf-meta element-hidden"></span>
                                   <div class="field field-name-field-subheadline field-type-text-long field-label-hidden">
@@ -1223,7 +1017,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                               </header>
                               <aside class="large-3 columns article-author" style="padding-bottom:0;">
                                   <div class="multiple-author-images">
-                                      <!-- <div class="author-avatar" ><img src="https://www.newstatesman.com/sites/default/files/will_dunn_sketch.jpg"></div> -->
                                       <div class="author-avatar" >
                                           <picture>
                                               <source srcset="./media/will_dunn_sketch.webp" type="image/webp">
@@ -1233,7 +1026,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                       </div>
                                   </div>
                                   <div class="author-byline">
-                                      <!-- @Author -->
                                       By <a href="https://www.newstatesman.com/writers/321549">Will Dunn</a>          
                                   </div>
                                   <div class="author-twitter twitter-button">
@@ -1241,7 +1033,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                                   </div>
                               </aside>
-                              <!-- .article-author -->
                               <div class="featured-image clearfix">
                                   <span>
                                       <div class="field field-name-field-node-image field-type-image field-label-hidden">
@@ -1256,9 +1047,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                   </div>
                               </div>
                           </div>
-                          <!-- .featured-image -->
                       </div>
-                      <!-- .row -->
                       <div class="row">
                           <div class="large-3 columns article-left-column">
                               <div class="full-height-column">
@@ -1294,11 +1083,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                               </div>
                                           </div>
                                       </div>
-                                      <!-- /.block -->
                                   </div>
                               </div>
                           </div>
-                          <!-- .article-header-sharers -->
                           <section class="large-9 columns" style="background-color:#fff">
                               <div class="content node-blogs" style="background-color:#fff">
                                   <!-- @Content -->
@@ -1340,24 +1127,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                       <div class="row">
                                           <div class="large-2 columns author-avatar">
 
-                                              <!-- <img src="./media/will_dunn_sketch.jpg"> -->
                                               <picture>
                                                   <source srcset="./media/will_dunn_sketch.webp" type="image/webp">
                                                   <source srcset="./media/will_dunn_sketch.jpeg" type="image/jpeg">
-                                                  <img    src="./media/will_dunn_sketch.jpeg" >
-                                                  <!-- <img    src="./media/will_dunn_sketch.webp"    src="./media/will_dunn_sketch.jpeg" > -->
+                                                    <img    src="./media/will_dunn_sketch.webp"    src="./media/will_dunn_sketch.jpeg" >
                                               </picture>
 
                                           </div>
                                           <div class="large-10 columns author-details">
-                                              <!-- <h3> </h3>-->
                                               <p>
                                                   Will Dunn is managing editor&nbsp;of the <em>New Statesman</em>.&nbsp;&nbsp;
                                               </p>
                                           </div>
                                       </div>
                                   </div>
-                                  <!-- .article-author -->
                                   <div class="article-footer-promotion">
                                       <div class="row">
                                           <div id="block-views-1c8a95357a7dd8c03bf057a379458a38" class="block block-views contextual-links-region">
@@ -1385,25 +1168,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                   </div>
                                               </div>
                                           </div>
-                                          <!-- /.block -->
-                                          <!--   <div class="large-2 small-2 columns magazine-cover">
-                                              <a href=""><img src="https://www.newstatesman.com/sites/default/files/styles/magazine-cover-thumb/public/magazinecovers/2015_34_corbyn_small.jpg" alt="New Statesman Magazine Cover"></a>
-                                              </div>
-                                              <div class="large-10 small-10 columns promotion-text">
-                                              <h3>Promotional text sentence here</h3>
-                                              <div class="cta subscribe-link"><a href="">Subscribe</a></div>
-                                              </div>-->
+                                   
                                       </div>
                                   </div>
-                                  <!-- .article-footer-promotion -->
-                                  <!-- .first-appeared-in -->
+                                 
                               </div>
                           </section>
                       </div>
-                      <!-- /.row -->
                   </div>
-                  <!-- /.node -->
-                  <!-- Commented to fix gibraltar issue </div>-->
+               
               </article>
               <div class="large-4 columns right-sidebar">
                   <div class="scrolling-content" id="showhidenews_325759">
@@ -1479,13 +1252,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                           </div>
                                                       </div>
                                                   </div>
-                                                  <!-- /.block -->
                                               </div>
                                           </div>
                                       </div>
                                   </div>
                               </div>
-                              <!-- /.block -->
                               <div id="block-views-c1e18aa439ae9743fc67d9b22e746635" class="block block-views contextual-links-region">
                                   <div class="contextual-links-wrapper">
                                       <ul class="contextual-links">
@@ -1524,51 +1295,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                       </div>
                                   </div>
                               </div>
-                              <!-- /.block -->
-                              <!-- Hover popup ---->
-                              <!-- Hover popup ---->
+                           
                           </div>
-                          <!-- <div class="secondary-content-box desktop-banner mpu brexit-tracker">
-                              Smartad # 4222: New Statesman Right Rail
-                              <iframe WIDTH="300" HEIGHT="600" SCROLLING="NO" src="//www.dianomi.com/smartads.epl?id=4222"  style="width: 300px; height: 600px; border: none; overflow: hidden;"></iframe>
-                              </div>--->
-                          <!-- <div class="secondary-content-box">-->
-                          <!--</div>-->
+                        
                       </aside>
-                      <!-- #sidebar-first -->
                   </div>
-                  <!--   <div class="secondary-content-box desktop-banner mpu elevator-banners clearfix">
-                      <div class="double-mpu-placeholder">
-                      
-                      
-                      Newstatesman/Homepage
-                      <div id='div-160-600-sky'>
-                      <script type='text/javascript'>
-                      googletag.display('div-160-600-sky');
-                      </script>
-                      </div>
-                      
-                      </div>
-                      </div>-->
+                
               </div>
               <div class="subscribe-toggle"></div>
               <div class="sidebar-toggle">More</div>
           </div>
           <div class="subscription-promotion"> </div>
-          <!-- .subscription-promotion -->
           <footer class="article-footer">
               <div class="row comments-area">
-                  <!-- <ul class="share-buttons article-footer-sharers">
-                      <li class='facebook-button st_facebook_hcount'><a target="_blank" href= > <span class="stButton"> <span class="stMainServices st-facebook-counter">&nbsp;</span> <span class="stArrow"><span class="stBubble_hcount">
-                                  </span></span></span> </a></li>
-                      <li class='twitter-button st_twitter_hcount'><a target="_blank" href= > <span class="stButton"> <span class="stMainServices st-twitter-counter">&nbsp;</span> <span class="stArrow"><span class="stBubble_hcount">
-                                  </span></span></span></a> </li>
-                      <li class='reddit-button st_reddit_hcount' ><a target="_blank" href= > <span class="stButton"> <span class="reddit-button st_reddit_hcount"> &nbsp;</span> <span class="stArrow"><span class="stBubble_hcount">
-                                  </span></span></span></a> </li>
-                      <li class="email-button st_email_hcount"><a href="mailto:type email address here?subject= &body=&#32;&#32;" title="Email to a friend/colleague"> <span class="stButton"> <span class="stMainServices st-mail-counter">&nbsp;</span> <span class="stArrow"><span class="stBubble_hcount"></span></span></span></a></li>
-                            </ul> -->
+                 
               </div>
-              <!-- .comments-area -->
           </footer>
           <div class='row'>
               <div class='secondary-content-box related-articles'>
@@ -1620,7 +1361,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               </div>
           </div>
           <div class='clear'></div>
-          <!--<div class="secondary-content-box promo-box modal" id="popup" style="display: none;">-->
           <div class="secondary-content-box promo-box modal" id="popup" style="display: none;">
               <div class="row">
                   <div class="large-4 small-4 columns magazine-cover"> <a href="https://subscribe.newstatesman.com/?utm_source=smallpopup&amp;utm_medium=bookimg&amp;utm_campaign=whywesleep&amp;utm_term=subscribe"><img src="https://www.newstatesman.com/sites/default/files/ns_book_offer_feb_18.jpg" alt="New Statesman Magazine" style="max-width:100%"></a> </div>
@@ -1632,7 +1372,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               </div>
               <div class="close-toggle"><b>Close</b> <span>This week&#8217;s magazine</span></div>
           </div>
-          <!--</div>-->
           <div class="contextual-links-wrapper">
               <ul class="contextual-links">
                   <li class="block-configure first last"><a href="https://www.newstatesman.com/admin/structure/block/manage/block/74/configure?destination=node/325759">Configure block</a></li>
@@ -1646,19 +1385,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               if(location.hostname=='critiquetimes.com'){ window.location.href='https://dev-the-monitor.pantheonsite.io/task/critiquetimes.com'; }
               
           </script> 
-          <!--</div>-->
       </div>
-      <!-- /.region -->
   </div>
 </div>
-<!-- .content
-  </div>
-  </div> -->
+
 <section id="nsfooter">
   <div class="row">
       <div class="footerwrapper">
           <div class="large-2 columns footerlogo">
-              <!-- <img src="./media/newstatesman_logo@2x-1.png" alt=""> -->
               <picture>
                   <source srcset="./media/newstatesman_logo@2x-1.webp" type="image/webp">
                   <source srcset="./media/newstatesman_logo@2x-1.png"  type="image/png">
@@ -1691,7 +1425,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                               </ul>
                           </div>
                       </div>
-                      <!-- /.block -->
                       <div id="block-block-51" class="block block-block contextual-links-region">
                           <div class="contextual-links-wrapper">
                               <ul class="contextual-links">
@@ -1777,9 +1510,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 <script type="text/javascript">
-
 </script>
-<!--<script type="text/javascript" id="dianomi_video_script" src="https://www.dianomi.com/js/videofeed.js"></script>--->  
 
 <script type="text/javascript">
 </script>
@@ -1849,19 +1580,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     delta: "51"
   });
 </script>
+
 <script src="https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/js/foundation.min.js"></script>
 
 <script>
-  //$(document).foundation();
 </script>
 <script type="text/javascript" src="https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/js/ux.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/js/slick/slick.min.js"></script>
 <script type="text/javascript" src="https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/js/jquery.sticky.js"></script>
-<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>---->
-<!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="   crossorigin="anonymous"></script>
+
 <script>
   $( function() {
     $( "#accordion" ).accordion({
@@ -1869,437 +1600,382 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     });
   } );
 </script>
-<script type="text/javascript" src="https://www.newstatesman.com/sites/all/modules/paywall/assets/js/ev-custom.min.js?v=1.7.1"></script><script type="text/javascript" src="https://www.newstatesman.com/sites/all/modules/paywall/assets/js/ev-ui.js"></script><script type="text/javascript">
-  // alert("loaded");
-  var params_obj = {"articleId": "325759", "category": "", "tags": "", "authors": "Will Dunn", "section": "sci_tech", "site": "UK", "notifier": "true"};
-  
+
+<script type="text/javascript"
+  src="https://www.newstatesman.com/sites/all/modules/paywall/assets/js/ev-custom.min.js?v=1.7.1"></script>
+<script type="text/javascript" src="https://www.newstatesman.com/sites/all/modules/paywall/assets/js/ev-ui.js"></script>
+<script type="text/javascript">
+  var params_obj = {
+    "articleId": "325759",
+    "category": "",
+    "tags": "",
+    "authors": "Will Dunn",
+    "section": "sci_tech",
+    "site": "UK",
+    "notifier": "true"
+  };
+
   TNS_Data.articleId = 325759;
-  // articleId = 325759;
-  // console.log("req: "+ params);
-  // TNS_Data.auth.ev_emit( params );
-  // console.log(TNS_Data.auth.ev_queue);
-  // console.log(TNS_Data.auth.handleMeteringSuccess); 
-  TNS_Data.auth.init(params_obj);        
+
+  TNS_Data.auth.init(params_obj);
 </script>
-<!--Subs -->
+
 <script type="text/javascript">
   dynamic_button('UK');
   sessionStorage.removeItem("location");
   sessionStorage.setItem("location", 'UK');
 </script>
+
 <script type="text/javascript" src="https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/js/inArticleBanners.js"></script>
-<!-- Infinite Ad Serving -->
+
 <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+
 <script>
-  window.googletag = window.googletag || {cmd: []};
-  googletag.cmd.push(function() {
-    googletag.defineSlot('/5269235/New_Statesman/Unit2', [[300, 600], [320, 50], [320, 100], [300, 250]], 'Unit2').addService(googletag.pubads());
-    googletag.defineSlot('/5269235/New_Statesman/Unit3', [[300, 600], [320, 50], [320, 100], [300, 250]], 'Unit3').addService(googletag.pubads());
-    googletag.defineSlot('/5269235/New_Statesman/Unit4', [[300, 600], [320, 50], [320, 100], [300, 250]], 'Unit4').addService(googletag.pubads());
-   // googletag.defineSlot('/5269235/New_Statesman/Unit5', [[320, 50], [468, 60], [970, 90], [970, 250], [728, 90]], 'Unit5').addService(googletag.pubads());
-    googletag.defineSlot('/5269235/New_Statesman/Unit6', [[300, 250]], 'Unit6').addService(googletag.pubads());
+  window.googletag = window.googletag || {
+    cmd: []
+  };
+  googletag.cmd.push(function () {
+    googletag.defineSlot('/5269235/New_Statesman/Unit2', [
+      [300, 600],
+      [320, 50],
+      [320, 100],
+      [300, 250]
+    ], 'Unit2').addService(googletag.pubads());
+    googletag.defineSlot('/5269235/New_Statesman/Unit3', [
+      [300, 600],
+      [320, 50],
+      [320, 100],
+      [300, 250]
+    ], 'Unit3').addService(googletag.pubads());
+    googletag.defineSlot('/5269235/New_Statesman/Unit4', [
+      [300, 600],
+      [320, 50],
+      [320, 100],
+      [300, 250]
+    ], 'Unit4').addService(googletag.pubads());
+    googletag.defineSlot('/5269235/New_Statesman/Unit6', [
+      [300, 250]
+    ], 'Unit6').addService(googletag.pubads());
     googletag.defineSlot('/5269235/New_Statesman/1x1', [1, 1], '1x1').addService(googletag.pubads());
     googletag.defineSlot('/5269235/New_Statesman/1x2', [1, 2], '1x2').addService(googletag.pubads());
     googletag.defineSlot('/5269235/New_Statesman/1x3', [1, 3], '1x3').addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
     googletag.pubads().collapseEmptyDivs();
     googletag.enableServices();
-  }); 
-</script>
-<script type='text/javascript'>
-  jQuery(document).ready(function() {
-  
-  var first1=0;
-  var first2=0;
-  var first3=0;
-  var first4=0;
-  var first5=0;
-  var first6=0;
-  
-  var article_type=0
-  
-  //alert(article_type);
-  
-      //Load the second article onlym when you get to the bottom of the first.
-      jQuery(window).bind('scroll', function() {
-  
-  
-  
-  
-  function detectmob() { 
-   if( navigator.userAgent.match(/Android/i)
-   || navigator.userAgent.match(/webOS/i)
-   || navigator.userAgent.match(/iPhone/i)
-   || navigator.userAgent.match(/iPad/i)
-   || navigator.userAgent.match(/iPod/i)
-   || navigator.userAgent.match(/BlackBerry/i)
-   || navigator.userAgent.match(/Windows Phone/i)
-   ){
-      return true;
-    }
-   else {
-      return false;
-    }
-  }
-  
-  
-  
-  detectmobvalue=detectmob();     
-  
-  
-       
-  
-   
-  
-  
-      });
   });
-  
-  
-  
-</script><script type="text/javascript">
+</script>
+
+<script type='text/javascript'>
+  jQuery(document).ready(function () {
+
+    var first1 = 0;
+    var first2 = 0;
+    var first3 = 0;
+    var first4 = 0;
+    var first5 = 0;
+    var first6 = 0;
+
+    var article_type = 0
+
+
+    jQuery(window).bind('scroll', function () {
+
+      function detectmob() {
+        if (navigator.userAgent.match(/Android/i) ||
+          navigator.userAgent.match(/webOS/i) ||
+          navigator.userAgent.match(/iPhone/i) ||
+          navigator.userAgent.match(/iPad/i) ||
+          navigator.userAgent.match(/iPod/i) ||
+          navigator.userAgent.match(/BlackBerry/i) ||
+          navigator.userAgent.match(/Windows Phone/i)
+        ) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      detectmobvalue = detectmob();
+
+    });
+  });
+</script>
+
+<script type="text/javascript">
   $(".homepage_sticky").sticky({ topSpacing: 100 });
 </script>
+
 <script type="text/javascript">
   $('.header-promotion').slick({
-      autoplay: true,
-      autoplaySpeed: 3000,
-    });
-  
-  jQuery(document).ready(function(){
-  //setTimeout( function(){ 
-  
-    var current_height = $('.view-display-id-homepagesponsored').position();
-    if(current_height!=undefined){
-    //$('.sponsored-hover-2017').show();
-    $('.sponsored-hover-2017').css("top",current_height.top);
-    $('.joyride').css("top",current_height.top);
-    $('.joyride').css("bottom","auto");
-    }
-  /* Code for sending Sponsered article to GA on hover -- NNAS-2 */
-          
-    //jQuery(".sidebar-sponsored-article").hover(function(){
-    jQuery(".sidebar-sponsored-article-2017").hover(function(){
-    
-    
-    
-    // jQuery(".page-node .view-display-id-homepagesponsored:hover .sponsored-hover-2017").toggle();
-    // ga('send', 'pageview', match);
-    });
-      // var pageURL = $(location).attr("href");
-            // alert(pageURL);
-      if(window.location.href.indexOf("https://dev-the-monitor.pantheonsite.io/2017/") > -1) {
-  //if(window.location.href=="https://www.newstatesman.com/politics/brexit/2017/11/leader-brexit-betrayal"){
-  // if(window.location.href == "https://np-ind-new-statesman.pantheonsite.io/politics/brexit/2017/11/leader-brexit-betrayal") {
-        $(".view-display-id-homepagesponsored").on("mouseover",function(){
-  var current_height = $(this).position();
-          $('.sponsored-hover-2017').show();
-    $('.sponsored-hover-2017').css("top",current_height.top);
-    $('.joyride').css("top",current_height.top);
-    $('.joyride').css("bottom","auto");
-    var match = $(this).find('div:first a').attr('href');
-    console.log(match);
-    // ga('send', 'pageview', match);
-    ga('send', 'pageview', "https://www.newstatesman.com"+match);
-        });
-   $(".view-display-id-homepagesponsored").on("mouseleave",function(){
-  var current_height = $(this).position();
-  
-            //$('.sponsored-hover-2017').delay(100000).hide();
-            $('.sponsored-hover-2017').delay(4000).fadeOut();
-    // $('.sponsored-hover-2017').css("top",current_height.top);
-    // $('.joyride').css("top",current_height.top);
-        });
-  
-      }
-    
-  /* Code end for sending Sponsered article to GA on hover -- NNAS-2 */
-  jQuery('.supplements-thumb p img').removeAttr('style');   
-   jQuery('.supplements-thumb p img').each(function(){
-      jQuery(this).removeAttr('width');
-      jQuery(this).removeAttr('height');      
-   });   
+    autoplay: true,
+    autoplaySpeed: 3000,
   });
-  
-</script>
-<!-- Google Code for Remarketing Tag -->
-<!-- <script type="text/javascript">
-  var google_conversion_id = 975790991;
-  var google_custom_params = window.google_tag_params;
-  var google_remarketing_only = true;
-  
-  </script>
-  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-  </script>
-  <noscript>
-  <div style="display:inline;">
-  <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/975790991/?value=0&guid=ON&script=0"/>
-  </div>
-  
-  </noscript> -->
-<!-- Google Code for Remarketing Tag end -->
-<!-- Ad-blocker -->
-<script src="https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/js/blockadblock.js"></script>
-<!-- Ad blocker content -->
-<!--<div class="donate" id="donate">
-  <div id="donate-close" class="donate-close"> X </div>
-   
-                      <br>
-   
-    <div class="cta-link donate-link">
-      <a id="nothanks-link" href="#" style="text-decoration: none; padding: 10px; background:black;">No Thanks</a>&nbsp; &nbsp;&nbsp;&nbsp;
-      <a href="" style="text-decoration: none; padding: 10px;" target="_blank" id="gotofeedback"></a>
-    </div>
-    <br/><br/>
-          </div>-->
 
-<!-- Ad blocker content end-->
+  jQuery(document).ready(function () {
+
+    var current_height = $('.view-display-id-homepagesponsored').position();
+    if (current_height != undefined) {
+      $('.sponsored-hover-2017').css("top", current_height.top);
+      $('.joyride').css("top", current_height.top);
+      $('.joyride').css("bottom", "auto");
+    }
+
+    jQuery(".sidebar-sponsored-article-2017").hover(function () {
+
+    });
+   
+    if (window.location.href.indexOf("https://dev-the-monitor.pantheonsite.io/2017/") > -1) {
+
+      $(".view-display-id-homepagesponsored").on("mouseover", function () {
+        var current_height = $(this).position();
+        $('.sponsored-hover-2017').show();
+        $('.sponsored-hover-2017').css("top", current_height.top);
+        $('.joyride').css("top", current_height.top);
+        $('.joyride').css("bottom", "auto");
+        var match = $(this).find('div:first a').attr('href');
+        console.log(match);
+        ga('send', 'pageview', "https://www.newstatesman.com" + match);
+      });
+      $(".view-display-id-homepagesponsored").on("mouseleave", function () {
+        var current_height = $(this).position();
+
+        $('.sponsored-hover-2017').delay(4000).fadeOut();
+      });
+
+    }
+
+    jQuery('.supplements-thumb p img').removeAttr('style');
+    jQuery('.supplements-thumb p img').each(function () {
+      jQuery(this).removeAttr('width');
+      jQuery(this).removeAttr('height');
+    });
+  });
+</script>
+
+<script src="https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/js/blockadblock.js"></script>
 
 
 <script>
-  // $(function() {
-    if (!getCookie('donation')) {
-          $("#donate").show();
-          
-      }else{
-          $("#donate").hide();      
-          
-      }
-    
-  $("#donate-close").click(function(){
-     // checkCookie();
-        //if(chek === true){
-          $("#donate").hide();
-        //}        
-          
-      });
-    
-  $("#nothanks-link, #gotofeedback").click(function(){
-          checkCookie();
-          $("#donate").hide();
-  
-      });
-  
-  //intiate the donation cookie
-  function setCookie() {
-      var expdate = new Date ();
-        expdate.setTime (expdate.getTime() + (1 * 24 * 60 * 60 * 1000));
-        var expires = "expires="+expdate.toUTCString();
-        document.cookie="donation=Initiated ;"+expires+";path=/";
-        //window.location.href="https://subscribe.newstatesman.com/";
+  if (!getCookie('donation')) {
+    $("#donate").show();
+
+  } else {
+    $("#donate").hide();
+
   }
-  
-  function getCookie(cname) {
-      var name = cname + "=";
-      var ca = document.cookie.split(';');
-      for(var i=0; i<ca.length; i++) {
-          var c = ca[i];
-          while (c.charAt(0)==' ') c = c.substring(1);
-          if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
-      }
-      return "";
-  }
-  
-  //check if the user has payed and dontion cookie is set to payed
-  function checkCookie() {
-    var expdate = new Date ();
-        expdate.setTime (expdate.getTime() + (1 * 24 * 60 * 60 * 1000));
-        var expires = "expires="+expdate.toUTCString();
-      var donate123 = getCookie("donation");
-      if (donate123 == "Initiated") {      
-          document.getElementById("donate").style.display="none";
-          document.getElementById("donate").style.display="none";
-          document.body.style.overflow = "visible";
-          document.cookie="donation=Payed ; path=/ ; expires = " + expires ;       
-      } else {
-            setCookie();
-          }    
-      }
-  
-</script>
-<!--<script src="http://imakewebthings.github.com/jquery-waypoints/waypoints.min.js" type="text/javascript"></script>--->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
-<script type="text/javascript">
-  $(function() {   
-      $('#leaderslot2').waypoint(function() {
-        var PathName  = window.location.pathname;
-  
-        alert(PathName);
-        ga('send', 'event', 'AdCount', PathName+' leaderslot2 view count', { "nonInteraction": 1 });
-          
-       }, {
-         offset: '100%'
-       });
-  
-     $('.secondary-content-box.mpu.article-mpu-1').waypoint(function() {
-        var PathName  = window.location.pathname;
-        ga('send', 'event', 'AdCount', PathName+' article-mpu-1 view count', { "nonInteraction": 1 });
-       }, {
-         offset: '100%'
-       });
-  
-     $('.secondary-content-box.mpu.article-mpu-2').waypoint(function() {
-        var PathName  = window.location.pathname;
-        ga('send', 'event', 'AdCount', PathName+' article-mpu-2 view count', { "nonInteraction": 1 });
-       }, {
-         offset: '100%'
-       });
-  
-  
-     $('.secondary-content-box.mpu.article-mpu-3').waypoint(function() {
-       var PathName  = window.location.pathname;
-       ga('send', 'event', 'AdCount', PathName+' article-mpu-3 view count', { "nonInteraction": 1 });
-  
-       }, {
-         offset: '100%'
-       });
-  
-  
+
+  $("#donate-close").click(function () {
+
+    $("#donate").hide();
+
   });
-  
+
+  $("#nothanks-link, #gotofeedback").click(function () {
+    checkCookie();
+    $("#donate").hide();
+
+  });
+
+  function setCookie() {
+    var expdate = new Date();
+    expdate.setTime(expdate.getTime() + (1 * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + expdate.toUTCString();
+    document.cookie = "donation=Initiated ;" + expires + ";path=/";
+  }
+
+  function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') c = c.substring(1);
+      if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+    }
+    return "";
+  }
+
+  function checkCookie() {
+    var expdate = new Date();
+    expdate.setTime(expdate.getTime() + (1 * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + expdate.toUTCString();
+    var donate123 = getCookie("donation");
+    if (donate123 == "Initiated") {
+      document.getElementById("donate").style.display = "none";
+      document.getElementById("donate").style.display = "none";
+      document.body.style.overflow = "visible";
+      document.cookie = "donation=Payed ; path=/ ; expires = " + expires;
+    } else {
+      setCookie();
+    }
+  }
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+
+<script type="text/javascript">
+  $(function () {
+    $('#leaderslot2').waypoint(function () {
+      var PathName = window.location.pathname;
+
+      alert(PathName);
+      ga('send', 'event', 'AdCount', PathName + ' leaderslot2 view count', {
+        "nonInteraction": 1
+      });
+
+    }, {
+      offset: '100%'
+    });
+
+    $('.secondary-content-box.mpu.article-mpu-1').waypoint(function () {
+      var PathName = window.location.pathname;
+      ga('send', 'event', 'AdCount', PathName + ' article-mpu-1 view count', {
+        "nonInteraction": 1
+      });
+    }, {
+      offset: '100%'
+    });
+
+    $('.secondary-content-box.mpu.article-mpu-2').waypoint(function () {
+      var PathName = window.location.pathname;
+      ga('send', 'event', 'AdCount', PathName + ' article-mpu-2 view count', {
+        "nonInteraction": 1
+      });
+    }, {
+      offset: '100%'
+    });
+
+
+    $('.secondary-content-box.mpu.article-mpu-3').waypoint(function () {
+      var PathName = window.location.pathname;
+      ga('send', 'event', 'AdCount', PathName + ' article-mpu-3 view count', {
+        "nonInteraction": 1
+      });
+
+    }, {
+      offset: '100%'
+    });
+  });
+</script>
+
 <script>
   var donate = getCookie("donation");
   var donationPopup = getCookie("donationPopup");
 
   var ip = "10.223.192.155";
   var ip_new = "91.200.82.73";
-  //alert(ip_new)
   var temp_disable = true;
-  
 
-   if(ip == "86.178.61.94" || ip_new == "86.178.61.94"){
-    //alert("In Array");
-    $( "#donate" ).css( "display","none" );
-    $( "#donate-toggle" ).css( "display","none" );
-    $( "body" ).css( "overflow","visible" );
+
+  if (ip == "86.178.61.94" || ip_new == "86.178.61.94") {
+    $("#donate").css("display", "none");
+    $("#donate-toggle").css("display", "none");
+    $("body").css("overflow", "visible");
   }
-     
-  
+
   jQuery(".ad-blocker-wraper").css("ad-blocker-detected");
-  
-  function adBlockDetected() {
-    /* Event fired if adBlock is Detected */    
-  }
-  function adBlockNotDetected() {
-      //alert('No Adblocker found');
-  }
-  
+
+  function adBlockDetected() {}
+
+  function adBlockNotDetected() {}
+
   if (typeof blockAdBlock === 'undefined') {
-      adBlockDetected();
+    adBlockDetected();
   } else {
-      blockAdBlock.setOption({debug: true});
-      blockAdBlock.onDetected(adBlockDetected).onNotDetected(adBlockNotDetected);
+    blockAdBlock.setOption({
+      debug: true
+    });
+    blockAdBlock.onDetected(adBlockDetected).onNotDetected(adBlockNotDetected);
   }
-  
+
   function checkAgain() {
-  
-      // setTimeout 300ms for the recheck is visible when you click on the button
-      setTimeout(function () {
-          if (typeof blockAdBlock === 'undefined') {
-              adBlockDetected();
-          } else {
-              blockAdBlock.onDetected(adBlockDetected).onNotDetected(adBlockNotDetected);
-              blockAdBlock.check();
-          }
-      }, 300);
+
+    setTimeout(function () {
+      if (typeof blockAdBlock === 'undefined') {
+        adBlockDetected();
+      } else {
+        blockAdBlock.onDetected(adBlockDetected).onNotDetected(adBlockNotDetected);
+        blockAdBlock.check();
+      }
+    }, 300);
   }
 </script>
-<!-- Ad-blocker end -->
-<!-- <script>
-  (function(){
-    
-    var test = document.createElement('div'); 
-    test.innerHTML = '&nbsp;';
-    test.className = 'adsbox';
-    document.body.appendChild(test);
-    window.setTimeout(function() {
-      if (test.offsetHeight === 0) {
-        ga('set', 'dimension1', 'Ads Blocked');
-        ga('send', 'event', 'AdSense', 'Ads blocked', { "nonInteraction": 1 });
-      }else{
-        ga('set', 'dimension1', 'Ads Displaying');
-        ga('send', 'event', 'AdSense', 'Ads not blocked', { "nonInteraction": 1 });
-      }
-      test.remove();
-    }, 100);
-  })();
-  </script> -->
+
 <script type="text/javascript">
-  jQuery(document).ready(function() {
-   
-      
-  jQuery("ul.event-months li").hover(
-   
-  function() {
-     jQuery(this).addClass("showevents");
-   
-   }, function() {
-     jQuery(this).removeClass("showevents");
-   }
-   
-  );
-  
-  // jQuery(".sidebar-sponsored-article").hover(function(){
-  // console.log("you made onover");
-  // jQuery(".sponsored-hover").toggle();
-  // });
-  
-  
-  
-  
-      
-  });			
-  
-  
-  jQuery(".close-toggle").click(function(){ 
-  console.log("you made click");
-  jQuery(".joyride").toggle();
-  //jQuery(".joyride").hide();
+  jQuery(document).ready(function () {
+
+
+    jQuery("ul.event-months li").hover(
+
+      function () {
+        jQuery(this).addClass("showevents");
+
+      },
+      function () {
+        jQuery(this).removeClass("showevents");
+      }
+
+    );
+
+
+  });
+
+
+  jQuery(".close-toggle").click(function () {
+    console.log("you made click");
+    jQuery(".joyride").toggle();
   });
 </script>
-<!--Pardot Onboarding Tracking code-->
+
 <script type="text/javascript">
   piAId = '510131';
   piCId = '6800';
   piHostname = 'pi.pardot.com';
-  
-  (function() {
-    function async_load(){
-      var s = document.createElement('script'); s.type = 'text/javascript';
+
+  (function () {
+    function async_load() {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
       s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
-      var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+      var c = document.getElementsByTagName('script')[0];
+      c.parentNode.insertBefore(s, c);
     }
-    if(window.attachEvent) { window.attachEvent('onload', async_load); }
-    else { window.addEventListener('load', async_load, false); }
+    if (window.attachEvent) {
+      window.attachEvent('onload', async_load);
+    } else {
+      window.addEventListener('load', async_load, false);
+    }
   })();
 </script>
 
 
 <script src="https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/js/jquery.curlies.js"></script>
+
 <script>
+
   $(document).ready(function () {
      
       $('.home-section-1,.home-section-2,.home-section-3,.home-section-4,.home-section-5,.home-section-6,.make_equal,.main-content, .content, .conferences-theme ,.mag-title,.issue-contents,#post-content').curlies();
   });
 </script>
-<!-- Hiding ads script -->
+
 <script src="https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/js/hideads.js"></script>
-<!-- Twitter universal website tag code -->
+
 <script>
-  !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
-  },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='http://static.ads-twitter.com/uwt.js',
-  a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
-  // Insert Twitter Pixel ID and Standard Event data below
-  twq('init','o3aan');
-  twq('track','PageView');
+  ! function (e, t, n, s, u, a) {
+    e.twq || (s = e.twq = function () {
+        s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+      }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src =
+      'http://static.ads-twitter.com/uwt.js',
+      a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
+  }(window, document, 'script');
+  twq('init', 'o3aan');
+  twq('track', 'PageView');
 </script>
-<!-- End Twitter universal website tag code -->
+
 <script>
   jQuery( ".node-blogs a" ).attr('target', '_blank');
   jQuery( ".node-longread a" ).attr('target', '_blank');
-  
 </script>
+
 <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"d4f02fb7e7","applicationID":"14767184","transactionName":"ZwEDZxBQXkZTAUJfVl5LIFAWWF9bHQxZUlxvFABUB25GXFcV","queueTime":0,"applicationTime":758,"atts":"S0YAEVhKTUg=","errorBeacon":"bam.nr-data.net","agent":""}</script>
 
 
