@@ -51,7 +51,10 @@
                         "mainEntityOfPage": "https://www.newstatesman.com/science-tech/internet/2020/06/finger-app-dystopian-competition-sums-everything-s-wrong-internet"
                     }
                 ]
-            }</script>
+            }
+          
+          </script>
+
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="amphtml" href="https://www.newstatesman.com/science-tech/internet/2020/06/finger-app-dystopian-competition-sums-everything-s-wrong-internet?amp" />
             <meta name="description" content="It&#039;s a gruelling and almost certainly futile contest to see who can pay the most attention to their screen. Why does that sound familiar?" />
@@ -76,9 +79,6 @@
             <meta name="twitter:description" content="It&#039;s a gruelling and almost certainly futile contest to see who can pay the most attention to their screen. Why does that sound familiar?" />
             <title>Finger on the App: the dystopian competition that sums up everything that’s wrong with the internet</title>
 
-            <!-- <link href=.CSSs/font-awesome.css" rel="stylesheet"> -->
-
-
             <script src="https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/js/vendor/modernizr.js"></script>
 
             <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -97,6 +97,7 @@
             <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
             <link rel="manifest" href="/manifest.json">
             <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
             <meta name="msapplication-TileColor" content="#da532c">
             <meta name="msapplication-TileImage" content="/mstile-144x144.png">
             <meta name="theme-color" content="#ffffff">
@@ -334,7 +335,6 @@
                       skipSessionCreation: false,
                       skipLogin: false
                   });
-
 
                   var TNS_Data = {};
 
@@ -1296,12 +1296,15 @@
                                                                             alt="" /></div>
                                                                         <div class="large-10 small-10 columns promotion-text-remove">
                                                                             <h3></h3>
-                                                                            <div class="cta subscribe-link"><a
-                                                                                href="https://www.newstatesman.com/weboffer">Subscribe</a>
-                                                                                <br />
-                                                                                For more great writing from our award-winning journalists subscribe <strong>
-                                                                                for just £1
-                                                                                per month!</strong>
+                                                                            <div class="cta subscribe-link">
+                                                                              
+                                                                              <a href="https://www.newstatesman.com/weboffer">
+                                                                                Subscribe
+                                                                              </a>
+                                                                              <br />
+                                                                                For more great writing from our award-winning journalists subscribe 
+
+                                                                                <strong>for just £1 per month!</strong>
                                                                             </div>
                                                                             <span></span>
                                                                         </div>
@@ -1640,7 +1643,6 @@
                         </div>
                         <div class="close-toggle"><b>Close</b> <span>This week&#8217;s magazine</span></div>
                     </div>
-                    <!--</div>-->
                     <div class="contextual-links-wrapper">
                         <ul class="contextual-links">
                             <li class="block-configure first last"><a
@@ -1892,7 +1894,6 @@
                 [320, 100],
                 [300, 250]
               ], 'Unit4').addService(googletag.pubads());
-              // googletag.defineSlot('/5269235/New_Statesman/Unit5', [[320, 50], [468, 60], [970, 90], [970, 250], [728, 90]],
               'Unit5').addService(googletag.pubads()); googletag.defineSlot('/5269235/New_Statesman/Unit6', [
               [300, 250]
             ], 'Unit6').addService(googletag.pubads()); googletag.defineSlot('/5269235/New_Statesman/1x1', [1, 1], '1x1')
@@ -1992,7 +1993,6 @@
           </div>
 
           <script>
-            // $(function() {
             if (!getCookie('donation')) {
               $("#donate").show();
 
@@ -2002,26 +2002,19 @@
             }
 
             $("#donate-close").click(function () {
-              // checkCookie();
-              //if(chek === true){
               $("#donate").hide();
-              //}        
-
             });
 
             $("#nothanks-link, #gotofeedback").click(function () {
               checkCookie();
               $("#donate").hide();
-
             });
 
-            //intiate the donation cookie
             function setCookie() {
               var expdate = new Date();
               expdate.setTime(expdate.getTime() + (1 * 24 * 60 * 60 * 1000));
               var expires = "expires=" + expdate.toUTCString();
               document.cookie = "donation=Initiated ;" + expires + ";path=/";
-              //window.location.href="https://subscribe.newstatesman.com/";
             }
 
             function getCookie(cname) {
@@ -2035,7 +2028,6 @@
               return "";
             }
 
-            //check if the user has payed and dontion cookie is set to payed
             function checkCookie() {
               var expdate = new Date();
               expdate.setTime(expdate.getTime() + (1 * 24 * 60 * 60 * 1000));
