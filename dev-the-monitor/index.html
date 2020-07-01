@@ -1,516 +1,427 @@
 
 <!DOCTYPE html>
 
-  <html lang="en">
+<html lang="en">
     
 <head>
-<meta charset="utf-8" />
-<!-- <script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"d4f02fb7e7",applicationID:"14767184"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1169.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script> -->
-<meta property="og:image" content="https://www.newstatesman.com/sites/default/files/styles/homesection_image/public/blogs_2020/06/fota.png?itok=JpZCWuKM" />
-<link rel="apple-touch-icon" href="https://www.newstatesman.com/sites/all/modules/touch_icons/apple-touch-icon.png" type="image/png" />
-<link rel="shortcut icon" href="https://www.newstatesman.com/sites/default/files/favicon_0.jpg" type="image/jpeg" />
-<script type="application/ld+json">{
-    "@context": "http://schema.org",
-    "@graph": [
-        {
-            "@type": "NewsArticle",
-            "headline": "Finger on the App: the dystopian competition that sums up everything that’s wrong with the internet",
-            "name": "Finger on the App: the dystopian competition that sums up everything that’s wrong with the internet",
-            "description": "On Tuesday 30 June, thousands of people will open an app called Finger on the App, press their fingers to the screen and wait. Many will give up after a few minutes. Others may wait for hours or even days, unable to do much but wait and pay attention. One of them will win some money, although they won’t know how much – this will be for their fellow players to decide.  Almost 20 years ago, a similar idea was played out live on British TV. One Sunday evening in March 2001, a million people sat down across the UK to watch Dale Winton explain the format for his new game show, Touch the Truck. In a shopping centre next to the M25, contestants gathered around a new Toyota SUV to see who could keep their hands on the vehicle the longest. For 81 hours and 43 minutes, the contestants stood, bored out of their minds, until they were picked off by sleep deprivation, hallucinations, and despair. Most viewers switched off without bothering to find out how it ended and the winner, if you could call him that, immediately put his new car up for sale (he used some of the proceeds to stand against Ed Davey in Kingston and Surbiton in that year’s general election, and won just 54 votes). Many at the time saw Touch the Truck as reality TV’s lowest point. The writer and Black Mirror creator, Charlie Brooker, has said that it made him stop satirising TV, because there was no point in parody when the real thing was so ridiculous. Cheap, cruel, abject in its consumerism and mind-numbingly dull, it was reality TV reduced to its most basic components.  The same could be said of Finger on the App, which takes the endless, pointless contest for eyeballs that dominates the internet today and boils it down to its simplest mechanics, trading the uncertain promise of money for the thoughtless attention of the moving finger. In doing so it holds up a mirror to an internet on which attention – in the form of bulk traffic, shares and likes – is the main currency. It asks how much of human communication has become, like Finger on the App, a demanding and repetitive game.  It is made by a US company called MSCHF, which turns viral ideas – a dog collar that “translates” barks into swearwords, trainers made with holy water, an AI that texts people pictures of feet – into absurdist art-products. “When you get down to it,” the developers write in the game’s manifesto, “every iPhone game says only: move your finger like this.” The game “boils down phone use to its minimalist core”, demanding “utmost devotion” to the screen. It asks players to consider whether the hours they spend on their phones – 48 per cent of young Americans say they are online \u0022almost constantly\u0022 – are a game, or a system that compels them to press the screen long after they have stopped enjoying the experience. Though only available in the US, Finger on the App is already the country’s most popular free app. It has been reviewed thousands of times, despite the fact the game itself does not start for another five days. The reviews suggest that most users do not see the game as a joke at their expense. The same could be said for much of the internet. It is a game with one winner and thousands of losers, and each time someone “loses” – by taking their finger off their screen – they get to vote on how much money, up to $25,000, the winner should get.  This mirrors the attention markets of social media, in which a small number of people are able to cash in on a game that almost everyone else pays, with their time, attention and money, to play. And these winners can themselves be brought down by a sufficient quantity of meanness on the part of everyone else.  If the winner of Finger on the App finds they have been left penniless by the crowd, they will be little different from the companies which spend billions advertising to people who don’t exist and the real people who pretend they’re being paid to advertise products. These are the ultimate customers of the attention economy, the people who forfeit their time and money for the ultimate digital product: zero.",
-            "author": {
-                "@type": "Organization",
-                "@id": "https://www.newstatesman.com",
-                "name": "Will Dunn",
-                "url": "https://www.newstatesman.com/science-tech/internet/2020/06/finger-app-dystopian-competition-sums-everything-s-wrong-internet",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/images/newstatesman_logo@2x.png",
-                    "width": "50",
-                    "height": "50"
-                }
-            },
-            "publisher": {
-                "@type": "Organization",
-                "@id": "https://www.newstatesman.com",
-                "name": "Newstatesman",
-                "url": "https://www.newstatesman.com/science-tech/internet/2020/06/finger-app-dystopian-competition-sums-everything-s-wrong-internet",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/images/newstatesman_logo@2x.png",
-                    "width": "50",
-                    "height": "50"
-                }
-            },
-            "datePublished": "25 June, 2020 - 12:01",
-            "dateModified": "25 June, 2020 - 12:02",
-            "image": {
-                "@type": "ImageObject",
-                "url": "https://www.newstatesman.com/sites/default/files/blogs_2020/06/fota.png",
-                "width": "500",
-                "height": "200"
-            },
-            "mainEntityOfPage": "https://www.newstatesman.com/science-tech/internet/2020/06/finger-app-dystopian-competition-sums-everything-s-wrong-internet"
-        }
-    ]
-}</script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="amphtml" href="https://www.newstatesman.com/science-tech/internet/2020/06/finger-app-dystopian-competition-sums-everything-s-wrong-internet?amp" />
-<meta name="description" content="It&#039;s a gruelling and almost certainly futile contest to see who can pay the most attention to their screen. Why does that sound familiar?" />
-<meta name="abstract" content="It&#039;s a gruelling and almost certainly futile contest to see who can pay the most attention to their screen. Why does that sound familiar?" />
-<meta name="keywords" content="New Statesman magazine, International Politics, British Politics, Britain, UK, Tony Blair, Gordon Brown, Geoffrey Robinson, David Cameron, Sir Menzies Campbell, Labour, Conservative, Liberal Democrat, UK Politics, House of Commons, House of Lords, Legislation, politics magazine" />
-<meta name="robots" content="follow, index" />
-<meta name="news_keywords" content="New Statesman magazine, International Politics, British Politics, Britain, UK, Tony Blair, Gordon Brown, Geoffrey Robinson, David Cameron, Sir Menzies Campbell, Labour, Conservative, Liberal Democrat, UK Politics, House of Commons, House of Lords, Legislation, politics magazin" />
-<meta name="generator" content="Drupal 7 (http://drupal.org)" />
-<meta name="rights" content="New Statesman Ltd" />
-<link rel="canonical" href="https://www.newstatesman.com/science-tech/internet/2020/06/finger-app-dystopian-competition-sums-everything-s-wrong-internet" />
-<link rel="shortlink" href="https://www.newstatesman.com/node/325759" />
-<meta property="fb:pages" content="100959719644" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.newstatesman.com/science-tech/internet/2020/06/finger-app-dystopian-competition-sums-everything-s-wrong-internet" />
-<meta property="og:title" content="Finger on the App: the dystopian competition that sums up everything that’s wrong with the internet" />
-<meta property="og:description" content="On Tuesday 30 June, thousands of people will open an app called Finger on the App, press their fingers to the screen and wait. Many will give up after a few minutes. Others may wait for hours or even days, unable to do much but wait and pay attention. One of them will win some money, although they won’t know how much – this will be for their fellow players to decide.  Almost 20 years ago, a similar idea was played out live on British TV. One Sunday evening in March 2001, a million people sat down across the UK to watch Dale Winton explain the format for his new game show, Touch the Truck. In a shopping centre next to the M25, contestants gathered around a new Toyota SUV to see who could keep their hands on the vehicle the longest. For 81 hours and 43 minutes, the contestants stood, bored out of their minds, until they were picked off by sleep deprivation, hallucinations, and despair. Most viewers switched off without bothering to find out how it ended and the winner, if you could call him that, immediately put his new car up for sale (he used some of the proceeds to stand against Ed Davey in Kingston and Surbiton in that year’s general election, and won just 54 votes). Many at the time saw Touch the Truck as reality TV’s lowest point. The writer and Black Mirror creator, Charlie Brooker, has said that it made him stop satirising TV, because there was no point in parody when the real thing was so ridiculous. Cheap, cruel, abject in its consumerism and mind-numbingly dull, it was reality TV reduced to its most basic components.  The same could be said of Finger on the App, which takes the endless, pointless contest for eyeballs that dominates the internet today and boils it down to its simplest mechanics, trading the uncertain promise of money for the thoughtless attention of the moving finger. In doing so it holds up a mirror to an internet on which attention – in the form of bulk traffic, shares and likes – is the main currency. It asks how much of human communication has become, like Finger on the App, a demanding and repetitive game.  It is made by a US company called MSCHF, which turns viral ideas – a dog collar that “translates” barks into swearwords, trainers made with holy water, an AI that texts people pictures of feet – into absurdist art-products. “When you get down to it,” the developers write in the game’s manifesto, “every iPhone game says only: move your finger like this.” The game “boils down phone use to its minimalist core”, demanding “utmost devotion” to the screen. It asks players to consider whether the hours they spend on their phones – 48 per cent of young Americans say they are online &quot;almost constantly&quot; – are a game, or a system that compels them to press the screen long after they have stopped enjoying the experience. Though only available in the US, Finger on the App is already the country’s most popular free app. It has been reviewed thousands of times, despite the fact the game itself does not start for another five days. The reviews suggest that most users do not see the game as a joke at their expense. The same could be said for much of the internet. It is a game with one winner and thousands of losers, and each time someone “loses” – by taking their finger off their screen – they get to vote on how much money, up to $25,000, the winner should get.  This mirrors the attention markets of social media, in which a small number of people are able to cash in on a game that almost everyone else pays, with their time, attention and money, to play. And these winners can themselves be brought down by a sufficient quantity of meanness on the part of everyone else.  If the winner of Finger on the App finds they have been left penniless by the crowd, they will be little different from the companies which spend billions advertising to people who don’t exist and the real people who pretend they’re being paid to advertise products. These are the ultimate customers of the attention economy, the people who forfeit their time and money for the ultimate digital product: zero." />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@NewStatesman" />
-<meta name="twitter:creator" content="@NewStatesman" />
-<meta name="twitter:creator:id" content="19906615" />
-<meta name="twitter:url" content="https://www.newstatesman.com/science-tech/internet/2020/06/finger-app-dystopian-competition-sums-everything-s-wrong-internet" />
-<meta name="twitter:description" content="It&#039;s a gruelling and almost certainly futile contest to see who can pay the most attention to their screen. Why does that sound familiar?" />
-<title>Finger on the App: the dystopian competition that sums up everything that’s wrong with the internet</title>
+      <meta charset="utf-8" />
+      <!-- <script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"d4f02fb7e7",applicationID:"14767184"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1169.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script> -->
+      <meta property="og:image" content="https://www.newstatesman.com/sites/default/files/styles/homesection_image/public/blogs_2020/06/fota.png?itok=JpZCWuKM" />
+      <link rel="apple-touch-icon" href="https://www.newstatesman.com/sites/all/modules/touch_icons/apple-touch-icon.png" type="image/png" />
+      <link rel="shortcut icon" href="https://www.newstatesman.com/sites/default/files/favicon_0.jpg" type="image/jpeg" />
+      <script type="application/ld+json">{
+          "@context": "http://schema.org",
+          "@graph": [
+              {
+                  "@type": "NewsArticle",
+                  "headline": "Finger on the App: the dystopian competition that sums up everything that’s wrong with the internet",
+                  "name": "Finger on the App: the dystopian competition that sums up everything that’s wrong with the internet",
+                  "description": "On Tuesday 30 June, thousands of people will open an app called Finger on the App, press their fingers to the screen and wait. Many will give up after a few minutes. Others may wait for hours or even days, unable to do much but wait and pay attention. One of them will win some money, although they won’t know how much – this will be for their fellow players to decide.  Almost 20 years ago, a similar idea was played out live on British TV. One Sunday evening in March 2001, a million people sat down across the UK to watch Dale Winton explain the format for his new game show, Touch the Truck. In a shopping centre next to the M25, contestants gathered around a new Toyota SUV to see who could keep their hands on the vehicle the longest. For 81 hours and 43 minutes, the contestants stood, bored out of their minds, until they were picked off by sleep deprivation, hallucinations, and despair. Most viewers switched off without bothering to find out how it ended and the winner, if you could call him that, immediately put his new car up for sale (he used some of the proceeds to stand against Ed Davey in Kingston and Surbiton in that year’s general election, and won just 54 votes). Many at the time saw Touch the Truck as reality TV’s lowest point. The writer and Black Mirror creator, Charlie Brooker, has said that it made him stop satirising TV, because there was no point in parody when the real thing was so ridiculous. Cheap, cruel, abject in its consumerism and mind-numbingly dull, it was reality TV reduced to its most basic components.  The same could be said of Finger on the App, which takes the endless, pointless contest for eyeballs that dominates the internet today and boils it down to its simplest mechanics, trading the uncertain promise of money for the thoughtless attention of the moving finger. In doing so it holds up a mirror to an internet on which attention – in the form of bulk traffic, shares and likes – is the main currency. It asks how much of human communication has become, like Finger on the App, a demanding and repetitive game.  It is made by a US company called MSCHF, which turns viral ideas – a dog collar that “translates” barks into swearwords, trainers made with holy water, an AI that texts people pictures of feet – into absurdist art-products. “When you get down to it,” the developers write in the game’s manifesto, “every iPhone game says only: move your finger like this.” The game “boils down phone use to its minimalist core”, demanding “utmost devotion” to the screen. It asks players to consider whether the hours they spend on their phones – 48 per cent of young Americans say they are online \u0022almost constantly\u0022 – are a game, or a system that compels them to press the screen long after they have stopped enjoying the experience. Though only available in the US, Finger on the App is already the country’s most popular free app. It has been reviewed thousands of times, despite the fact the game itself does not start for another five days. The reviews suggest that most users do not see the game as a joke at their expense. The same could be said for much of the internet. It is a game with one winner and thousands of losers, and each time someone “loses” – by taking their finger off their screen – they get to vote on how much money, up to $25,000, the winner should get.  This mirrors the attention markets of social media, in which a small number of people are able to cash in on a game that almost everyone else pays, with their time, attention and money, to play. And these winners can themselves be brought down by a sufficient quantity of meanness on the part of everyone else.  If the winner of Finger on the App finds they have been left penniless by the crowd, they will be little different from the companies which spend billions advertising to people who don’t exist and the real people who pretend they’re being paid to advertise products. These are the ultimate customers of the attention economy, the people who forfeit their time and money for the ultimate digital product: zero.",
+                  "author": {
+                      "@type": "Organization",
+                      "@id": "https://www.newstatesman.com",
+                      "name": "Will Dunn",
+                      "url": "https://www.newstatesman.com/science-tech/internet/2020/06/finger-app-dystopian-competition-sums-everything-s-wrong-internet",
+                      "logo": {
+                          "@type": "ImageObject",
+                          "url": "https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/images/newstatesman_logo@2x.png",
+                          "width": "50",
+                          "height": "50"
+                      }
+                  },
+                  "publisher": {
+                      "@type": "Organization",
+                      "@id": "https://www.newstatesman.com",
+                      "name": "Newstatesman",
+                      "url": "https://www.newstatesman.com/science-tech/internet/2020/06/finger-app-dystopian-competition-sums-everything-s-wrong-internet",
+                      "logo": {
+                          "@type": "ImageObject",
+                          "url": "https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/images/newstatesman_logo@2x.png",
+                          "width": "50",
+                          "height": "50"
+                      }
+                  },
+                  "datePublished": "25 June, 2020 - 12:01",
+                  "dateModified": "25 June, 2020 - 12:02",
+                  "image": {
+                      "@type": "ImageObject",
+                      "url": "https://www.newstatesman.com/sites/default/files/blogs_2020/06/fota.png",
+                      "width": "500",
+                      "height": "200"
+                  },
+                  "mainEntityOfPage": "https://www.newstatesman.com/science-tech/internet/2020/06/finger-app-dystopian-competition-sums-everything-s-wrong-internet"
+              }
+          ]
+      }</script>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="amphtml" href="https://www.newstatesman.com/science-tech/internet/2020/06/finger-app-dystopian-competition-sums-everything-s-wrong-internet?amp" />
+      <meta name="description" content="It&#039;s a gruelling and almost certainly futile contest to see who can pay the most attention to their screen. Why does that sound familiar?" />
+      <meta name="abstract" content="It&#039;s a gruelling and almost certainly futile contest to see who can pay the most attention to their screen. Why does that sound familiar?" />
+      <meta name="keywords" content="New Statesman magazine, International Politics, British Politics, Britain, UK, Tony Blair, Gordon Brown, Geoffrey Robinson, David Cameron, Sir Menzies Campbell, Labour, Conservative, Liberal Democrat, UK Politics, House of Commons, House of Lords, Legislation, politics magazine" />
+      <meta name="robots" content="follow, index" />
+      <meta name="news_keywords" content="New Statesman magazine, International Politics, British Politics, Britain, UK, Tony Blair, Gordon Brown, Geoffrey Robinson, David Cameron, Sir Menzies Campbell, Labour, Conservative, Liberal Democrat, UK Politics, House of Commons, House of Lords, Legislation, politics magazin" />
+      <meta name="generator" content="Drupal 7 (http://drupal.org)" />
+      <meta name="rights" content="New Statesman Ltd" />
+      <link rel="canonical" href="https://www.newstatesman.com/science-tech/internet/2020/06/finger-app-dystopian-competition-sums-everything-s-wrong-internet" />
+      <link rel="shortlink" href="https://www.newstatesman.com/node/325759" />
+      <meta property="fb:pages" content="100959719644" />
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="https://www.newstatesman.com/science-tech/internet/2020/06/finger-app-dystopian-competition-sums-everything-s-wrong-internet" />
+      <meta property="og:title" content="Finger on the App: the dystopian competition that sums up everything that’s wrong with the internet" />
+      <meta property="og:description" content="On Tuesday 30 June, thousands of people will open an app called Finger on the App, press their fingers to the screen and wait. Many will give up after a few minutes. Others may wait for hours or even days, unable to do much but wait and pay attention. One of them will win some money, although they won’t know how much – this will be for their fellow players to decide.  Almost 20 years ago, a similar idea was played out live on British TV. One Sunday evening in March 2001, a million people sat down across the UK to watch Dale Winton explain the format for his new game show, Touch the Truck. In a shopping centre next to the M25, contestants gathered around a new Toyota SUV to see who could keep their hands on the vehicle the longest. For 81 hours and 43 minutes, the contestants stood, bored out of their minds, until they were picked off by sleep deprivation, hallucinations, and despair. Most viewers switched off without bothering to find out how it ended and the winner, if you could call him that, immediately put his new car up for sale (he used some of the proceeds to stand against Ed Davey in Kingston and Surbiton in that year’s general election, and won just 54 votes). Many at the time saw Touch the Truck as reality TV’s lowest point. The writer and Black Mirror creator, Charlie Brooker, has said that it made him stop satirising TV, because there was no point in parody when the real thing was so ridiculous. Cheap, cruel, abject in its consumerism and mind-numbingly dull, it was reality TV reduced to its most basic components.  The same could be said of Finger on the App, which takes the endless, pointless contest for eyeballs that dominates the internet today and boils it down to its simplest mechanics, trading the uncertain promise of money for the thoughtless attention of the moving finger. In doing so it holds up a mirror to an internet on which attention – in the form of bulk traffic, shares and likes – is the main currency. It asks how much of human communication has become, like Finger on the App, a demanding and repetitive game.  It is made by a US company called MSCHF, which turns viral ideas – a dog collar that “translates” barks into swearwords, trainers made with holy water, an AI that texts people pictures of feet – into absurdist art-products. “When you get down to it,” the developers write in the game’s manifesto, “every iPhone game says only: move your finger like this.” The game “boils down phone use to its minimalist core”, demanding “utmost devotion” to the screen. It asks players to consider whether the hours they spend on their phones – 48 per cent of young Americans say they are online &quot;almost constantly&quot; – are a game, or a system that compels them to press the screen long after they have stopped enjoying the experience. Though only available in the US, Finger on the App is already the country’s most popular free app. It has been reviewed thousands of times, despite the fact the game itself does not start for another five days. The reviews suggest that most users do not see the game as a joke at their expense. The same could be said for much of the internet. It is a game with one winner and thousands of losers, and each time someone “loses” – by taking their finger off their screen – they get to vote on how much money, up to $25,000, the winner should get.  This mirrors the attention markets of social media, in which a small number of people are able to cash in on a game that almost everyone else pays, with their time, attention and money, to play. And these winners can themselves be brought down by a sufficient quantity of meanness on the part of everyone else.  If the winner of Finger on the App finds they have been left penniless by the crowd, they will be little different from the companies which spend billions advertising to people who don’t exist and the real people who pretend they’re being paid to advertise products. These are the ultimate customers of the attention economy, the people who forfeit their time and money for the ultimate digital product: zero." />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@NewStatesman" />
+      <meta name="twitter:creator" content="@NewStatesman" />
+      <meta name="twitter:creator:id" content="19906615" />
+      <meta name="twitter:url" content="https://www.newstatesman.com/science-tech/internet/2020/06/finger-app-dystopian-competition-sums-everything-s-wrong-internet" />
+      <meta name="twitter:description" content="It&#039;s a gruelling and almost certainly futile contest to see who can pay the most attention to their screen. Why does that sound familiar?" />
+      <title>Finger on the App: the dystopian competition that sums up everything that’s wrong with the internet</title>
 
 
-<!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
-<link href=.CSSs/font-awesome.css" rel="stylesheet">
+      <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
+      <link href=.CSSs/font-awesome.css" rel="stylesheet">
 
 
-<script src="https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/js/vendor/modernizr.js"></script>
-<!-- <script> var j = 1; </script> -->
+      <script src="https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/js/vendor/modernizr.js"></script>
+      <!-- <script> var j = 1; </script> -->
 
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-TileImage" content="/mstile-144x144.png">
-<meta name="theme-color" content="#ffffff">
-<!--<meta name="google-site-verification" content="-wzk9l4dBtL8YHJVF-afrZXha3QSFTKJvhfaoTyOL2Y" />--->
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+      <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+      <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+      <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+      <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+      <link rel="manifest" href="/manifest.json">
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+      <meta name="theme-color" content="#ffffff">
 
-<!--[if gt IE 9 | !IE ]><!-->
-            <link href="https://www.newstatesman.com/sites/all/modules/paywall/assets/css/ev-widgets.min.css" rel="stylesheet">
+      <!--[if gt IE 9 | !IE ]><!-->
+                  <link href="https://www.newstatesman.com/sites/all/modules/paywall/assets/css/ev-widgets.min.css" rel="stylesheet">
+                  <script type="text/javascript" src="https://www.newstatesman.com/sites/all/modules/paywall/assets/js/ev-widgets.min.js?ver=3.7.2"></script>
+                
+                <!-- <![endif]-->
+      <script type="text/javascript"> window.AD_UNITS_TOGGLE_OFF = []; </script>
 
+      <script type="text/javascript" src="./scripts/script3.js"></script>
 
-			<!-- <link href="https://www.newstatesman.com/sites/all/modules/paywall/assets/css/ev-widgets.min.old.css" rel="stylesheet"> -->
-            <!-- <link href="https://www.newstatesman.com/sites/all/modules/paywall/assets/css/prefixed-bootstrap.css" rel="stylesheet"> -->
-            <!-- <script type="text/javascript" src="https://www.newstatesman.com/sites/all/modules/paywall/assets/js/ev-dab.min.js?ver=1.2.2"></script> -->
-            <script type="text/javascript" src="https://www.newstatesman.com/sites/all/modules/paywall/assets/js/ev-widgets.min.js?ver=3.7.2"></script>
-            <!-- <script type="text/javascript" src="https://www.newstatesman.com/sites/all/modules/paywall/assets/js/ev-em.min.js?ver=3.2.21"></script> -->
-          <!-- <![endif]-->
-<!-- Online Advertising -->
-<script type="text/javascript">
-    window.AD_UNITS_TOGGLE_OFF = [];
-</script>
+      <script type="text/javascript" src="https://www.newstatesman.com/sites/default/files/js/js_UthpDohPnEdHMtar0mEL9h0vgubIpjNuvUNLSBKjOjM.js"></script>
 
+      <script type="text/javascript" src="./scripts/script7.js"></script>
 
-<!-- <script type="text/javascript" src="//static.amp.services/clients/GlobalData/NewStatesman.js"></script> -->
+      <script type="text/javascript" src="./scripts/script2.js"></script>
 
+      <script type="text/javascript"> var _cp = _cp || []; var _cp_d = 0; </script>
 
-<!-- <script type="text/javascript" src="https://www.newstatesman.com/sites/default/files/js/js_qikmINIYTWe4jcTUn8cKiMr8bmSDiZB9LQqvceZ6wlM.js"></script> -->
-<script type="text/javascript" src="./scripts/script3.js"></script>
+      <script type="text/javascript" src="https://www.newstatesman.com/sites/default/files/js/js_tsk7LKfnDMPbC8dzXo_nGElHzjO88jR5D9RPKaYlgfQ.js"></script>
 
+      <script type="text/javascript" src="./scripts/script5.js"></script>
+      
+      <style type="text/css" media="all">
+            @import url("https://www.newstatesman.com/modules/system/system.base.css?qci118");
+            @import url("https://www.newstatesman.com/modules/system/system.menus.css?qci118");
+            @import url("https://www.newstatesman.com/modules/system/system.messages.css?qci118");
+            @import url("https://www.newstatesman.com/modules/system/system.theme.css?qci118");
+            @import url("https://www.newstatesman.com/sites/all/modules/views_slideshow/views_slideshow.css?qci118");
+            @import url("https://www.newstatesman.com/modules/contextual/contextual.css?qci118");
+            @import url("https://www.newstatesman.com/modules/book/book.css?qci118");
+            @import url("https://www.newstatesman.com/sites/all/modules/date/date_api/date.css?qci118");
+            @import url("https://www.newstatesman.com/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?qci118");
+            @import url("https://www.newstatesman.com/modules/field/theme/field.css?qci118");
+            @import url("https://www.newstatesman.com/modules/node/node.css?qci118");
+            @import url("https://www.newstatesman.com/sites/all/modules/NS_custom/css/custom.css?qci118");
+            @import url("./CSSs/css4.css");
+            @import url("https://www.newstatesman.com/modules/search/search.css?qci118");
+            @import url("https://www.newstatesman.com/modules/user/user.css?qci118");
+            @import url("https://www.newstatesman.com/sites/all/modules/views/css/views.css?qci118");
+            @import url("https://www.newstatesman.com/sites/all/modules/lazyloader/lazyloader.css?qci118");
+            @import url("https://www.newstatesman.com/sites/all/modules/ckeditor/css/ckeditor.css?qci118");
+            @import url("https://www.newstatesman.com/sites/all/modules/admin_menu/admin_menu.css?qci118");
+            @import url("https://www.newstatesman.com/sites/all/modules/ctools/css/ctools.css?qci118");
+            @import url("https://www.newstatesman.com/sites/default/files/sl_sprites.css?qci118");
+            @import url("https://www.newstatesman.com/sites/all/modules/vscc/vscc.css?qci118");
+            @import url("https://www.newstatesman.com/sites/all/modules/views_slideshow/contrib/views_slideshow_cycle/views_slideshow_cycle.css?qci118");
+            @import url("https://www.newstatesman.com/sites/all/modules/adminimal_admin_menu/adminimal_admin_menu.css?qci118");
+            @import url("https://www.newstatesman.com/sites/all/modules/adminimal_admin_menu/js/slicknav/slicknav.css?qci118");
+            @import url("https://www.newstatesman.com/sites/all/modules/cache_purger/cache_purger.css?qci118");
+            @import url("https://www.newstatesman.com/sites/all/modules/flippy/flippy.css?qci118");
+            @import url("./CSSs/css1.css");
+            @import url("https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/styles/style-america.css?qci118");
+      </style>
 
-<script type="text/javascript" src="https://www.newstatesman.com/sites/default/files/js/js_UthpDohPnEdHMtar0mEL9h0vgubIpjNuvUNLSBKjOjM.js"></script>
+      <meta name="google-site-verification" content="GfOJMinBD7e8A_EFHIWacMNjU-AM1WaPrpnAVzwr7-4"/>
 
-<!-- <script type="text/javascript" src="https://www.newstatesman.com/sites/default/files/js/js_638JyAWZIOZEps6kQTM2htOda__ZSdVsh_ngc2yLmYQ.js"></script> -->
-<script type="text/javascript" src="./scripts/script7.js"></script>
-
-<!-- <script type="text/javascript" src="https://www.newstatesman.com/sites/default/files/js/js_wis9hteWWJ2QBSYU1z7nEYwWR1xvUCzD32UbmCQmYXc.js"></script> -->
-<script type="text/javascript" src="./scripts/script2.js"></script>
-
-
-
-
-<script type="text/javascript">
-
-var _cp = _cp || []; var _cp_d = 0;
-
-</script>
-<script type="text/javascript" src="https://www.newstatesman.com/sites/default/files/js/js_tsk7LKfnDMPbC8dzXo_nGElHzjO88jR5D9RPKaYlgfQ.js"></script>
-
-
-<!-- <script type="text/javascript" src="https://www.newstatesman.com/sites/default/files/js/js_QnVhp9Kx354KgMWVjiItFouKYEiPPoc6ASTE8fVgtc0.js"></script> -->
-<script type="text/javascript" src="./scripts/script5.js"></script>
-
- 
-<style type="text/css" media="all">
-@import url("https://www.newstatesman.com/modules/system/system.base.css?qci118");
-@import url("https://www.newstatesman.com/modules/system/system.menus.css?qci118");
-@import url("https://www.newstatesman.com/modules/system/system.messages.css?qci118");
-@import url("https://www.newstatesman.com/modules/system/system.theme.css?qci118");
-</style>
-<style type="text/css" media="all">
-@import url("https://www.newstatesman.com/sites/all/modules/views_slideshow/views_slideshow.css?qci118");
-@import url("https://www.newstatesman.com/modules/contextual/contextual.css?qci118");
-</style>
-<style type="text/css" media="all">
-@import url("https://www.newstatesman.com/modules/book/book.css?qci118");
-@import url("https://www.newstatesman.com/sites/all/modules/date/date_api/date.css?qci118");
-@import url("https://www.newstatesman.com/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?qci118");
-@import url("https://www.newstatesman.com/modules/field/theme/field.css?qci118");
-@import url("https://www.newstatesman.com/modules/node/node.css?qci118");
-@import url("https://www.newstatesman.com/sites/all/modules/NS_custom/css/custom.css?qci118");
-
-/* @import url("https://www.newstatesman.com/sites/all/modules/paywall/assets/css/ev-custom.css?qci118"); */
-@import url("./CSSs/css4.css");
-
-@import url("https://www.newstatesman.com/modules/search/search.css?qci118");
-@import url("https://www.newstatesman.com/modules/user/user.css?qci118");
-@import url("https://www.newstatesman.com/sites/all/modules/views/css/views.css?qci118");
-@import url("https://www.newstatesman.com/sites/all/modules/lazyloader/lazyloader.css?qci118");
-@import url("https://www.newstatesman.com/sites/all/modules/ckeditor/css/ckeditor.css?qci118");
-@import url("https://www.newstatesman.com/sites/all/modules/admin_menu/admin_menu.css?qci118");
-</style>
-<style type="text/css" media="all">
-@import url("https://www.newstatesman.com/sites/all/modules/ctools/css/ctools.css?qci118");
-@import url("https://www.newstatesman.com/sites/default/files/sl_sprites.css?qci118");
-@import url("https://www.newstatesman.com/sites/all/modules/vscc/vscc.css?qci118");
-@import url("https://www.newstatesman.com/sites/all/modules/views_slideshow/contrib/views_slideshow_cycle/views_slideshow_cycle.css?qci118");
-@import url("https://www.newstatesman.com/sites/all/modules/adminimal_admin_menu/adminimal_admin_menu.css?qci118");
-@import url("https://www.newstatesman.com/sites/all/modules/adminimal_admin_menu/js/slicknav/slicknav.css?qci118");
-@import url("https://www.newstatesman.com/sites/all/modules/cache_purger/cache_purger.css?qci118");
-@import url("https://www.newstatesman.com/sites/all/modules/flippy/flippy.css?qci118");
-</style>
-<style type="text/css" media="all">
-/* @import url("https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/style.css?qci118"); */
-@import url("./CSSs/css1.css");
-@import url("https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/styles/style-america.css?qci118");
-</style>
+      <meta name="DCSext.WebsiteName" content="www.newstatesman.com" />
 
 
-<meta name="google-site-verification" content="GfOJMinBD7e8A_EFHIWacMNjU-AM1WaPrpnAVzwr7-4"/>
-<meta name="DCSext.WebsiteName" content="www.newstatesman.com" />
-
-
-<!-- Facebook Conversion Code for Checkouts - New Statesman 1 -->
-    <script>(function() {
-    var _fbq = window._fbq || (window._fbq = []);
-    if (!_fbq.loaded) {
-    var fbds = document.createElement('script');
-    fbds.async = true;
-    fbds.src = '//connect.facebook.net/en_US/fbds.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(fbds, s);
-    _fbq.loaded = true;
-    }
-    })();
-    window._fbq = window._fbq || [];
-    window._fbq.push(['track', '6025943409225', {'value':'0.00','currency':'GBP'}]);
-    </script>
-    <noscript>
-      <img height="1" width="1" alt="" style="display:none" 
-      src="https://www.facebook.com/tr?ev=6025943409225&amp;cd[value]=0.00&amp;cd[currency]=GBP&amp;noscript=1" />
-     </noscript>
-    
-    <!-- Facebook tracking pixel -->
-    <script>(function() {
-    var _fbq = window._fbq || (window._fbq = []);
-    if (!_fbq.loaded) {
-    var fbds = document.createElement('script');
-    fbds.async = true;
-    fbds.src = '//connect.facebook.net/en_US/fbds.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(fbds, s);
-    _fbq.loaded = true;
-    }
-    _fbq.push(['addPixelId', '526380280843209']);
-    })();
-    window._fbq = window._fbq || [];
-    window._fbq.push(['track', 'PixelInitialized', {}]);
-    </script>
-    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=526380280843209&amp;ev=PixelInitialized" /></noscript>
-    
-
-<!-- Facebook Conversion Code for New Statesman - MasterBrand Philips 2015 -->
+      <!-- Facebook Conversion Code for Checkouts - New Statesman 1 -->
       <script>(function() {
-      var _fbq = window._fbq || (window._fbq = []);
-      if (!_fbq.loaded) {
-      var fbds = document.createElement('script');
-      fbds.async = true;
-      fbds.src = '//connect.facebook.net/en_US/fbds.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(fbds, s);
-      _fbq.loaded = true;
-      }
-      })();
-      window._fbq = window._fbq || [];
-      window._fbq.push(['track', '6032031760848', {'value':'0.00','currency':'GBP'}]);
+          var _fbq = window._fbq || (window._fbq = []);
+
+          if (!_fbq.loaded) {
+          var fbds = document.createElement('script');
+          fbds.async = true;
+          fbds.src = '//connect.facebook.net/en_US/fbds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(fbds, s);
+          _fbq.loaded = true;
+          }
+          })();
+          window._fbq = window._fbq || [];
+          window._fbq.push(['track', '6025943409225', {'value':'0.00','currency':'GBP'}]);
       </script>
+
+      <noscript>
+            <img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6025943409225&amp;cd[value]=0.00&amp;cd[currency]=GBP&amp;noscript=1" />
+      </noscript>
+          
+          <!-- Facebook tracking pixel -->
+      <script>(function() {
+          var _fbq = window._fbq || (window._fbq = []);
+          if (!_fbq.loaded) {
+          var fbds = document.createElement('script');
+          fbds.async = true;
+          fbds.src = '//connect.facebook.net/en_US/fbds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(fbds, s);
+          _fbq.loaded = true;
+          }
+          _fbq.push(['addPixelId', '526380280843209']);
+          })();
+          window._fbq = window._fbq || [];
+          window._fbq.push(['track', 'PixelInitialized', {}]);
+      </script>
+
+      <noscript>
+        <img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=526380280843209&amp;ev=PixelInitialized" />
+      </noscript>
+          
+
+      <!-- Facebook Conversion Code for New Statesman - MasterBrand Philips 2015 -->
+      <script>(function() {
+          var _fbq = window._fbq || (window._fbq = []);
+          if (!_fbq.loaded) {
+          var fbds = document.createElement('script');
+          fbds.async = true;
+          fbds.src = '//connect.facebook.net/en_US/fbds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(fbds, s);
+          _fbq.loaded = true;
+          }
+          })();
+          window._fbq = window._fbq || [];
+          window._fbq.push(['track', '6032031760848', {'value':'0.00','currency':'GBP'}]);
+          </script>
+
       <noscript>
         <img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6032031760848&amp;cd[value]=0.00&amp;cd[currency]=GBP&amp;noscript=1" />
       </noscript>
-	  <script type="text/javascript"> 
-		if(location.hostname=='critiquetimes.com'){ window.location.href='https://critiquetimes.com/'; }
-	  </script>
-<!-- end of Facebook Conversion Code- MasterBrand Philips 2015 -->
 
+      <script type="text/javascript">  if(location.hostname=='critiquetimes.com'){ window.location.href='https://critiquetimes.com/'; } </script>
 
-<!-- OnScroll tag: New Statesman -->
-<!-- <script src="//tags.onscroll.com/3380db1e-7e02-4e5d-b02b-291ba90d3565/tag.min.js" async defer></script> -->
+      <script>
+          (function(h,o,t,j,a,r){
+              h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+              h._hjSettings={hjid:899208,hjsv:6};
+              a=o.getElementsByTagName('head')[0];
+              r=o.createElement('script');r.async=1;
+              r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+              a.appendChild(r);
+          })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+      </script>
 
-<!-- Hotjar Tracking Code for www.newstatesman.com -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:899208,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
- <!-- On mouse hover sponsered artilce --->
+      <script type="application/ld+json">
+          {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "url": "https://www.newstatesman.com/us",
+            "name": "Newstatesman."
+          }
+      </script>
 
- <!-- On mouse hover sponsered artilce --->
-  
+      <script>
+          var unruly = window.unruly ||{};
+          unruly.native = unruly.native || {};
+          unruly.native.siteld=1080927;
+      </script>
 
-<!--- Added Organization name and address for structure data elements ------>	
-	<script type="application/ld+json">
-	{
-	  "@context": "http://schema.org",
-	  "@type": "Organization",
-	  "url": "https://www.newstatesman.com/us",
-	  "name": "Newstatesman."
-	 
-     
-	}
-</script>
-<!--- End Organization name and address for structure data elements -->
-<!-- Unruly tracking Code ----->
-<script>
-var unruly = window.unruly ||{};
-unruly.native = unruly.native || {};
-unruly.native.siteld=1080927;
-</script>
-<!-- <script src="//video.unrulymedia.com/native/native-loader.js"></script> -->
-<!--unruly tracking code---->
-<!-- unruly script--->
-<!-- head script  start -->
+      <script>
+        dataLayer = [{
+          'nodeID': '325759',
+          'title': 'Finger on the App: the dystopian competition that sums up everything that’s wrong with the internet',
+          'type': 'blogs',
+          'categories': 'Science & Tech,Internet,International,Science & Tech,Internet & Social Media',
+          'NSgeo' : 'UK',
+          'publishedDate': '2020-06-25 12:01:29',
+          'authorName': 'Will Dunn'
+        }];
+      </script>
 
-
-<!-- <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-<script>
-  window.googletag = window.googletag || {cmd: []};
-  googletag.cmd.push(function() {
-    googletag.defineSlot('/5269235/New_Statesman/1x3', [1, 3], '1x3').addService(googletag.pubads());
-    googletag.pubads().enableSingleRequest();
-    googletag.pubads().collapseEmptyDivs();
-    googletag.enableServices();
-  });
-</script> -->
-<!-- head script  End-->
-
-<!-- unruly script---->
-
-
-
-
-
-<script>
-  dataLayer = [{
-    'nodeID': '325759',
-    'title': 'Finger on the App: the dystopian competition that sums up everything that’s wrong with the internet',
-    'type': 'blogs',
-    'categories': 'Science & Tech,Internet,International,Science & Tech,Internet & Social Media',
-    'NSgeo' : 'UK',
-    'publishedDate': '2020-06-25 12:01:29',
-    'authorName': 'Will Dunn'
-  }];
-</script>
-
-
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WCSDN56');</script>
-<!-- End Google Tag Manager -->
-
-   
-
-
-
-
-</head>
 
 
       <script>
-        EV.Core.init({
-            serviceName: "default",
-            realmName: "default_realm",
-            icDomain: "https://cmp.evolok.net/ic/api",
-            recaptchaSiteKey: "6LcHrpAUAAAAAGAkDcosec3_d7Ssqggm8j9bz5e2"
-        });
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-WCSDN56');
+      </script>
 
-        EV.Translate.addTranslationTable("en", {
-          "ev.widgets.errors.attribute_validation_failed": "Details are invalid. Please enter valid details",
-          "ev.widgets.errors.general_attributes": "Details are invalid. Please enter valid details",
-          "ev.widgets.errors.general_attribute": "Details are invalid. Please enter valid details",          
-          "ev.widgets.errors.forgot_password_success": "Password reset email sent",
-          "ev.widgets.errors.duplicate_user_profile": "Email already exits! Please use different email for signup",        
-          "ev.widgets.errors.undefined_order_id": "The order has not been created. Please enter valid billing address and delivery address.",  
-          "ev.widgets.errors.invalid_form": "Please enter valid profile details.",  
-          "ev.widgets.errors.identifiers_invalid": "The password you have entered is incorrect. Please re-enter your password, or click the forgot password button below to reset it.",
-          "ev.widgets.errors.identifier_value_empty": "Please enter a valid email address.",
-          "ev.widgets.errors.validators_value_empty": "Please enter a valid password.",
-          "ev.widgets.productProfile.submit" : "Click To Proceed",
-          "ev.widgets.productSelection.orderType.GIFT": "Tick this box if this is a gift",
-          "ev.widgets.errors.not_robot": "Please tick the captcha box below",
-          "ev.widgets.accountactivation.success" : "Your account is successfully activated.",
-          "ev.widgets.accountactivation.warning" : "Couldn't find the activation key!.",
-          "ev.widgets.purchases.actions" : "Invite",          
-          "ev.widgets.purchases.numberBeneficiaries" : "Gifts Given",
-		  "ev.widgets.gocardless.directDebitSuccessful": "Your payment is successful"
-        });
+      <script>
+            EV.Core.init({
+                serviceName: "default",
+                realmName: "default_realm",
+                icDomain: "https://cmp.evolok.net/ic/api",
+                recaptchaSiteKey: "6LcHrpAUAAAAAGAkDcosec3_d7Ssqggm8j9bz5e2"
+            });
 
-      EV.Translate.setActiveLanguage("en", true);
+            EV.Translate.addTranslationTable("en", {
+                  "ev.widgets.errors.attribute_validation_failed": "Details are invalid. Please enter valid details",
+                  "ev.widgets.errors.general_attributes": "Details are invalid. Please enter valid details",
+                  "ev.widgets.errors.general_attribute": "Details are invalid. Please enter valid details",          
+                  "ev.widgets.errors.forgot_password_success": "Password reset email sent",
+                  "ev.widgets.errors.duplicate_user_profile": "Email already exits! Please use different email for signup",        
+                  "ev.widgets.errors.undefined_order_id": "The order has not been created. Please enter valid billing address and delivery address.",  
+                  "ev.widgets.errors.invalid_form": "Please enter valid profile details.",  
+                  "ev.widgets.errors.identifiers_invalid": "The password you have entered is incorrect. Please re-enter your password, or click the forgot password button below to reset it.",
+                  "ev.widgets.errors.identifier_value_empty": "Please enter a valid email address.",
+                  "ev.widgets.errors.validators_value_empty": "Please enter a valid password.",
+                  "ev.widgets.productProfile.submit" : "Click To Proceed",
+                  "ev.widgets.productSelection.orderType.GIFT": "Tick this box if this is a gift",
+                  "ev.widgets.errors.not_robot": "Please tick the captcha box below",
+                  "ev.widgets.accountactivation.success" : "Your account is successfully activated.",
+                  "ev.widgets.accountactivation.warning" : "Couldn't find the activation key!.",
+                  "ev.widgets.purchases.actions" : "Invite",          
+                  "ev.widgets.purchases.numberBeneficiaries" : "Gifts Given",
+                  "ev.widgets.gocardless.directDebitSuccessful": "Your payment is successful"
+            });
 
-        EV.Widgets = {};
-        EV.Widgets.Display = {};
+          EV.Translate.setActiveLanguage("en", true);
 
-        EV.Em.init({
-            url: "https://cmp.evolok.net/acd/api/3.0",
-            sidCookieDomain: ".newstatesman.com",
-            meterHD: false
-        });
+            EV.Widgets = {};
+            EV.Widgets.Display = {};
 
-        EV.Social.init({
-            icDomain: "https://cmp.evolok.net/evolok-idm-web/api",
-            serviceName: "default",
-            realmName: "default_realm",
-            redirectUri: "/my-account",
-            socialAttributeMapping: {
-                "email_address": "email",
-                "first_name": "firstName",
-                "last_name": "lastName"
-            },
-            socialKeys: {
-                facebook   : "296323097570420",
-                google   : "733730641858-49sls9g1ol0ko0sv6eihg9gqhtrh6v7o.apps.googleusercontent.com",
-            }
-        });
+            EV.Em.init({
+                url: "https://cmp.evolok.net/acd/api/3.0",
+                sidCookieDomain: ".newstatesman.com",
+                meterHD: false
+            });
 
-        EV.Event.init();
-
-        EV.PM.init({
-            pmDomain: "https://cmp.evolok.net/pm/api/v2",
-            version: 2,
-            stripeKey: "pk_live_iGYXuxWCb49iOFMJ7G4F86Yy",
-		    gocardlessKey: "r6pl7ZbTOkybdM2SZKNYissworK71NEhMFUeQGet",
-            skipSummary: false,
-            skipProfile: false,
-            skipValidation: false,
-            skipSessionCreation: false,
-            skipLogin: false
-        });
-
-
-        var TNS_Data = {};
-
-        TNS_Data.countries = [];
-
-        EV.Widgets.Display = {
-          "NewStatesman_The_Morning_Call_by_Stephen_Bush": {
-              "type": "checkbox",
-              "values": {
-                  "true": {
-                      "caption": "Morning Call - your daily political briefing from Stephen Bush",
-                      "id": "true"
-                  }
-              }
-          },
-          "newsletterWeeklyHighlights": {
-              "type": "checkbox",
-              "values": {
-                  "true": {
-                      "caption": "Weekly Highlights - a round up of coverage from the New Statesman",
-                      "id": "true"
-                  }
-              }
-          },
-         "newsletterCulture": {
-              "type": "checkbox",
-              "values": {
-                  "true": {
-                      "caption": "New Statesman Dress Down - our weekly culture newsletter",
-                      "id": "true"
-                  }
-              }
-          },"newsletterSpecialOffers": {
-              "type": "checkbox",
-              "values": {
-                  "true": {
-                      "caption": "Information regarding NS events, subscription offers & product updates",
-                      "id": "true"
-                  }
-              }
-          },
-		  "newsletterWorldReview": {
-              "type": "checkbox",
-              "values": {
-                  "true": {
-                      "caption": "World Review - the New Statesman’s global affairs newsletter",
-                      "id": "true"
-                  }
-              }
-          },
-		  
-          "NS_Archive_Newsletter": {
-            "type": "checkbox",
-            "values": {
-                "true": {
-                    
-					"caption": "From the Archive newsletter - a weekly dig into the New Statesman’s archive",
-                    "id": "true"
+            EV.Social.init({
+                icDomain: "https://cmp.evolok.net/evolok-idm-web/api",
+                serviceName: "default",
+                realmName: "default_realm",
+                redirectUri: "/my-account",
+                socialAttributeMapping: {
+                    "email_address": "email",
+                    "first_name": "firstName",
+                    "last_name": "lastName"
+                },
+                socialKeys: {
+                    facebook   : "296323097570420",
+                    google   : "733730641858-49sls9g1ol0ko0sv6eihg9gqhtrh6v7o.apps.googleusercontent.com",
                 }
-            } 
-        },
-          "delivery_address": {
-              "type": "label",
-              "values": [{
-                  "caption": "Delivery Address",
-                  "value": "Delivery Address"
-              }]
-          }
-      };
-        TNS_Data.auth = {};
-        
-        EV.Dab.init();
+            });
+
+            EV.Event.init();
+
+            EV.PM.init({
+                pmDomain: "https://cmp.evolok.net/pm/api/v2",
+                version: 2,
+                stripeKey: "pk_live_iGYXuxWCb49iOFMJ7G4F86Yy",
+                gocardlessKey: "r6pl7ZbTOkybdM2SZKNYissworK71NEhMFUeQGet",
+                skipSummary: false,
+                skipProfile: false,
+                skipValidation: false,
+                skipSessionCreation: false,
+                skipLogin: false
+            });
+
+
+            var TNS_Data = {};
+
+            TNS_Data.countries = [];
+
+            EV.Widgets.Display = {
+              "NewStatesman_The_Morning_Call_by_Stephen_Bush": {
+                  "type": "checkbox",
+                  "values": {
+                      "true": {
+                          "caption": "Morning Call - your daily political briefing from Stephen Bush",
+                          "id": "true"
+                      }
+                  }
+              },
+              "newsletterWeeklyHighlights": {
+                  "type": "checkbox",
+                  "values": {
+                      "true": {
+                          "caption": "Weekly Highlights - a round up of coverage from the New Statesman",
+                          "id": "true"
+                      }
+                  }
+              },
+            "newsletterCulture": {
+                  "type": "checkbox",
+                  "values": {
+                      "true": {
+                          "caption": "New Statesman Dress Down - our weekly culture newsletter",
+                          "id": "true"
+                      }
+                  }
+              },"newsletterSpecialOffers": {
+                  "type": "checkbox",
+                  "values": {
+                      "true": {
+                          "caption": "Information regarding NS events, subscription offers & product updates",
+                          "id": "true"
+                      }
+                  }
+              },
+          "newsletterWorldReview": {
+                  "type": "checkbox",
+                  "values": {
+                      "true": {
+                          "caption": "World Review - the New Statesman’s global affairs newsletter",
+                          "id": "true"
+                      }
+                  }
+              },
+
+              "NS_Archive_Newsletter": {
+                "type": "checkbox",
+                "values": {
+                    "true": {
+                        
+              "caption": "From the Archive newsletter - a weekly dig into the New Statesman’s archive",
+                        "id": "true"
+                    }
+                } 
+            },
+              "delivery_address": {
+                  "type": "label",
+                  "values": [{
+                      "caption": "Delivery Address",
+                      "value": "Delivery Address"
+                  }]
+              }
+          };
+            TNS_Data.auth = {};
+            
+            EV.Dab.init();
 
       </script>
-<!--- Evlolok init ENDS -->
 
-<!--Twitter conversion tracking pixel for philips -->
-
-<!-- <script src="https://platform.twitter.com/oct.js" type="text/javascript"></script>
-<script type="text/javascript">twttr.conversion.trackPid('ntow3', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
-<noscript>
-<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=ntow3&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
-<img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=ntow3&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
-</noscript> -->
-
-<!-- End of Twitter conversion tracking pixel for philips -->
+</head>
 
 
 
