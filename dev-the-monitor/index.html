@@ -527,8 +527,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
  
-<div class="tns-modal-wrapper"><div class="tns-modal tns-modal--login"><a><span class="ev-nslogo"><img src="https://www.newstatesman.com/sites/default/files/styles/large/public/ns-ga.jpeg?itok=soqxWQNh"></span></a><a><span class="tns-ev-close tns-close">&times;</span></a><ev-login ev-ready="login_loaded" auth-scheme-name="default" forgot-password-service="edit_password" show-social="true" recaptcha="false" social-style="icons" social-networks="['facebook', 'google']" remember-me="true" title="Login" show-labels="false" show-header="false" show-container="false"  auto-populate="true" submitbtn-caption="Log In" override-translation-key="ev.login">
-    </ev-login><span class="tns-right">Don't have an account? <a name="register" class="tns-goto-register" data-context="Login">Sign up</a></span></div><div class="tns-modal tns-modal--register"><a><span class="ev-nslogo"><img src="https://www.newstatesman.com/sites/default/files/styles/large/public/ns-ga.jpeg?itok=soqxWQNh"></span></a><a><span class="tns-ev-close tns-close">&times;</span></a><ev-registration show-labels="false" show-header="false" id="registration" auth-scheme-name="default" recaptcha="true" service-name="default" title="register" submitbtn-caption="Create Account" auto-login="false" show-social="true" social-style="icons" social-networks="['facebook', 'google']" hidden-attributes="{'registration': 'true'}"></ev-registration><div class="tns-pp ng-scope">By registering, I Agree to the <a href="https://www.newstatesman.com/terms/" target="_blank">Terms of Service</a> and <a href="https://www.newstatesman.com/privacy-policy/" target="_blank">Privacy Policy</a></div><span class="tns-right">Already a member? <a name="login" class="tns-goto-login" data-context="Register">Log in</a></span></div><div class="tns-modal tns-modal--paywall ns-paywall--subscribe"><a><span class="tns-ev-close tns-close">&times;</span></a><ev-paywall modal="false"></ev-paywall></div><div class="tns-modal tns-modal--paywallNotifier ns-paywall--subscribe-mozila"><a><span class="tns-ev-close tns-close">&times;</span></a><ev-paywall-notifier modal="false"></ev-paywall-notifier></div><div name="sociallogin" class="tns-modal tns-modal--sociallogin"><a><span class="tns-ev-close tns-close">&times;</span></a><ev-social-registration id="socialRegistration" auth-scheme-name="default" service-name="registration" title="Create an Account"
+<div class="tns-modal-wrapper"><div class="tns-modal tns-modal--login"><a><span class="ev-nslogo">
+  
+  
+  <!-- <img src="https://www.newstatesman.com/sites/default/files/styles/large/public/ns-ga.jpeg?itok=soqxWQNh"> -->
+
+  <picture>
+    <source srcset="./media/ns-ga.webp" type="image/webp">
+    <source srcset="./media/ns-ga.jpeg" type="image/jpeg">
+    <img    src="   ./media/ns-ga.webp" src="./media/ns-ga.jpeg" >
+</picture>
+
+
+
+</span></a><a><span class="tns-ev-close tns-close">&times;</span></a><ev-login ev-ready="login_loaded" auth-scheme-name="default" forgot-password-service="edit_password" show-social="true" recaptcha="false" social-style="icons" social-networks="['facebook', 'google']" remember-me="true" title="Login" show-labels="false" show-header="false" show-container="false"  auto-populate="true" submitbtn-caption="Log In" override-translation-key="ev.login">
+    </ev-login><span class="tns-right">Don't have an account? <a name="register" class="tns-goto-register" data-context="Login">Sign up</a></span></div><div class="tns-modal tns-modal--register"><a><span class="ev-nslogo">
+      
+      <!-- <img src="https://www.newstatesman.com/sites/default/files/styles/large/public/ns-ga.jpeg?itok=soqxWQNh"> -->
+
+  <picture>
+    <source srcset="./media/ns-ga.webp" type="image/webp">
+    <source srcset="./media/ns-ga.jpeg" type="image/jpeg">
+    <img    src="   ./media/ns-ga.webp" src="./media/ns-ga.jpeg" >
+</picture>
+    
+    
+    
+    </span></a><a><span class="tns-ev-close tns-close">&times;</span></a><ev-registration show-labels="false" show-header="false" id="registration" auth-scheme-name="default" recaptcha="true" service-name="default" title="register" submitbtn-caption="Create Account" auto-login="false" show-social="true" social-style="icons" social-networks="['facebook', 'google']" hidden-attributes="{'registration': 'true'}"></ev-registration><div class="tns-pp ng-scope">By registering, I Agree to the <a href="https://www.newstatesman.com/terms/" target="_blank">Terms of Service</a> and <a href="https://www.newstatesman.com/privacy-policy/" target="_blank">Privacy Policy</a></div><span class="tns-right">Already a member? <a name="login" class="tns-goto-login" data-context="Register">Log in</a></span></div><div class="tns-modal tns-modal--paywall ns-paywall--subscribe"><a><span class="tns-ev-close tns-close">&times;</span></a><ev-paywall modal="false"></ev-paywall></div><div class="tns-modal tns-modal--paywallNotifier ns-paywall--subscribe-mozila"><a><span class="tns-ev-close tns-close">&times;</span></a><ev-paywall-notifier modal="false"></ev-paywall-notifier></div><div name="sociallogin" class="tns-modal tns-modal--sociallogin"><a><span class="tns-ev-close tns-close">&times;</span></a><ev-social-registration id="socialRegistration" auth-scheme-name="default" service-name="registration" title="Create an Account"
                 modal-keyboard="true" modal-backdrop="true" auto-populate="true" auto-register="false"
                 show-error-msgs="true" submitBtn-caption="Create Account" cancel-anchor-caption="" show-labels="false">
             </ev-social-registration></div><div class="tns-modal tns-modal--privateMode"><a><span class="tns-ev-close tns-close">&times;</span></a><div class="container-fluid">
@@ -760,7 +785,19 @@ jQuery("div.story_related_"+currentNid+" #"+currentNid+"related_story").append(t
 <div class="header-promotion">
 	 		<div>
 			<div class="promotion">
-			  <a href="https://www.newstatesman.com/subscribe12"><img src="https://www.newstatesman.com/sites/default/files/styles/large/public/12-for-12.png" alt="12 issues for £12"></a>
+        <a href="https://www.newstatesman.com/subscribe12">
+          
+          <!-- <img src="https://www.newstatesman.com/sites/default/files/styles/large/public/12-for-12.png" alt="12 issues for £12"> -->
+
+          <picture>
+            <source srcset="./media/12-for-12.webp" type="image/webp"           alt="12 issues for £12">
+            <source srcset="./media/12-for-12.png"  type="image/png"            alt="12 issues for £12">
+            <img    src="   ./media/12-for-12.webp" src="./media/12-for-12.png" alt="12 issues for £12" >
+        </picture>
+        
+        
+        
+        </a>
 			</div>
 		</div>
 		<!-- 	<div>
