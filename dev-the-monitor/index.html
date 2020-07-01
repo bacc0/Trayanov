@@ -76,7 +76,11 @@
 <meta name="twitter:url" content="https://www.newstatesman.com/science-tech/internet/2020/06/finger-app-dystopian-competition-sums-everything-s-wrong-internet" />
 <meta name="twitter:description" content="It&#039;s a gruelling and almost certainly futile contest to see who can pay the most attention to their screen. Why does that sound familiar?" />
 <title>Finger on the App: the dystopian competition that sums up everything that’s wrong with the internet</title>
+
+
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+
 <script src="https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/js/vendor/modernizr.js"></script>
 <script>
   var j = 1;
@@ -105,6 +109,8 @@
 
 <!--[if gt IE 9 | !IE ]><!-->
             <link href="https://www.newstatesman.com/sites/all/modules/paywall/assets/css/ev-widgets.min.css" rel="stylesheet">
+
+
 			<!-- <link href="https://www.newstatesman.com/sites/all/modules/paywall/assets/css/ev-widgets.min.old.css" rel="stylesheet"> -->
             <!-- <link href="https://www.newstatesman.com/sites/all/modules/paywall/assets/css/prefixed-bootstrap.css" rel="stylesheet"> -->
             <script type="text/javascript" src="https://www.newstatesman.com/sites/all/modules/paywall/assets/js/ev-dab.min.js?ver=1.2.2"></script>
@@ -1320,22 +1326,53 @@ jQuery('#noimage').val('imageexist');
             <div class="field field-name-field-node-image field-type-image field-label-hidden">
               <div class="field-items">
                 <div class="field-item even">
-                  <noscript class="adaptive-image" data-adaptive-image-breakpoints="300 768 1024"
-                    data-adaptive-image-300-img=  "&lt;img class=&quot;adaptive-image&quot; data-adaptive-image-breakpoint=&quot;300&quot;  typeof=&quot;foaf:Image&quot; src=&quot; ./media/fota300.png  &quot; /&gt;"
-                    data-adaptive-image-768-img=  "&lt;img class=&quot;adaptive-image&quot; data-adaptive-image-breakpoint=&quot;768&quot;  typeof=&quot;foaf:Image&quot; src=&quot; ./media/fota768.png  &quot; /&gt;"
-                    data-adaptive-image-1024-img= "&lt;img class=&quot;adaptive-image&quot; data-adaptive-image-breakpoint=&quot;1024&quot; typeof=&quot;foaf:Image&quot; src=&quot; ./media/fota1024.png &quot; /&gt;"
-                    data-adaptive-image-max-img=  "&lt;img class=&quot;adaptive-image&quot; data-adaptive-image-breakpoint=&quot;max&quot;  typeof=&quot;foaf:Image&quot; src=&quot; ./media/fotaMax.png  &quot; /&gt;"
-                    >
+                  
+                  <noscript  class="adaptive-image" 
+                             data-adaptive-image-breakpoints="300 768 1024"
 
-                    <img typeof="foaf:Image"
-                      src="https://www.newstatesman.com/sites/default/files/styles/nodeimage/public/blogs_2020/06/fota.png?itok=1OKFjC6_"
-                      alt="" />
+                             data-adaptive-image-300-img  = "&lt;img class=&quot;  adaptive-image&quot;  data-adaptive-image-breakpoint=&quot;300&quot;  typeof=&quot;foaf:Image&quot;  src=&quot; ./media/fota300.png   &quot; /&gt;"
+                             data-adaptive-image-768-img  = "&lt;img class=&quot;  adaptive-image&quot;  data-adaptive-image-breakpoint=&quot;768&quot;  typeof=&quot;foaf:Image&quot;  src=&quot; ./media/fota768.png   &quot; /&gt;"
+                             data-adaptive-image-1024-img = "&lt;img class=&quot;  adaptive-image&quot;  data-adaptive-image-breakpoint=&quot;1024&quot; typeof=&quot;foaf:Image&quot;  src=&quot; ./media/fota1024.png  &quot; /&gt;"
+                             data-adaptive-image-max-img  = "&lt;img class=&quot;  adaptive-image&quot;  data-adaptive-image-breakpoint=&quot;max&quot;  typeof=&quot;foaf:Image&quot;  src=&quot; ./media/fotaMax.png   &quot; /&gt;"
+                  >
+
+                    <!-- <img typeof="foaf:Image" rc="./media/fotaMax.png" alt="" /> -->
+
+
+                    <picture>
+                      <source srcset="./media/fota.webp"    type="image/webp"           alt="">
+                      <source srcset="./media/fotaMax.png"  type="image/png"            alt="">
+                       <img   typeof="foaf:Image" 
+                                      rc="./media/fota.webp" rc="././media/fotaMax.png" alt="" >
+                  </picture>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                   </noscript>
                 </div>
               </div>
             </div>
           </span>
-         <div style="position:relative; top:-2em;">               <div class="image-credit">
+         <div style="position:relative; top:-2em;">               
+          
+          <div class="image-credit">
                               </div>
                       </div>
       </div>
